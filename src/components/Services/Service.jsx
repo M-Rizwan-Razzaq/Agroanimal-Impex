@@ -6,14 +6,14 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
 import "./service.css";
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { Autoplay,EffectCoverflow, Pagination } from "swiper/modules";
 
 const Service = () => {
   return (
     <section className="service-div">
       <div className="lg:mt-20">
         <div className="">
-          <span className="flex justify-center items-center items-center gap-2">
+          <span className="flex justify-center items-center gap-2">
             <img className="w-8" src={secImg} alt="" />
             <h3 className="flex justify-center items-center text-xl md:text-xl lg:text-2xl antialiased font-sans">
               Our Service
@@ -29,6 +29,11 @@ const Service = () => {
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={"auto"}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: true,
+        }}
+
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -37,7 +42,7 @@ const Service = () => {
           slideShadows: true,
         }}
         pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[Autoplay,EffectCoverflow, Pagination]}
         className="mySwiper"
       >
         <SwiperSlide>
