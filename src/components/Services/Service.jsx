@@ -6,7 +6,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
 import "./service.css";
-import { Autoplay,EffectCoverflow, Pagination } from "swiper/modules";
+import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 
 const Service = () => {
   return (
@@ -33,7 +33,6 @@ const Service = () => {
           delay: 3000,
           disableOnInteraction: true,
         }}
-
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -42,7 +41,7 @@ const Service = () => {
           slideShadows: true,
         }}
         pagination={true}
-        modules={[Autoplay,EffectCoverflow, Pagination]}
+        modules={[Autoplay, EffectCoverflow, Pagination]}
         className="mySwiper"
       >
         <SwiperSlide>
