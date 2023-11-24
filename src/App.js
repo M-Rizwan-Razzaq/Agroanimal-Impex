@@ -1,11 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
-    <div className="App">
-       
-    </div>
+    <>
+      <div className="bg-indigo-200 w-full h-screen">
+        <Home />
+      </div>
+    </>
   );
 }
 
