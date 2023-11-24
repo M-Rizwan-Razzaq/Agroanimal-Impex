@@ -1,13 +1,17 @@
-import "./App.css";
-import Home from "./components/Home/Home";
+
+import "tailwindcss/tailwind.css";
+import './App.css';
+import Navbar from './components/navber/Navbar';
+import Home from './components/home/Home';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <>
-      <div className="bg-indigo-200 w-full h-screen">
-        <Home />
-      </div>
-    </>
+    <div className="App">
+       <Navbar/>
+        <Home/>
+        <Footer/>
+    </div>
   );
 }
 

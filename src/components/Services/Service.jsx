@@ -1,9 +1,6 @@
 import React from "react";
 import secImg from "../../images/TriasseaIcon.png";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
