@@ -103,14 +103,15 @@ const Navbar = () => {
             className={`${isScrolled ? "nav-item" : "nav-item-hover"} `}
           >
             {" "}
-            Contact Us
+            Service
           </Link>
+
           <Link
-            to="/"
+            to="/contactUs"
             className={`${isScrolled ? "nav-item" : "nav-item-hover"} `}
           >
             {" "}
-            Service
+            Contact Us
           </Link>
         </ul>
       </header>
