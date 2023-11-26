@@ -1,12 +1,19 @@
-import React from "react";
 import About from "../About/About";
 import Service from "../Services/Service";
-
-export default function Home() {
+import "./home.css";
+import HeroSection from "../Herosection/HeroSection";
+import Testimonial from "../Testimonial/Testimonial";
+import Team from "../TeamMambers/OurTeam";
+const Home = () => {
   return (
-    <div className="bg-indigo-200 w-full m-screen">
+    <div>
+      <HeroSection />
       <About />
+      <Testimonial />
       <Service />
+      <Team />
     </div>
   );
-}
+};
+
+export default Home;

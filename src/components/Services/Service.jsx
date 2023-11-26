@@ -1,9 +1,6 @@
 import React from "react";
 import secImg from "../../images/TriasseaIcon.png";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
@@ -16,7 +13,7 @@ const Service = () => {
     <section className="service-div">
       <div className="lg:mt-20">
         <div className="">
-          <span className="flex justify-center items-center items-center gap-2">
+          <span className="flex justify-center items-center gap-2">
             <img className="w-8" src={secImg} alt="" />
             <h3 className="flex justify-center items-center text-xl md:text-xl lg:text-2xl antialiased font-sans">
               Our Service
