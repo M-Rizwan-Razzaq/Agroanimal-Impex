@@ -9,21 +9,13 @@ import "./ContactUsPage.css";
 import CompoHeader from "../common/CompoHeader";
 
 const ContactUsPage = () => {
- 
-
-  
-
-  
   const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent the default form submission behavior
-    // Add your form submission logic here
+    event.preventDefault();
   };
 
   return (
     <div>
-
-       <CompoHeader name="contact"  image={contactUsImage}/>
-
+      <CompoHeader name="contact" image={contactUsImage} />
 
       <div className="main-box grid grid-cols-3 mt-[6%] mb-[6%] gap-4 ml-3 mr-3">
         <div
@@ -82,7 +74,7 @@ const ContactUsPage = () => {
         </div>
       </div>
 
-      <section className="grid grid-cols-1 mb-10 mt-20 mr-5 gap-20 md:grid-cols-2 lg:grid-cols-2 gap-8">
+      <section className="grid grid-cols-1 mb-10 mt-20 mr-5 gap-20 md:grid-cols-2 lg:grid-cols-2 ">
         <form onSubmit={handleSubmit} className="ml-6 mb-4">
           <div className="mb-10 md:ml-1 lg:ml-2 ">
             <span className="flex justify-start ml-0 items-center gap-1">

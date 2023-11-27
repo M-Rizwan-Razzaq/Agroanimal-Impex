@@ -4,3 +4,23 @@ div {
   font-family: "Comfortaa", sans-serif;
   font-family: "Poppins", sans-serif;
 }
+
+.activeIcon {
+  @apply hidden;
+}
+
+.active .inactiveIcon {
+  @apply hidden;
+}
+
+.active .activeIcon {
+  @apply block;
+}
+
+.item:not(.active) .content {
+  @apply h-0 overflow-hidden py-0;
+}
+
+.item .content {
+  @apply p-8 h-[150px];
+}
