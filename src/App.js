@@ -15,7 +15,7 @@ import Patners from "./components/patners/Patners";
 import Press from "./components/PressKit/Press";
 import FAQ from "./components/Faq/FAQ";
 import Aproach from "./components/Apraoch/Aproach";
-
+//structure
 function App() {
   return (
     <div className="App">
