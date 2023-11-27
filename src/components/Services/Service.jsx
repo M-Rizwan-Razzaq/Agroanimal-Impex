@@ -29,6 +29,7 @@ const Service = () => {
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={"auto"}
+    
         autoplay={{
           delay: 3000,
           disableOnInteraction: true,
