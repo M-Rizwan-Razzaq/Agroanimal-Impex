@@ -1,5 +1,5 @@
 import React from "react";
-import contactUsImage from "../../images/contactus1.jpg"; // Adjust the path to your image
+import contactUsImage from "../../images/contactus1.jpg";  
 import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";

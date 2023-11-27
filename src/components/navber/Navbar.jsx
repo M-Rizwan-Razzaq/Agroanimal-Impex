@@ -94,6 +94,22 @@ const Navbar = () => {
           </Link>
           <Link
             to="/"
+            className={`${isScrolled ? "nav-item" : "nav-item-hover"} ${
+              isMobile ? "mt-4" : ""
+            } `}
+          >
+            Our Aproach
+          </Link>
+          <Link
+            to="/"
+            className={`${isScrolled ? "nav-item" : "nav-item-hover"} ${
+              isMobile ? "mt-4" : ""
+            } `}
+          >
+            Projects
+          </Link>
+          <Link
+            to="/"
             className={`${isScrolled ? "nav-item" : "nav-item-hover"} `}
           >
             About Us
