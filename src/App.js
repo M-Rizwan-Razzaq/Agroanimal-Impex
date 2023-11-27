@@ -15,6 +15,7 @@ import Patners from "./components/patners/Patners";
 import Press from "./components/PressKit/Press";
 import FAQ from "./components/Faq/FAQ";
 import Aproach from "./components/Apraoch/Aproach";
+import ProjectDetail from "./components/ProjectDetail/ProjectDetail";
 //structure
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/ouraproach" element={<Aproach/>} />
           <Route path="/successstories" element={<SuccessStories />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projectdetail/:id" element={<ProjectDetail />} />
 
           <Route path="/blog" element={<Blog />} />
            <Route path="/involved" element={<Involved />} />

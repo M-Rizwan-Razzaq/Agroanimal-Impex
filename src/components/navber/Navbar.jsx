@@ -101,7 +101,7 @@ const Navbar = () => {
             Our Aproach
           </Link>
           <Link
-            to="/"
+            to="/projects"
             className={`${isScrolled ? "nav-item" : "nav-item-hover"} ${
               isMobile ? "mt-4" : ""
             } `}

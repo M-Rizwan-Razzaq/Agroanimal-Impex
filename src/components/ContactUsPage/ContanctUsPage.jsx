@@ -11,9 +11,6 @@ import CompoHeader from "../common/CompoHeader";
 const ContactUsPage = () => {
  
 
-  
-
-  
   const handleSubmit = (event) => {
     event.preventDefault(); // Prevent the default form submission behavior
     // Add your form submission logic here
