@@ -1,5 +1,5 @@
 import React from "react";
-import contactUsImage from "../../images/contactus1.jpg";  
+import contactUsImage from "../../images/contactus1.jpg";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
@@ -51,6 +51,7 @@ const ContactUsPage = () => {
     event.preventDefault(); // Prevent the default form submission behavior
     // Add your form submission logic here
   };
+
   return (
     <div>
       <div className="something mt-[4.45%]" style={containerStyle}>
@@ -255,8 +256,6 @@ const ContactUsPage = () => {
           />
         </div>
       </section>
-
-      <section></section>
       <div className="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
