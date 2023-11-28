@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import faqimage from "../../images/Faq12.jpg";
 import secImg from "../../images/TriasseaIcon.png";
+import { IoArrowForward } from "react-icons/io5";
 import CompoHeader from "../common/CompoHeader";
+import { useNavigate } from "react-router-dom";
 import "./projects.css";
 
 const Projects = () => {
@@ -165,6 +167,9 @@ const Projects = () => {
       },
     ],
   ];
+
+  const navigate = useNavigate();
+
   const [data, setData] = useState(dataArray[0]);
   const [state, setState] = useState(1);
 
@@ -206,41 +211,24 @@ const Projects = () => {
               <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-10 lg:space-y-0">
                 {data.map((callout) => (
                   <div key={callout.id} className="group relative">
-                    <div className="content relative w-full h-[420px] mb-8 overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1">
+                    <div className="project-content relative w-full h-[440px] mb-8 overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1">
                       <img
                         src={callout.imageSrc}
                         alt={callout.imageAlt}
-                        className="h-[420px] rounded-lg w-full object-cover object-center"
+                        className="h-[440px] rounded-lg w-full object-cover object-center"
                       />
                       {/* Display on hover */}
-                      <div className="overlay w-full h-full absolute top-0 left-0 opacity-0 group-hover:opacity-50 bg-green-700 transition-opacity duration-300"></div>
-                      <div className="absolute inset-0 my-6 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <h3 className="text-xl text-yellow-400 hover:text-yellow-400">
-                          <a href={callout.href}>{callout.name}</a>
+                      <div
+                        className="absolute top-0 bottom-0 left-0 right-0 project-detail bg-green-600 opacity-0 hover:opacity-60 flex flex-col justify-center items-center text-center px-10"
+                        onClick={() => navigate(`/projectdetail/${callout.id}`)}
+                      >
+                        <h3 className="text-3xl font-semibold text-white mb-2">
+                          {callout.name}
                         </h3>
-                        <p
-                          className="ml-[3%] mr-[3%] text-base font-semibold text-gray-900"
-                          style={{ textAlign: "center" }}
-                        >
+                        <p className="text-white text-base">
                           {callout.description}
                         </p>
-                        <a href={callout.href}>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth="1.5"
-                            stroke="currentColor"
-                            className="w-10 h-8 my-4 hover:text-lime-400"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                            />
-                          </svg>
-                        </a>
-                        {/* Add link here if needed */}
+                        <IoArrowForward className="absolute bottom-5 right-5 text-white font-bold text-4xl" />
                       </div>
                     </div>
                   </div>
