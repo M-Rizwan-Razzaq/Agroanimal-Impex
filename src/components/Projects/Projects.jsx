@@ -9,7 +9,7 @@ const Projects = () => {
     [
       {
         id: 1,
-        name: "",
+        name: "Desk and Office",
         description:
           "It is a long established fact that reader will the readable content",
         imageSrc:
@@ -218,7 +218,10 @@ const Projects = () => {
                         <h3 className="text-xl text-yellow-400 hover:text-yellow-400">
                           <a href={callout.href}>{callout.name}</a>
                         </h3>
-                        <p className="ml-[3%] mr-[3%] text-base font-semibold text-gray-900">
+                        <p
+                          className="ml-[3%] mr-[3%] text-base font-semibold text-gray-900"
+                          style={{ textAlign: "center" }}
+                        >
                           {callout.description}
                         </p>
                         <a href={callout.href}>
@@ -250,10 +253,11 @@ const Projects = () => {
 
       <section className="flex content-center justify-center gap-1">
         <button
+          onClick={handclick1}
           className={
             state !== 2
               ? `hidden`
-              : `text-green-600 hover:text-white border border-gray-400 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900`
+              : `text-green-600 hover:text-white border border-gray-400 hover:bg-green-600 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-4 py-2 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900`
           }
         >
           <svg
@@ -274,23 +278,24 @@ const Projects = () => {
         <button
           onClick={handclick1}
           type="button"
-          className={`text-green-600 hover:text-white border border-gray-400 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900`}
+          className={`text-green-600 hover:text-white border border-gray-400 hover:bg-green-600 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-5 py-2 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900`}
         >
           1
         </button>
         <button
           onClick={handclick2}
           type="button"
-          className={`text-green-600 hover:text-white border border-gray-400 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900`}
+          className={`text-green-600 hover:text-white border border-gray-400 hover:bg-green-600 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-5 py-2 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900`}
         >
           2
         </button>
         <button
+          onClick={handclick2}
           type="button"
           className={
             state === 2
               ? `hidden`
-              : `text-green-600 hover:text-white border border-gray-400 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900`
+              : `text-green-600 hover:text-white border border-gray-400 hover:bg-green-600 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-4 py-2 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900`
           }
         >
           <svg

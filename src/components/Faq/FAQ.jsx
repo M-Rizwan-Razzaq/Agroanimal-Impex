@@ -186,7 +186,7 @@ const FAQ = () => {
   ];
 
   const [activeIndex, setActiveIndex] = useState(null);
-  const [activeButton, setActiveButton] = useState(null);
+  const [activeButton, setActiveButton] = useState(1);
 
   const clickHeader = (event, index) => {
     event.stopPropagation();
