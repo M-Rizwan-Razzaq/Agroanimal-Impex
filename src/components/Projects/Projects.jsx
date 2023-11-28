@@ -166,7 +166,7 @@ const Projects = () => {
     ],
   ];
   const [data, setData] = useState(dataArray[0]);
-  const [state, setState] = useState(null);
+  const [state, setState] = useState(1);
 
   const handclick1 = () => {
     setData(dataArray[0]);
@@ -275,20 +275,39 @@ const Projects = () => {
             />
           </svg>
         </button>
+
         <button
           onClick={handclick1}
           type="button"
-          className={`text-green-600 hover:text-white border border-gray-400 hover:bg-green-600 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-5 py-2 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900`}
+          style={{
+            backgroundColor: state === 1 ? "#16a34a" : "",
+            color: state === 1 ? "white" : "",
+          }}
+          className={`text-green-600 border border-gray-400 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900 ${
+            state === 1
+              ? "!hover:bg-green-600"
+              : "text-green-600 hover:text-white hover:bg-green-600"
+          }`}
         >
           1
         </button>
+
         <button
           onClick={handclick2}
           type="button"
-          className={`text-green-600 hover:text-white border border-gray-400 hover:bg-green-600 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-5 py-2 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900`}
+          style={{
+            backgroundColor: state === 2 ? "#16a34a" : "",
+            color: state === 2 ? "white" : "",
+          }}
+          className={`text-green-600 border border-gray-400 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900 ${
+            state === 2
+              ? "!hover:bg-green-600"
+              : "text-green-600 hover:text-white hover:bg-green-600"
+          }`}
         >
           2
         </button>
+
         <button
           onClick={handclick2}
           type="button"
