@@ -213,7 +213,7 @@ const FAQ = () => {
         <CompoHeader name="Faqs" image={faqimage} />
       </section>
 
-      <section className="grid grid-cols-1 mb-10 mt-20 mr-5 gap-8 md:grid-cols-2 lg:grid-cols-2 ">
+      <section className="grid grid-cols-1 mb-10 mt-20 mr-5 gap-8 md:grid-cols-2 lg:grid-cols-2">
         <div className="ml-4">
           <div className="mb-6 md:ml-1 lg:ml-2 ">
             <span className="flex justify-start items-center gap-1">
