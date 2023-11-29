@@ -8,6 +8,7 @@ import centerImage from "../../images/centercircle.png";
 import vidimg from "../../images/vidImg.jpg";
 import { FaCanadianMapleLeaf } from "react-icons/fa";
 import { FaPlayCircle } from "react-icons/fa";
+import YouTube from "react-youtube";
 
 const DottedCircle = ({ children }) => {
   return <div className="dotted-circle">{children}</div>;
@@ -39,6 +40,7 @@ const textOnImageStyle = {
   lineHeight: "6rem",
   marginTop: "0.8rem",
 };
+
 const containerStyle = {
   position: "relative",
   textAlign: "center",
@@ -58,6 +60,22 @@ const links = {
 };
 
 const Aproach = () => {
+  const [isVideoPlaying, setIsVideoPlaying] = React.useState(false);
+
+  const playVideo = () => {
+    setIsVideoPlaying(true);
+  };
+
+  const stopVideo = () => {
+    setIsVideoPlaying(false);
+  };
+
+  const videoOpts = {
+    playerVars: {
+      autoplay: 1,
+    },
+  };
+
   return (
     <div>
       <section>
@@ -78,9 +96,26 @@ const Aproach = () => {
           <h1 className="font-bold text-green-200" style={textOnImageStyle}>
             Agriculture & Eco Farming
           </h1>
-          <button className="absolute bottom-[25%] left-[48%] hover:text-green-500">
+          <button
+            className="absolute bottom-[25%] left-[48%] hover:text-green-500"
+            onClick={playVideo}
+          >
             <FaPlayCircle className="mt-10 text-7xl" />
           </button>
+
+          {isVideoPlaying && (
+            <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
+              <div
+                className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-70"
+                onClick={stopVideo}
+              />
+              <YouTube
+                videoId="FHpdGfjU0yU" // Replace with your YouTube video ID
+                opts={videoOpts}
+                className="z-10"
+              />
+            </div>
+          )}
         </div>
       </section>
 
