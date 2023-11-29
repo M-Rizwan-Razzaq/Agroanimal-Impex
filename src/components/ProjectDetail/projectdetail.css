@@ -1,0 +1,19 @@
+.next-pre-box{
+    border-top: 1px solid rgba(128, 128, 128, 0.694);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.696);
+}
+@media (max-width:767px){
+  .slider-div{
+        margin: .5rem;
+         
+    }
+}
+ 
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+div {
+  font-family: "Comfortaa", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+  
+ 
