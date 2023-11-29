@@ -5,6 +5,10 @@ import CompoHeader from "../common/CompoHeader";
 import approachTop from "../../images/ServiceTop3.jpg";
 import secImg from "../../images/TriasseaIcon.png";
 import centerImage from "../../images/centercircle.png";
+import vidimg from "../../images/vidImg.jpg";
+import { FaCanadianMapleLeaf } from "react-icons/fa";
+import { FaPlayCircle } from "react-icons/fa";
+
 const DottedCircle = ({ children }) => {
   return <div className="dotted-circle">{children}</div>;
 };
@@ -22,11 +26,62 @@ const TextContainer = ({ className, title, description }) => {
   );
 };
 
+const imageStyle = {
+  width: "100%",
+};
+
+const textOnImageStyle = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  fontSize: "70px",
+  lineHeight: "6rem",
+  marginTop: "0.8rem",
+};
+const containerStyle = {
+  position: "relative",
+  textAlign: "center",
+  color: "rgb(201, 236, 236)",
+};
+
+const links = {
+  position: "absolute",
+  top: "37%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  fontSize: "23px",
+  fontFamily: "cursive",
+  display: "flex",
+  justifyContent: "center",
+  width: "100%",
+};
+
 const Aproach = () => {
   return (
     <div>
       <section>
         <CompoHeader name="Aproach" image={approachTop} />
+      </section>
+
+      <section className="mt-40">
+        <div style={containerStyle}>
+          <img
+            className="contactimage h-[800px]"
+            src={vidimg}
+            alt="Contact Us"
+            style={imageStyle}
+          />
+          <div className="flex justify-between items-center " style={links}>
+            <FaCanadianMapleLeaf className="mb-10 text-7xl text-green-200" />
+          </div>
+          <h1 className="font-bold text-green-200" style={textOnImageStyle}>
+            Agriculture & Eco Farming
+          </h1>
+          <button className="absolute bottom-[25%] left-[48%] hover:text-green-500">
+            <FaPlayCircle className="mt-10 text-7xl" />
+          </button>
+        </div>
       </section>
 
       <section className="mt-20">
