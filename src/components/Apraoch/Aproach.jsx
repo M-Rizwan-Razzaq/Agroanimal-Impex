@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./apraoch.css";
 import data from "./aproachData";
 import CompoHeader from "../common/CompoHeader";
@@ -60,7 +60,7 @@ const links = {
 };
 
 const Aproach = () => {
-  const [isVideoPlaying, setIsVideoPlaying] = React.useState(false);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   const playVideo = () => {
     setIsVideoPlaying(true);
@@ -106,7 +106,7 @@ const Aproach = () => {
           {isVideoPlaying && (
             <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
               <div
-                className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-70"
+                className="vid-div absolute top-0 left-0 w-full h-full bg-black bg-opacity-70"
                 onClick={stopVideo}
               />
               <YouTube
