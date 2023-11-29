@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+div {
+  font-family: "Comfortaa", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-container1 {
+  position: absolute;
+  top: -8%;
+  left: 12%;
+  transform: translateX(-100%);
+}
+
+.text-container2 {
+  position: absolute;
+  top: 83%;
+  left: 14%;
+  transform: translateX(-100%);
+}
+
+.text-container3 {
+  position: absolute;
+  top: 2%;
+  right: -76%;
+  transform: translateX(-100%);
+}
+
+.text-container4 {
+  position: absolute;
+  top: 78%;
+  right: -73%;
+  transform: translateX(-100%);
+}
+
+.dotted-circle {
+  position: relative;
+  width: 530px;
+  height: 530px;
+  border: 3px dotted green;
+  border-radius: 50%;
+  display: flex;
+}
+
+@media (max-width: 540px) {
+  .dotted-circle {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 2px dotted green;
+    border-radius: 50%;
+    display: flex;
+  }
+
+  .text-container1 {
+    position: absolute;
+    top: -25%;
+    left: 43%;
+    transform: translateX(-100%);
+  }
+
+  .text-container2 {
+    position: absolute;
+    top: 95%;
+    left: 44%;
+    transform: translateX(-100%);
+  }
+
+  .text-container3 {
+    position: absolute;
+    top: -26%;
+    right: -60%;
+    transform: translateX(-100%);
+  }
+
+  .text-container4 {
+    position: absolute;
+    top: 96%;
+    right: -60%;
+    transform: translateX(-100%);
+  }
+}
+
+.circle-image {
+  width: 120px; /* Adjust the image size as needed */
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.approach-centerImage {
+  position: absolute;
+  top: 20%;
+  left: 12%;
+}
+
+.img-topLeft {
+  top: 5%;
+  left: 25%;
+  transform: translateX(-100%);
+}
+
+.img-bottomLeft {
+  top: 80%;
+  right: 20;
+  transform: translateY(-50%);
+}
+
+.img-bottomRight {
+  bottom: 5%;
+  left: 85%;
+  transform: translateX(-50%);
+}
+
+.img-topRight {
+  top: 18%;
+  left: 76%;
+  transform: translateY(-50%);
+}

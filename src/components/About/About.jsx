@@ -38,7 +38,7 @@ const About = () => {
   ];
 
   return (
-    <section className="grid grid-cols-1 mt-20 mr-10 gap-20 md:grid-cols-2 lg:grid-cols-2 gap-8">
+    <section className="grid grid-cols-1 mt-20 mr-10 gap-20 md:grid-cols-2 lg:grid-cols-2">
       <div className="md:ml-8 lg:ml-2">
         <span className="flex justify-start ml-6 items-center gap-2">
           <img className="w-8" src={secImg} alt="" />
