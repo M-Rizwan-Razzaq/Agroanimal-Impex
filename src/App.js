@@ -1,11 +1,11 @@
 import "tailwindcss/tailwind.css";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Navbar from "./components/navber/Navbar";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import ContanctUsPage from "./components/ContactUsPage/ContanctUsPage";
-
+ 
 import SuccessStories from "./components/SuccessStories/SuccessStories";
 import Projects from "./components/Projects/Projects";
 import Blog from "./components/Blog/Blog";
@@ -16,8 +16,12 @@ import Press from "./components/PressKit/Press";
 import FAQ from "./components/Faq/FAQ";
 import Aproach from "./components/Apraoch/Aproach";
 import ProjectDetail from "./components/ProjectDetail/ProjectDetail";
+ 
 //structure
 function App() {
+
+
+
   return (
     <div className="App">
       <Router>

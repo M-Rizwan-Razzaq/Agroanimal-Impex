@@ -3,6 +3,9 @@ import "./projects.css"
 import compoheaderimg from "../../images/contactus1.jpg"
 import CompoHeader from '../common/CompoHeader'
 import project1 from "../../assest/project1.jpg"
+import project2 from "../../assest/project2.jpg"
+import project3 from "../../assest/project3.jpg"
+import project4 from "../../assest/project4.jpg"
 import secImg from "../../images/TriasseaIcon.png"
 import { IoArrowForward } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom/dist'
@@ -16,21 +19,21 @@ export const projectsData  =  [
   },
   {
     id:2,
-    image:project1,
+    image:project2,
     title:"Simple Generator",
     desciption:"It is a long established fact that reader will the readable content"
 
   },
   {
     id:3,
-    image:project1,
+    image:project3,
     title:"Simple Generator",
     desciption:"It is a long established fact that reader will the readable content"
 
   },
   {
     id:4,
-    image:project1,
+    image:project4,
     title:"Simple Generator",
     desciption:"It is a long established fact that reader will the readable content"
 
@@ -44,21 +47,21 @@ export const projectsData  =  [
   },
     {
     id:6,
-    image:project1,
+    image:project2,
     title:"Simple Generator",
     desciption:"It is a long established fact that reader will the readable content"
 
   },
   {
     id:7,
-    image:project1,
+    image:project3,
     title:"Simple Generator",
     desciption:"It is a long established fact that reader will the readable content"
 
   },
   {
     id:8,
-    image:project1,
+    image:project4,
     title:"Simple Generator",
     desciption:"It is a long established fact that reader will the readable content"
 

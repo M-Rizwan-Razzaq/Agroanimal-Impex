@@ -9,11 +9,41 @@
     }
 }
  
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@media (max-width:1150px){
+  .project-gallery-box{
+    grid-template-columns: repeat(3,1fr);
+  }
+ }
 
-div {
-  font-family: "Comfortaa", sans-serif;
-  font-family: "Poppins", sans-serif;
-}
+@media (max-width:850px){
+  .project-gallery-box{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .next-pre-heading{
+    display: block;
+  }
+ 
+ }
+
   
+ @media (max-width:500px){
+  .project-gallery-box{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .next-pre-heading{
+    display: none;
+  }
+  .project-detail-top-img{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .project-detail-top-detail{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+ }
+ 
+
+
+
  
