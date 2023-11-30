@@ -93,7 +93,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            to="/"
+            to="/ouraproach"
             className={`${isScrolled ? "nav-item" : "nav-item-hover"} ${
               isMobile ? "mt-4" : ""
             } `}
@@ -101,7 +101,7 @@ const Navbar = () => {
             Our Aproach
           </Link>
           <Link
-            to="/"
+            to="/projects"
             className={`${isScrolled ? "nav-item" : "nav-item-hover"} ${
               isMobile ? "mt-4" : ""
             } `}
@@ -113,6 +113,12 @@ const Navbar = () => {
             className={`${isScrolled ? "nav-item" : "nav-item-hover"} `}
           >
             About Us
+          </Link>
+          <Link
+            to="/"
+            className={`${isScrolled ? "nav-item" : "nav-item-hover"} `}
+          >
+            Pages
           </Link>
           <Link
             to="/"
