@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import dataArray from "./FaqData";
 import "./faq.css";
 import faqimage from "../../images/Faq12.jpg";
@@ -6,6 +7,13 @@ import secImg from "../../images/TriasseaIcon.png";
 import CompoHeader from "../common/CompoHeader";
 
 const FAQ = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    // Scroll to the top of the page when the location (route) changes
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   const [activeArray, setActiveArry] = useState(dataArray[0]);
 
   const [activeIndex, setActiveIndex] = useState(null);

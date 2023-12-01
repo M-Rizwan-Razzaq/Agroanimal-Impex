@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import contactUsImage from "../../images/contactus1.jpg";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
@@ -13,6 +14,12 @@ const ContactUsPage = () => {
     event.preventDefault();
   };
 
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    // Scroll to the top of the page when the location (route) changes
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <div>
       <CompoHeader name="contact" image={contactUsImage} />
@@ -204,6 +211,7 @@ const ContactUsPage = () => {
           />
         </div>
       </section>
+
       <div className="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">

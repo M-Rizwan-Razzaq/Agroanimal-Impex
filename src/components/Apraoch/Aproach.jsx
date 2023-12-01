@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "./apraoch.css";
 import data from "./aproachData";
 import CompoHeader from "../common/CompoHeader";
@@ -60,6 +61,13 @@ const links = {
 };
 
 const Aproach = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    // Scroll to the top of the page when the location (route) changes
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   const playVideo = () => {
