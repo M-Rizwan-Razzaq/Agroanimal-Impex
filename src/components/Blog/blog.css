@@ -1,0 +1,11 @@
+.focus{
+    border: 1px solid gray;
+}
+
+.focus:focus{
+    border:1px solid #CCB100;
+}
+.post-button:hover{
+    background-color: #CCB100;
+    transition: all .3s ease-in;
+}

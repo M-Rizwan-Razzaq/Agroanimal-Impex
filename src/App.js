@@ -16,6 +16,7 @@ import Press from "./components/PressKit/Press";
 import FAQ from "./components/Faq/FAQ";
 import Aproach from "./components/Apraoch/Aproach";
 import ProjectDetail from "./components/ProjectDetail/ProjectDetail";
+import BlogDetail from "./components/BlogDetail/BlogDetail";
  
 //structure
 function App() {
@@ -36,6 +37,7 @@ function App() {
           <Route path="/projectdetail/:id" element={<ProjectDetail />} />
 
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blogDetail/:id" element={<BlogDetail />} />
            <Route path="/involved" element={<Involved />} />
           <Route path="/gallery" element={<Gallary />} />
 
