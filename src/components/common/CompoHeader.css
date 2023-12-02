@@ -20,7 +20,7 @@
   margin-top: 0.8rem;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 786px) {
   .contactimage {
     width: 100%;
     height: 280px;
@@ -44,7 +44,7 @@
 @media (max-width: 420px) {
   .contactimage {
     width: 100%;
-    height: 250px;
+    height: 230px;
   }
 
   .links {

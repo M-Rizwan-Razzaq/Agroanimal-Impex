@@ -109,7 +109,7 @@ function Partnership() {
       </section>
 
       <section className="mt-20 ml-6 mr-6 md:mx-10 py-4 md:mr-10 shadow-2xl rounded-lg">
-        <h1 className="text-3xl md:text-5xl text-center md:ml-8 mt-8 md:mt-0 text-green-900 opacity-100">
+        <h1 className="text-3xl md:text-5xl text-center md:ml-8 mt-8 text-green-900 opacity-100">
           Examples of collaborations and joint initiatives
         </h1>
 
@@ -135,68 +135,56 @@ function Partnership() {
             className="mySwiper"
           >
             <SwiperSlide>
-              <div className="bg-green-900 rounded-lg">
-                <a
-                  href="/"
-                  className="flex flex-col text-3xl mt-4 hover:text-green-500"
-                >
+              <div className="bg-green-900 rounded-lg text-black transform transition-all ease-in-out duration-300 hover:text-white">
+                <a href="/" className="flex flex-col text-3xl mt-4 ">
                   <img
                     className=""
                     src="https://dynamicassets.basf.com/is/image/basf/CSF-T-shirt-pink:16x9?dpr=off&fmt=webp-alpha&fit=crop%2C1&wid=414&hei=233"
                     alt=""
                   />
-                  <span className="block text-base md:text-lg mt-4 md:mt-8 mb-4 md:mb-6 ml-4 md:ml-4 text-white hover:text-green-500">
+                  <span className="block text-base md:text-lg mt-4 md:mt-8 mb-4 md:mb-6 ml-4 md:ml-4  hover:text-white">
                     Certified Sustainable FiberMax (CSF)
                   </span>
                 </a>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-green-900 rounded-lg">
-                <a
-                  href="/"
-                  className="flex flex-col text-3xl mt-4 hover:text-green-500"
-                >
+              <div className="bg-green-900 rounded-lg text-black transform transition-all ease-in-out duration-300 hover:text-white">
+                <a href="/" className="flex flex-col text-3xl mt-4 ">
                   <img
                     className="w-[200px]"
                     src="https://dynamicassets.basf.com/is/image/basf/cotton_banner:16x9?dpr=off&fmt=webp-alpha&fit=crop%2C1&wid=414&hei=233"
                     alt=""
                   />
-                  <span className="block text-base  md:text-lg mt-4 md:mt-8 mb-4 md:mb-6 ml-4 md:ml-4 text-white hover:text-green-500">
+                  <span className="block text-base  md:text-lg mt-4 md:mt-8 mb-4 md:mb-6 ml-4 md:ml-4 hover:text-white">
                     Certified Sustainable FiberMax (CSF)
                   </span>
                 </a>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-green-900 rounded-lg">
-                <a
-                  href="/"
-                  className="flex flex-col text-3xl mt-4 hover:text-green-500"
-                >
+              <div className="bg-green-900 rounded-lg text-black transform transition-all ease-in-out duration-300 hover:text-white">
+                <a href="/" className="flex flex-col text-3xl mt-4 ">
                   <img
                     className=""
                     src="https://dynamicassets.basf.com/is/image/basf/Climate-smart-barley-production:16x9?dpr=off&fmt=webp-alpha&fit=crop%2C1&wid=414&hei=233"
                     alt=""
                   />
-                  <span className="block text-base md:text-lg mt-4 md:mt-8 mb-4 md:mb-6 ml-4 md:ml-4 text-white hover:text-green-500">
+                  <span className="block text-base md:text-lg mt-4 md:mt-8 mb-4 md:mb-6 ml-4 md:ml-4 hover:text-white">
                     Certified Sustainable FiberMax (CSF)
                   </span>
                 </a>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-green-900 rounded-lg">
-                <a
-                  href="/"
-                  className="flex flex-col text-3xl mt-4 hover:text-green-500"
-                >
+              <div className="bg-green-900 rounded-lg text-black transform transition-all ease-in-out duration-300 hover:text-white">
+                <a href="/" className="flex flex-col text-3xl mt-4 ">
                   <img
                     className=""
                     src="https://dynamicassets.basf.com/is/image/basf/P389_2283_B:16x9?dpr=off&fmt=webp-alpha&fit=crop%2C1&wid=414&hei=233"
                     alt=""
                   />
-                  <span className="block text-base md:text-lg mt-4 md:mt-8 mb-4 md:mb-6 ml-4 md:ml-4 text-white hover:text-green-500">
+                  <span className="block text-base md:text-lg mt-4 md:mt-8 mb-4 md:mb-6 ml-4 md:ml-4 hover:text-white ">
                     Certified Sustainable FiberMax (CSF)
                   </span>
                 </a>
@@ -229,8 +217,8 @@ function Partnership() {
         <h1 className="ml-6 text-3xl py-6 text-gray-800">
           Change drivers within Partnerships for Sustainable Agriculture
         </h1>
-        <div className="text-lg ml-6 pb-8 text-white">
-          <div className="flex flex-row items-center gap-2 mb-2 cursor-pointer hover:text-yellow-300">
+        <div className="text-lg ml-6 pb-8 ">
+          <div className="flex flex-row items-center gap-2 mb-2 transform transition-all ease-in-out duration-300 cursor-pointer hover:text-yellow-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -248,7 +236,7 @@ function Partnership() {
 
             <p>SmallHolder Empowerment</p>
           </div>
-          <div className="flex flex-row items-center gap-2 mb-2 cursor-pointer hover:text-yellow-300">
+          <div className="flex flex-row items-center gap-2 mb-2 transform transition-all ease-in-out duration-300 cursor-pointer hover:text-yellow-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
