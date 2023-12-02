@@ -8,7 +8,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { projectsData } from "../ProjectDetail/ProjectDetail";
 import { RiReplyLine } from "react-icons/ri";
 import { LuPhoneCall } from "react-icons/lu";
-
+import secImg from "../../images/TriasseaIcon.png";
 const BlogDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -39,9 +39,9 @@ const BlogDetail = () => {
     <div>
       <CompoHeader name="blogDetail" image={compoheaderimg} />
 
-      <div className="md:px-8 px-4 py-8 md:flex gap-[6rem]">
+      <div  className="md:px-8 px-4 py-8   md:flex gap-[6rem]  ">
         {/* blog detail left box */}
-        <div className="w-full md:w-[60%]">
+        <div className="w-full md:w-[60%]   scroll-slow">
           <h1 className="md:text-4xl  text-[25px]">Complete Solution For Your Land Design</h1>
 
           <div className="flex md:flex-row flex-col-reverse md:items-center md:gap-8 gap-1 text-gray-500 md:mt-6 mt-3">
@@ -90,20 +90,26 @@ const BlogDetail = () => {
             tortor.
           </p>
 
-          <div className="flex md:py-10 py-8 md:px-10 px-6 bg-gray-200 md:mt-10 mt-7 rounded-lg md:text-2xl text-base">
+          <div className="flex gap-3  md:py-10 py-8 md:px-10 px-6 bg-gray-200 md:mt-10 mt-7 rounded-lg md:text-2xl text-base">
+          <div>
+
+         
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Prasent
               arcu metus, sollicitudin nec nulla et. Vivamus eleifend
               ullamcorper orci.
             </p>
+            <p className="mt-6 w-max cursor-pointer text-green-900 hover:text-[#CCB100] text-base"> <span className="mr-1    text-black">-</span>Dipanshu  </p>
+            </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
-              className="md:opacity-100 opacity-0 w-20 h-20 text-green-900 mb-4"
+              className="md:opacity-100 opacity-0 w-20 h-20 text-green-900 -mt-4"
               viewBox="0 0 975.036 975.036"
             >
               <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
             </svg>
+
           </div>
 
           <h2 className="md:text-2xl text-[1.3rem]  mt-7">Setting the mood with incense</h2>
@@ -243,6 +249,7 @@ const BlogDetail = () => {
               id=""
               rows="5"
               className="mt-7 bg-transparent outline-none border-gray-400 w-full px-5 py-3 rounded focus"
+              style={{resize:"none"}}
             ></textarea>
             <div className="mt-6 flex items-center text-[15px]">
               <input type="checkbox" id="save-info" className="mr-2" />
@@ -257,8 +264,14 @@ const BlogDetail = () => {
           </form>
         </div>
         {/* blog detail right box */}
-        <div className="flex-1 blog-detail-right-box">
+        <div className="flex-1 blog-detail-right-box   scroll-fast">
           <div className="rounded bg-white px-8 py-10 box-border">
+          <span className="flex justify-start items-center gap-2">
+          <img className="w-8" src={secImg} alt="" />
+          <h3 className="text-xl md:text-2xl antialiased font-sans">
+            Recent Posts
+          </h3>
+        </span>
             {[...new Array(6)].map(() => (
               <div className="flex gap-4 mt-8">
                 <div className="w-[25%] rounded-lg overflow-hidden">
@@ -284,13 +297,19 @@ const BlogDetail = () => {
                       </span>
                     </div>
                   </div>
-                  <h1 className="mt-2 font-semibold">fresh vagitable food</h1>
+                  <h1 className="mt-2 font-semibold hover:text-green-900 cursor-pointer">fresh vagitable food</h1>
                 </div>
               </div>
             ))}
           </div>
 
           <div className="rounded bg-white px-8 py-10 box-border mt-10">
+          <span className="flex justify-start mb-8 items-center gap-2">
+          <img className="w-8" src={secImg} alt="" />
+          <h3 className="text-xl md:text-2xl antialiased font-sans">
+            Tags
+          </h3>
+        </span>
             <div className="flex gap-3 flex-wrap">
               {[...new Array(5)].map(() => (
                 <p className="py-1 px-3 bg-gray-300 hover:bg-[#CCB100] hover:text-white cursor-pointer rounded-sm">
@@ -300,13 +319,13 @@ const BlogDetail = () => {
             </div>
           </div>
 
-          <div className="relative   rounded bg-white overflow-hidden box-border mt-10">
+          <div className="relative  h-[63vh]   rounded bg-white overflow-hidden box-border mt-10">
 
             <img
               src="https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/blog-12.jpg"
               alt=""
               width="100%"
-              height="100%"
+             className="object-cover"
             />
 
 
