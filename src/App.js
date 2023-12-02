@@ -11,11 +11,11 @@ import Projects from "./components/Projects/Projects";
 import Blog from "./components/Blog/Blog";
 import Involved from "./components/Involved/Involved";
 import Gallary from "./components/Gallary/Gallary";
-import Patners from "./components/patners/Patners";
 import Press from "./components/PressKit/Press";
 import FAQ from "./components/Faq/FAQ";
 import Aproach from "./components/Apraoch/Aproach";
 import Partnership from "./components/Partnership/Partnership";
+import Impact from "./components/Impact/Impact";
 
 function App() {
   return (
@@ -30,12 +30,12 @@ function App() {
           <Route path="/successstories" element={<SuccessStories />} />
           <Route path="/projects" element={<Projects />} />
 
+          <Route path="/impact" element={<Impact />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/involved" element={<Involved />} />
           <Route path="/gallery" element={<Gallary />} />
-          <Route path="/partnership" element={<Partnership />} />
 
-          <Route path="/patners" element={<Patners />} />
+          <Route path="/partnership" element={<Partnership />} />
           <Route path="/presskit" element={<Press />} />
           <Route path="/faq" element={<FAQ />} />
         </Routes>

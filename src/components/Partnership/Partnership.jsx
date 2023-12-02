@@ -72,7 +72,7 @@ function Partnership() {
           />
         </div>
         <div class="flex flex-col justify-center ml-3 mb-3 md:ml-6 mr-3 md:mr-6 mt-5 md:mt-0">
-          <h1 class="text-xl md:text-3xl text-gray-800">
+          <h1 class="text-xl md:text-3xl text-gray-300">
             BASF hosts roundtable discussions on cotton at the United Nations
             headquarters
           </h1>
@@ -88,7 +88,7 @@ function Partnership() {
 
       <section class="grid grid-cols-1 md:grid-cols-2 mt-10 md:mt-20 bg-green-900 mx-5 md:mx-10 rounded-lg shadow-2xl">
         <div class="flex flex-col justify-center ml-3 md:ml-6 mr-3 md:mr-6 mt-5 md:mt-0">
-          <h1 class="text-xl md:text-3xl text-gray-800">
+          <h1 class="text-xl md:text-3xl text-gray-300">
             BASF, Syngenta, and Arisa collaborate to improve labor standards in
             India’s vegetable seeds sector.
           </h1>
@@ -196,7 +196,7 @@ function Partnership() {
 
       <section class="grid grid-cols-1 md:grid-cols-2 mt-10 md:mt-20 mb-10 bg-green-900 mx-5 md:mx-10 rounded-lg shadow-2xl">
         <div class="flex flex-col justify-center ml-3 md:ml-6 mr-3 md:mr-6 mt-5 md:mt-0">
-          <h1 class="text-xl md:text-3xl text-gray-800">
+          <h1 class="text-xl md:text-3xl text-gray-300">
             Partnering With Farmers And Their Communities Around The Globe
           </h1>
           <p class="text-base md:text-lg text-white mt-5">
@@ -214,7 +214,7 @@ function Partnership() {
       </section>
 
       <section className="bg-green-900 mb-10 w-[80%] ml-10 mr-10 rounded-lg shadow-2xl">
-        <h1 className="ml-6 text-3xl py-6 text-gray-800">
+        <h1 className="ml-6 text-3xl py-6 text-gray-300">
           Change drivers within Partnerships for Sustainable Agriculture
         </h1>
         <div className="text-lg ml-6 pb-8 ">

@@ -37,9 +37,6 @@ const textOnImageStyle = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  fontSize: "70px",
-  lineHeight: "6rem",
-  marginTop: "0.8rem",
 };
 
 const containerStyle = {
@@ -99,16 +96,19 @@ const Aproach = () => {
             style={imageStyle}
           />
           <div className="flex justify-between items-center " style={links}>
-            <FaCanadianMapleLeaf className="mb-10 text-7xl text-green-200" />
+            <FaCanadianMapleLeaf className="mb-10 text-4xl mt-[-8%] md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-green-200" />
           </div>
-          <h1 className="font-bold text-green-200" style={textOnImageStyle}>
+          <h1
+            className="font-bold text-green-200 text-2xl mt-[-4%] md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
+            style={textOnImageStyle}
+          >
             Agriculture & Eco Farming
           </h1>
           <button
             className="absolute bottom-[25%] left-[48%] hover:text-green-500"
             onClick={playVideo}
           >
-            <FaPlayCircle className="mt-10 text-7xl" />
+            <FaPlayCircle className="mt-10 text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl" />
           </button>
 
           {isVideoPlaying && (
@@ -120,7 +120,7 @@ const Aproach = () => {
               <YouTube
                 videoId="FHpdGfjU0yU" // Replace with your YouTube video ID
                 opts={videoOpts}
-                className="z-10"
+                className="z-10 max-w-full"
               />
             </div>
           )}
