@@ -20,6 +20,7 @@ const ContactUsPage = () => {
     // Scroll to the top of the page when the location (route) changes
     window.scrollTo(0, 0);
   }, [pathname]);
+
   return (
     <div>
       <CompoHeader name="contact" image={contactUsImage} />

@@ -12,7 +12,11 @@ import { FaPlayCircle } from "react-icons/fa";
 import YouTube from "react-youtube";
 
 const DottedCircle = ({ children }) => {
-  return <div className="dotted-circle">{children}</div>;
+  return (
+    <div className="dotted-circle md:w-96 md:h-96 lg:w-72 lg:h-72 xl:w-96 xl:h-96">
+      {children}
+    </div>
+  );
 };
 
 const Image = ({ src, alt, className }) => {
@@ -22,14 +26,10 @@ const Image = ({ src, alt, className }) => {
 const TextContainer = ({ className, title, description }) => {
   return (
     <div className={className}>
-      <h1 className="text-3xl">{title}</h1>
-      <p className="my-3 text-gray-400">{description}</p>
+      <h1 className="title-text text-2xl md:text-3xl lg:text-4xl">{title}</h1>
+      <p className="descreption-text  text-gray-400">{description}</p>
     </div>
   );
-};
-
-const imageStyle = {
-  width: "100%",
 };
 
 const textOnImageStyle = {
@@ -76,24 +76,38 @@ const Aproach = () => {
   };
 
   const videoOpts = {
+    height:
+      window.innerWidth >= 786
+        ? "300"
+        : window.innerWidth >= 540
+        ? "230"
+        : window.innerWidth >= 320
+        ? "120"
+        : "60", // Adjust as needed
+    width:
+      window.innerWidth >= 786
+        ? "500"
+        : window.innerWidth >= 540
+        ? "260"
+        : window.innerWidth >= 320
+        ? "100%"
+        : "80",
     playerVars: {
       autoplay: 1,
     },
   };
-
   return (
     <div>
       <section>
         <CompoHeader name="Aproach" image={approachTop} />
       </section>
 
-      <section className="mt-40">
+      <section className="mt-20">
         <div style={containerStyle}>
           <img
-            className="contactimage h-[800px]"
+            className="contactimage h-[800px] w-full"
             src={vidimg}
             alt="Contact Us"
-            style={imageStyle}
           />
           <div className="flex justify-between items-center " style={links}>
             <FaCanadianMapleLeaf className="mb-10 text-4xl mt-[-8%] md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-green-200" />
@@ -120,14 +134,17 @@ const Aproach = () => {
               <YouTube
                 videoId="FHpdGfjU0yU" // Replace with your YouTube video ID
                 opts={videoOpts}
-                className="z-10 max-w-full"
+                className="z-10 "
               />
             </div>
           )}
         </div>
       </section>
 
-      <section className="mt-20">
+      <section
+        className="circles-por mt-20 pr-6 mb-20"
+        // style={{ border: "5px solid red" }}
+      >
         <div className="mb-6 md:ml-1 lg:ml-2 ">
           <span className="flex justify-center items-center gap-1">
             <img className="w-6" src={secImg} alt="" />
@@ -135,15 +152,12 @@ const Aproach = () => {
               Work Process
             </h3>
           </span>
-          <h1
-            className="form-hedding flex justify-center items-center"
-            style={{ fontSize: "50px" }}
-          >
+          <h1 className="form-hedding text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl flex justify-center items-center">
             The Agriculture Process
           </h1>
         </div>
 
-        <div className="w-full my-10 flex justify-center items-center h-[100vh]">
+        <div className="w-full mb-20 ml-5 mr-5 flex justify-center items-center h-[100vh]">
           <DottedCircle>
             <img
               src={centerImage}
