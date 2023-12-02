@@ -19,7 +19,7 @@ const CompoHeader = ({ name, image }) => {
   };
 
   return (
-    <div style={containerStyle}>
+    <div style={containerStyle} className="">
       <img
         className="contactimage h-[440px]"
         src={image}
