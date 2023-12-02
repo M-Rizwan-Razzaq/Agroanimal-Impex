@@ -9,3 +9,9 @@
     background-color: #CCB100;
     transition: all .3s ease-in;
 }
+@media (max-width:767px) {
+    .none-comment-img,.blog-detail-right-box{
+        display: none;
+    }
+
+}
