@@ -1,11 +1,11 @@
 // PressDetails.js
 
 import React from "react";
-import { pressKitData } from "./Press";
+import  pressKitData from "./pressData";
 import { useParams } from "react-router-dom";
 const PressDetails = () => {
     const { id } = useParams();
-    const press = pressKitData[id - 1]; // Adjusting index since array is 0-indexed
+    const press = pressKitData[Number(id)]; 
   
     if (!press) {
       return <div>Press not found</div>;
@@ -14,7 +14,7 @@ const PressDetails = () => {
     <div className="max-w-2xl mx-auto mt-12">
       <img
         className="w-full h-64 object-cover object-center mb-6"
-        src={`https://picsum.photos/200/300?image=${Number(id) + 1000}`}
+        src={`https://picsum.photos/200/300?image=${Number(id) + 999}`}
         alt={`Press Kit ${press.id}`}
       />
       <div className="px-4 sm:px-6 lg:px-8">

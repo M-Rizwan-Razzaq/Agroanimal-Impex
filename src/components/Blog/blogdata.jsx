@@ -1,8 +1,27 @@
+import blog1 from "../../assest/blog1.jpg"
+import blog2 from "../../assest/blog2.jpg"
+import blog3 from "../../assest/blog3.jpg"
+import blog4 from "../../assest/blog4.jpg"
+import blog5 from "../../assest/blog5.jpg"
+import blog6 from "../../assest/blog6.jpg"
+
+import blog7 from "../../assest/blog7.jpg"
+import blog8 from "../../assest/blog8.jpg"
+import blog9 from "../../assest/blog9.jpg"
+import blog10 from "../../assest/blog10.jpg"
+import blog11 from "../../assest/blog11.jpg"
+import blog13 from "../../assest/blog13.jpg"
+import blog12 from "../../assest/blog12.jpg"
+import blog14 from "../../assest/blog14.jpg"
+import blog15 from "../../assest/blog15.jpg"
+ 
+
+
 const blogData = [
     [
         {
             id: 1,
-            imageUrl: "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/blog-4-450x330.jpg",
+            imageUrl:blog1,
             date: "September 12, 2023",
             author: "Admin",
             comments: 5,
@@ -11,7 +30,7 @@ const blogData = [
           },
           {
             id: 2,
-            imageUrl: "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/blog-3-450x330.jpg",
+            imageUrl:blog2,
             date: "September 10, 2023",
             author: "Admin",
             comments: 8,
@@ -20,7 +39,7 @@ const blogData = [
           },
           {
             id: 3,
-            imageUrl: "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/blog-2-450x330.jpg",
+            imageUrl:blog3,
             date: "September 8, 2023",
             author: "Admin",
             comments: 12,
@@ -29,7 +48,7 @@ const blogData = [
           },
           {
             id: 4,
-            imageUrl: "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/blog-1-450x330.jpg",
+            imageUrl:blog4,
             date: "September 5, 2023",
             author: "Admin",
             comments: 6,
@@ -38,7 +57,7 @@ const blogData = [
           },
           {
             id: 5,
-            imageUrl: "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/08/blog-5-450x330.jpg",
+            imageUrl:blog5,
             date: "August 30, 2023",
             author: "Admin",
             comments: 10,
@@ -47,7 +66,7 @@ const blogData = [
           },
           {
             id: 6,
-            imageUrl: "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/08/blog-6-450x330.jpg",
+            imageUrl:blog6,
             date: "August 28, 2023",
             author: "Admin",
             comments: 7,
@@ -56,7 +75,7 @@ const blogData = [
           },
           {
             id: 7,
-            imageUrl: "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/08/blog-7-450x330.jpg",
+            imageUrl:blog7,
             date: "August 25, 2023",
             author: "Admin",
             comments: 9,
@@ -65,7 +84,7 @@ const blogData = [
           },
           {
             id: 8,
-            imageUrl: "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/08/blog-8-450x330.jpg",
+            imageUrl:blog8,
             date: "August 20, 2023",
             author: "Admin",
             comments: 4,
@@ -74,7 +93,7 @@ const blogData = [
           },
           {
             id: 9,
-            imageUrl: "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/08/blog-9-450x330.jpg",
+            imageUrl:blog9,
             date: "August 18, 2023",
             author: "Admin",
             comments: 11,
@@ -85,7 +104,7 @@ const blogData = [
     [
         {
             id: 10,
-            imageUrl: "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/08/blog-10-450x330.jpg",
+            imageUrl: blog10,
             date: "August 15, 2023",
             author: "Admin",
             comments: 6,
@@ -94,7 +113,7 @@ const blogData = [
           },
           {
             id: 11,
-            imageUrl: "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/08/blog-11-450x330.jpg",
+            imageUrl: blog11,
             date: "August 12, 2023",
             author: "Admin",
             comments: 8,
@@ -103,7 +122,7 @@ const blogData = [
           },
           {
             id: 12,
-            imageUrl: "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/08/blog-12-450x330.jpg",
+            imageUrl: blog12,
             date: "August 10, 2023",
             author: "Admin",
             comments: 7,
@@ -112,7 +131,7 @@ const blogData = [
           },
           {
             id: 13,
-            imageUrl: "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/08/blog-13-450x330.jpg",
+            imageUrl: blog13,
             date: "August 8, 2023",
             author: "Admin",
             comments: 9,
@@ -121,7 +140,7 @@ const blogData = [
           },
           {
             id: 14,
-            imageUrl: "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/08/blog-14-450x330.jpg",
+            imageUrl: blog14,
             date: "August 5, 2023",
             author: "Admin",
             comments: 5,
@@ -130,7 +149,7 @@ const blogData = [
           },
           {
             id: 15,
-            imageUrl: "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/08/blog-15-450x330.jpg",
+            imageUrl: blog15,
             date: "August 2, 2023",
             author: "Admin",
             comments: 10,

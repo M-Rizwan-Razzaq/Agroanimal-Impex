@@ -5,10 +5,12 @@ import { AiOutlineUser, AiOutlineComment } from "react-icons/ai";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa6";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useNavigate, useParams } from "react-router-dom";
-import { projectsData } from "../ProjectDetail/ProjectDetail";
+ 
+import { projectsData } from "../ProjectDetail/PorojectsData";
 import { RiReplyLine } from "react-icons/ri";
 import { LuPhoneCall } from "react-icons/lu";
 import secImg from "../../images/TriasseaIcon.png";
+import blogDetailData from "./BlogDetailData";
 const BlogDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -20,15 +22,17 @@ const BlogDetail = () => {
     preproject: null,
   });
 
+
   useEffect(() => {
-    const index = projectsData.findIndex((elm) => elm.id === Number(id));
+    const index = blogDetailData.findIndex((elm) => elm.id === Number(id));
 
-    const preproject = projectsData[index - 1] || null;
+    const preproject = blogDetailData[index - 1] || null;
 
-    const nextproject = projectsData[index + 1] || null;
+    const nextproject = blogDetailData[index + 1] || null;
+
     setCurrentProject({
       ...currentProject,
-      project: projectsData[index],
+      project: blogDetailData[index],
       preproject,
       nextproject,
       id: Number(id),
@@ -41,8 +45,8 @@ const BlogDetail = () => {
 
       <div  className="md:px-8 px-4 py-8   md:flex gap-[6rem]  ">
         {/* blog detail left box */}
-        <div className="w-full md:w-[60%]   scroll-slow">
-          <h1 className="md:text-4xl  text-[25px]">Complete Solution For Your Land Design</h1>
+        <div className="w-full md:w-[60%] scroll-slow">
+          <h1 className="md:text-4xl  text-[25px]">{currentProject.project.title}</h1>
 
           <div className="flex md:flex-row flex-col-reverse md:items-center md:gap-8 gap-1 text-gray-500 md:mt-6 mt-3">
             <div>
@@ -53,7 +57,7 @@ const BlogDetail = () => {
               <AiOutlineComment size={20} className="inline md:mr-1 mr-2 " />
 
               <span className="hover:text-[#CCB100] cursor-pointer">
-                2 Comment
+                {currentProject.project.comments} Comment
               </span>
             </div>
 
@@ -62,13 +66,13 @@ const BlogDetail = () => {
 
               <span className="hover:text-[#CCB100] cursor-pointer">
                
-                September 12, 2023
+                {currentProject.project.date}
               </span>
             </div>
           </div>
 
           <img
-            src="https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/blog-12.jpg"
+            src={currentProject.project.imageUrl}
             alt=""
             className="rounded-lg mt-6 md:h-[70vh] h-[30vh]  w-full"
           />
@@ -133,15 +137,13 @@ const BlogDetail = () => {
           <div className="md:flex justify-between mt-10 next-pre-box py-10">
             <div className="flex flex-wrap gap-3">
               <h1 className="text-2xl font-semibold mr-3">Tags:</h1>
-              <p className="py-1 px-3 bg-gray-300 hover:bg-[#CCB100] hover:text-white cursor-pointer ">
-                Landcaping
-              </p>
-              <p className="py-1 px-3  bg-gray-300 hover:bg-[#CCB100] hover:text-white cursor-pointer">
-                Nature
-              </p>
-              <p className="py-1 px-3 bg-gray-300 hover:bg-[#CCB100] hover:text-white cursor-pointer">
-                Organic
-              </p>
+              {
+                currentProject?.project?.tags?.map((elm)=>(
+                  <p className="py-1 px-3 bg-gray-300 hover:bg-[#CCB100] hover:text-white cursor-pointer ">
+                {elm}
+                </p>
+                ))
+              } 
             </div>
             <div className="flex items-center gap-4 mt-4 md:mt-0 ">
               <h1 className="text-2xl font-semibold mr-3">Share:</h1>
@@ -164,13 +166,13 @@ const BlogDetail = () => {
             {Number(id) !== 1 && (
               <div
                 className="flex gap-3 cursor-pointer"
-                onClick={() => navigate(`/projectdetail/${Number(id) - 1}`)}
+                onClick={()=>navigate(`/blogDetail/${Number(id)-1}`)}
               >
                 <GoArrowLeft size={20} />
                 <div>
                   <p className="md:text-xl text-lg text-gray-400"> Previous </p>
                   <h2 className="mt-1 text-2xl next-pre-heading  text-green-900 hover:text-[#CCB100] font-semibold">
-                    heading
+                    {currentProject?.preproject?.title}
                   </h2>
                 </div>
               </div>
@@ -179,15 +181,16 @@ const BlogDetail = () => {
             {Number(id) !== projectsData.length && (
               <div
                 className="flex ml-auto gap-3 cursor-pointer"
-                
+                onClick={()=>navigate(`/blogDetail/${Number(id)+1}`)}
               >
-                <div>
+                <div className='flex flex-col items-end'>
                   <p className="md:text-xl text-lg text-gray-400 float-right">
-                    {" "}
-                    Next{" "}
+                    
+                    Next 
                   </p>
-                  <h2 className="mt-1 text-2xl next-pre-heading text-green-900 hover:text-[#CCB100] font-semibold">
-                    heading
+                  <h2 className="mt-1 text-2xl next-pre-heading text-green-900 hover:text-[#CCB100] font-semibold ">
+                  {currentProject?.nextproject?.title}
+                 
                   </h2>
                 </div>
                 <GoArrowRight size={20} />
@@ -198,27 +201,26 @@ const BlogDetail = () => {
           <h2 className="md:text-3xl text-[26px] my-6 font-semibold">3 Comments</h2>
 
           <div>
-            {[...new Array(3)].map(() => (
+            {currentProject?.project?.commentsData?.map((elm) => (
               <div className="bg-white md:px-12  md:py-9 px-6 py-8 flex gap-8  rounded-lg shadow-2xl mt-3">
                 <img
                   src="https://secure.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?s=100&d=mm&r=g"
                   alt=""
-                  className="w-[30%] rounded-lg none-comment-img"
+                  className="w-[20%] rounded-lg none-comment-img"
                 />
                 <div>
                   <div className="flex justify-between items-center">
                     <div>
-                      <h2 className="md:text-lg text-base md:font-semibold">Felix Design</h2>
-                      <p className="text-[#CCB100]">September 12, 2023</p>
+                      <h2 className="md:text-lg text-base md:font-semibold">{elm.commenter}</h2>
+                      <p className="text-[#CCB100]">{elm.commentDate}</p>
                     </div>
                     <button className="bg-green-900 hover:bg-[#CCB100] md:px-[12px] px-[8px] md:py-2 py-1 rounded-md text-white ">
-                      {" "}
-                      <RiReplyLine className="inline text-xl -mt-1" /> Reply{" "}
+                    
+                      <RiReplyLine className="inline text-xl -mt-1" /> Reply
                     </button>
                   </div>
-                  <p className="mt-4 md:text-[16px]   text-gray-500">
-                    Every outfit is carefully chosen by our designated fashion
-                    expert. Check them out!
+                  <p className="mt-4 md:text-[16px]  text-gray-500">
+                     {elm.commentText}
                   </p>
                 </div>
               </div>
@@ -272,11 +274,11 @@ const BlogDetail = () => {
             Recent Posts
           </h3>
         </span>
-            {[...new Array(6)].map(() => (
-              <div className="flex gap-4 mt-8">
-                <div className="w-[25%] rounded-lg overflow-hidden">
+            {blogDetailData?.map((elm) => (
+              <div className="flex gap-4 mt-8 cursor-pointer" onClick={()=> navigate(`/blogDetail/${elm.id}`) }>
+                <div className="w-[22%] rounded-lg overflow-hidden">
                   <img
-                    src="https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/blog-12.jpg"
+                    src={elm.imageUrl}
                     alt=""
                     className=" w-full h-full object-cover"
                   />
@@ -293,11 +295,11 @@ const BlogDetail = () => {
                       <AiOutlineComment size={13} className="inline mr-1" />
 
                       <span className="hover:text-[#CCB100] cursor-pointer">
-                        3 Comment
+                        {elm.comments} Comment
                       </span>
                     </div>
                   </div>
-                  <h1 className="mt-2 font-semibold hover:text-green-900 cursor-pointer">fresh vagitable food</h1>
+                  <h1 className="mt-2 font-semibold hover:text-green-900 cursor-pointer">{elm.title}</h1>
                 </div>
               </div>
             ))}
@@ -311,9 +313,9 @@ const BlogDetail = () => {
           </h3>
         </span>
             <div className="flex gap-3 flex-wrap">
-              {[...new Array(5)].map(() => (
+              {currentProject?.project?.leftTags?.map((elem) => (
                 <p className="py-1 px-3 bg-gray-300 hover:bg-[#CCB100] hover:text-white cursor-pointer rounded-sm">
-                  Organic
+                 {elem}
                 </p>
               ))}
             </div>
