@@ -25,7 +25,7 @@ const ContactUsPage = () => {
     <div>
       <CompoHeader name="contact" image={contactUsImage} />
 
-      <div className="main-box grid grid-cols-3 mt-[6%] mb-[6%] gap-4 ml-3 mr-3">
+      <div className="main-box grid grid-cols-3 mt-[6%] mb-[6%] gap-4">
         <div
           className="idenity grid grid-cols-2 "
           style={{
@@ -38,7 +38,7 @@ const ContactUsPage = () => {
               style={{ fontSize: "50px" }}
             />
           </div>
-          <div className="contact grid grid-cols-1 gap-10 justify-center items-center">
+          <div className="contact grid grid-cols-1 justify-center items-center">
             <p>Our Location</p>
             <h1>2nd Block Melbourne</h1>
           </div>
@@ -55,10 +55,7 @@ const ContactUsPage = () => {
               style={{ fontSize: "50px" }}
             />
           </div>
-          <div
-            className="contact grid grid-cols-1 gap-10 justify-center items-center"
-            style={{}}
-          >
+          <div className="contact grid grid-cols-1 justify-center items-center">
             <p>Hotline</p>
             <h1>+000 (123) 456 88</h1>
           </div>
@@ -75,7 +72,7 @@ const ContactUsPage = () => {
               style={{ fontSize: "50px" }}
             />
           </div>
-          <div className="contact grid grid-cols-1 gap-10 justify-center items-center">
+          <div className="contact grid grid-cols-1 justify-center items-center">
             <p>Email Address</p>
             <h1>support@gmail.com</h1>
           </div>
@@ -91,7 +88,7 @@ const ContactUsPage = () => {
                 Contact With Us
               </h3>
             </span>
-            <h1 className="form-hedding" style={{ fontSize: "50px" }}>
+            <h1 className="form-hedding text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl flex justify-center items-center">
               Ready to Work With Us
             </h1>
           </div>
@@ -204,7 +201,7 @@ const ContactUsPage = () => {
           </button>
         </form>
 
-        <div className="mt-8 md:mt-0 lg:ml-10 lg:mt-5">
+        <div className="last-imgDiv mt-8 md:mt-0 lg:ml-10 lg:mt-5">
           <img
             className="final-img rounded-md cursor-pointer w-[600px] h-[600px]"
             src="https://demo2.themelexus.com/farmor/wp-content/uploads/2023/10/Contact-1.jpg"
