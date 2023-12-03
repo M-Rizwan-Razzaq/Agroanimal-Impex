@@ -17,10 +17,57 @@ div {
   @apply block;
 }
 
-.item:not(.active) .content {
+.item:not(.active) .faq-content {
   @apply h-0 overflow-hidden py-0;
 }
 
-.item .content {
+.item .faq-content {
   @apply p-8 h-[150px];
+}
+
+@media (max-width: 860px) {
+  .faq-descreption {
+    font-size: 17px;
+  }
+
+  .item .faq-content {
+    padding: 8px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-descreption {
+    font-size: 16px;
+  }
+
+  .item .faq-content {
+    padding: 8px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 540px) {
+  .faq-descreption {
+    font-size: 16px;
+  }
+
+  .item .faq-content {
+    padding: 8px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 420px) {
+  .faq-descreption {
+    font-size: 13px;
+  }
+
+  .faq-tag {
+    font-size: 15px;
+  }
+  .item .faq-content {
+    padding: 8px;
+    height: 180px;
+  }
 }

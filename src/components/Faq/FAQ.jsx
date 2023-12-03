@@ -110,7 +110,9 @@ const FAQ = () => {
                   className="header p-6 text-lg rounded-lg hover:text-white hover:bg-green-600  flex justify-between items-center cursor-pointer shadow-md"
                 >
                   <div>
-                    <div style={{ letterSpacing: "1.3px" }}>{item.tag}</div>
+                    <div className="faq-tag" style={{ letterSpacing: "1.3px" }}>
+                      {item.tag}
+                    </div>
                   </div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -141,8 +143,8 @@ const FAQ = () => {
                     />
                   </svg>
                 </div>
-                <div className="content text-lg text-grey-700 transition-all duration-500">
-                  <p className="">{item.description}</p>
+                <div className="faq-content text-lg text-grey-700 transition-all duration-500">
+                  <p className="faq-descreption">{item.description}</p>
                 </div>
               </div>
             ))}
