@@ -5,7 +5,7 @@ import Navbar from "./components/navber/Navbar";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import ContanctUsPage from "./components/ContactUsPage/ContanctUsPage";
- 
+ import PressDetails from "./components/PressKit/PressDetails";
 import SuccessStories from "./components/SuccessStories/SuccessStories";
 import Projects from "./components/Projects/Projects";
 import Blog from "./components/Blog/Blog";
@@ -43,6 +43,7 @@ function App() {
 
           <Route path="/patners" element={<Patners />} />
           <Route path="/presskit" element={<Press />} />
+          <Route path="/press/:id" element={<PressDetails/>} />
           <Route path="/faq" element={<FAQ/>} />
           
 

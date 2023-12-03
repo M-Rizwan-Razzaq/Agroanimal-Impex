@@ -5,8 +5,58 @@ import { BiNews } from "react-icons/bi";
 import { RiVideoFill } from "react-icons/ri";
 import CompoHeader from "../common/CompoHeader";
 import compoheaderimg from "../../images/contactus1.jpg";
+import { useNavigate } from "react-router-dom";
+export const pressKitData = [
+  {
+    title: "Press Kit Title 1",
+    date: "December 1, 2023",
+    author: "John Doe",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisiLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
+  },
+  {
+    title: "Press Kit Title 1",
+    date: "December 1, 2023",
+    author: "John Doe",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
+  },
+  {
+    title: "Press Kit Title 1",
+    date: "December 1, 2023",
+    author: "John Doe",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
+  },
+  {
+    title: "Press Kit Title 1",
+    date: "December 1, 2023",
+    author: "John Doe",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
+  },
+  {
+    title: "Press Kit Title 1",
+    date: "December 1, 2023",
+    author: "John Doe",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
+  },
+  {
+    title: "Press Kit Title 1",
+    date: "December 1, 2023",
+    author: "John Doe",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.",
+  },
+  // ... (add more press kit data)
+];
+const truncateDescription = (description, maxWords = 20) => {
+  const words = description.split(' ');
+  if (words.length > maxWords) {
+    return words.slice(0, maxWords).join(' ') + '...';
+  }
+  return description;
+};
 
 const Press = () => {
+
+
+  const navigate =  useNavigate();
   return (
 
     <div>
@@ -84,6 +134,36 @@ const Press = () => {
         </div>
       </div>
     </div>
+
+    {/* press section  */}
+    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8 mt-12">
+  <h2 className="text-2xl font-semibold text-gray-800 mb-4">letast Release Press</h2>
+
+  {/* Press Kit List */}
+  <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    {pressKitData.map((press, index) => (
+      <div key={index} className="bg-white shadow overflow-hidden rounded-lg" onClick={()=>navigate(`/press/${index + 1}`)}>
+        <img
+          className="w-full h-48   object-center"
+          src={`https://picsum.photos/200/300?image=${index + 1000}`}
+          alt={`Press Kit ${index + 1}`}
+        />
+        <div className="px-6 py-4">
+          <h3 className="text-lg font-medium text-gray-900">{press.title}</h3>
+          <p className="text-sm text-gray-600 mb-2">Date: {press.date}</p>
+          <p className="text-sm text-gray-600 mb-2">Author: {press.author}</p>
+          <p className="text-sm text-gray-600 mb-4 line-clamp-3">{truncateDescription(press.description)}</p>
+          <a href="#" className="text-green-600 hover:text-green-800 font-medium">
+            Read More
+          </a>
+        </div>
+      </div>
+    ))}
+  </div>
+  {/* End of Press Kit List */}
+</div>
+
+
     </div>
   );
 };
