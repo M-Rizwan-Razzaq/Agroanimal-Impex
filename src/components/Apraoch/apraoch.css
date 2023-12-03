@@ -86,7 +86,7 @@ div {
 
 @media (max-width: 768px) {
   .form-hedding {
-    margin-bottom: 5%;
+    margin-bottom: 7%;
   }
 
   .circles-por {
@@ -152,7 +152,12 @@ div {
 
 @media (max-width: 420px) {
   .form-hedding {
-    margin-bottom: -5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    text-align: center;
   }
 
   .dotted-circle {

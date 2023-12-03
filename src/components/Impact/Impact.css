@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+div,
+h1,
+p {
+  font-family: "Comfortaa", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.tagP {
+  font-size: 18px;
+}
+
+.last-img {
+  height: 500px;
+  width: 480px;
+}
+
+@media (max-width: 768px) {
+  .tagP {
+    font-size: 16px;
+  }
+
+  .last-img {
+    height: 330px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 540px) {
+  .tagP {
+    font-size: 14px;
+  }
+
+  .last-img {
+    height: 340px;
+    width: 380px;
+  }
+}
+
+@media (max-width: 420px) {
+  .tagP {
+    font-size: 12px;
+  }
+  .last-img {
+    height: 300px;
+    width: 280px;
+  }
+}

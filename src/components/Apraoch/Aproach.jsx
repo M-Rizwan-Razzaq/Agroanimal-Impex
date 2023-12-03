@@ -103,6 +103,17 @@ const Aproach = () => {
       </section>
 
       <section className="mt-20">
+        <div className="md:ml-1 lg:ml-2 ">
+          <span className="flex justify-center items-center gap-1">
+            <img className="w-6" src={secImg} alt="" />
+            <h3 className="text-xl xm:text-lg lg:text-xl antialiased font-sans">
+              Way of work
+            </h3>
+          </span>
+          <h1 className="form-hedding text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl flex justify-center items-center">
+            Know about our work
+          </h1>
+        </div>
         <div style={containerStyle}>
           <img
             className="contactimage h-[800px] w-full"
