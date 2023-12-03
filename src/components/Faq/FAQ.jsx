@@ -5,6 +5,7 @@ import "./faq.css";
 import faqimage from "../../images/Faq12.jpg";
 import secImg from "../../images/TriasseaIcon.png";
 import CompoHeader from "../common/CompoHeader";
+import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 
 const FAQ = () => {
   const { pathname } = useLocation();
@@ -95,7 +96,7 @@ const FAQ = () => {
           </div>
         </div>
 
-        <div className="mt-8 md:mt-0 lg:ml-10 lg:mt-5 ml-10 text-black">
+        <div className="mt-8 md:mt-0 lg:ml-10 lg:mt-5 ml-6 text-black">
           <div
             id="accordion"
             className="w-[100%]  rounded-lg overflow-hidden flex flex-col gap-[1.5px] shadow-xl"
@@ -114,34 +115,8 @@ const FAQ = () => {
                       {item.tag}
                     </div>
                   </div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="w-6 h-6 activeIcon"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M4.5 15.75l7.5-7.5 7.5 7.5"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="w-6 h-6 inactiveIcon"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                    />
-                  </svg>
+                  <IoIosArrowUp className="w-6 h-6 activeIcon" />
+                  <IoIosArrowDown className="w-6 h-6 inactiveIcon" />
                 </div>
                 <div className="faq-content text-lg text-grey-700 transition-all duration-500">
                   <p className="faq-descreption">{item.description}</p>
