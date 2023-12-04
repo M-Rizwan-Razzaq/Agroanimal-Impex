@@ -48,7 +48,7 @@ const Service = () => {
           </h1>
         </div>
       </div>
-      <div className="px-[4%]">
+      <div className="px-[6%]">
         <Swiper
           slidesPerView={getSlidesPerView()}
           spaceBetween={30}
