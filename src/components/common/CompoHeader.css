@@ -9,7 +9,9 @@
   justify-content: center;
   width: 100%;
 }
-
+.commo-header-img{
+  color:rgb(201, 236, 236) ;
+}
 .textOnImageStyle {
   position: absolute;
   top: 50%;

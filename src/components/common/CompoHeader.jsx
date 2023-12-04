@@ -2,35 +2,19 @@ import React from "react";
 import "./CompoHeader.css";
 
 const CompoHeader = ({ name, image }) => {
-  const imageStyle = {
-    width: "100%",
-  };
-
-  const containerStyle = {
-    position: "relative",
-    textAlign: "center",
-    color: "rgb(201, 236, 236)",
-  };
-
-  const linkStyle = {
-    margin: "0 15px",
-    transition: "all 0.2s ease-in-out",
-    // marginTop: "9%", // Adjust the margin as needed
-  };
-
+  
   return (
-    <div style={containerStyle} className="">
+    <div   className="relative text-center commo-header-img ">
       <img
-        className="contactimage h-[440px]"
+        className="contactimage h-[440px] w-full"
         src={image}
         alt="Contact Us"
-        style={imageStyle}
-      />
+        />
       <div className="links flex justify-between items-center ">
-        <a className="hover:text-yellow-400" style={linkStyle} href="/">
+        <a className="hover:text-yellow-400 mx-[15px] transition-all .2s ease-in-out" href="/">
           Home
         </a>
-        <h1 style={linkStyle}>{name}</h1>
+        <h1 className="mx-[15px] transition-all .2s ease-in-out">{name}</h1>
       </div>
       <h1 className="textOnImageStyle">{name}</h1>
     </div>

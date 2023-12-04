@@ -17,7 +17,7 @@ const ContactUsPage = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    // Scroll to the top of the page when the location (route) changes
+   
     window.scrollTo(0, 0);
   }, [pathname]);
 
@@ -289,6 +289,7 @@ const ContactUsPage = () => {
           />
         </div>
       </div>
+
     </div>
   )
 }
