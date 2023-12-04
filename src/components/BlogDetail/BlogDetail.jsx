@@ -43,7 +43,7 @@ const BlogDetail = () => {
     <div>
       <CompoHeader name="blogDetail" image={compoheaderimg} />
 
-      <div  className="md:px-8 px-4 py-8   md:flex gap-[6rem]  ">
+      <div  className="md:px-8 px-4 py-8 md:flex gap-[6rem]  ">
         {/* blog detail left box */}
         <div className="w-full md:w-[60%] scroll-slow">
           <h1 className="md:text-4xl  text-[25px]">{currentProject.project.title}</h1>
@@ -74,7 +74,7 @@ const BlogDetail = () => {
           <img
             src={currentProject.project.imageUrl}
             alt=""
-            className="rounded-lg mt-6 md:h-[70vh] h-[30vh]  w-full"
+            className="rounded-lg mt-6 md:h-[70vh] h-[35vh]  w-full"
           />
 
           <p className="md:mt-10 mt-8 text-[15px] text-gray-500">
@@ -202,14 +202,14 @@ const BlogDetail = () => {
 
           <div>
             {currentProject?.project?.commentsData?.map((elm) => (
-              <div className="bg-white md:px-12  md:py-9 px-6 py-8 flex gap-8  rounded-lg shadow-2xl mt-3">
+              <div className="bg-white md:px-12  w-full md:py-9 px-6 py-8 flex gap-8  rounded-lg shadow-2xl mt-3">
                 <img
                   src="https://secure.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?s=100&d=mm&r=g"
                   alt=""
                   className="w-[20%] rounded-lg none-comment-img"
                 />
-                <div>
-                  <div className="flex justify-between items-center">
+                <div   className="w-full">
+                  <div    className="flex w-full justify-between items-center">
                     <div>
                       <h2 className="md:text-lg text-base md:font-semibold">{elm.commenter}</h2>
                       <p className="text-[#CCB100]">{elm.commentDate}</p>
@@ -266,17 +266,19 @@ const BlogDetail = () => {
           </form>
         </div>
         {/* blog detail right box */}
-        <div className="flex-1 blog-detail-right-box   scroll-fast">
-          <div className="rounded bg-white px-8 py-10 box-border">
+        <div  className="flex-1   blog-detail-right-box  mt-5 scroll-fast">
+          <div className="rounded bg-white px-8 recent-posts py-10 box-border">
           <span className="flex justify-start items-center gap-2">
           <img className="w-8" src={secImg} alt="" />
           <h3 className="text-xl md:text-2xl antialiased font-sans">
             Recent Posts
           </h3>
         </span>
-            {blogDetailData?.map((elm) => (
-              <div className="flex gap-4 mt-8 cursor-pointer" onClick={()=> navigate(`/blogDetail/${elm.id}`) }>
-                <div className="w-[22%] rounded-lg overflow-hidden">
+            {[...blogDetailData?.slice(0,6)].map((elm) => (
+               
+    
+              <div className="flex gap-4 mt-8 recent-post-div cursor-pointer" onClick={()=> navigate(`/blogDetail/${elm.id}`) }>
+                <div className="w-[22%] recent-post-img-div rounded-lg overflow-hidden">
                   <img
                     src={elm.imageUrl}
                     alt=""
@@ -284,7 +286,7 @@ const BlogDetail = () => {
                   />
                 </div>
                 <div>
-                  <div className="flex items-center gap-5">
+                  <div className="flex items-center detail-recent-post gap-5">     
                     <div>
                       <AiOutlineUser size={13} className="inline mr-1" />
                       <span className="hover:text-[#CCB100] cursor-pointer">
@@ -302,7 +304,9 @@ const BlogDetail = () => {
                   <h1 className="mt-2 font-semibold hover:text-green-900 cursor-pointer">{elm.title}</h1>
                 </div>
               </div>
+              
             ))}
+             
           </div>
 
           <div className="rounded bg-white px-8 py-10 box-border mt-10">

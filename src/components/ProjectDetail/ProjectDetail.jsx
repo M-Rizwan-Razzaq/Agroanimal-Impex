@@ -52,7 +52,7 @@ const ProjectDetail = () => {
       <div className="md:px-[30px] px-[10px] py-8">
         {/* top img div */}
         <div
-          style={{ border: "1px solid red" }}
+          
           className="w-full md:h-[90vh] h-45vh  relative md:overflow-hidden border rounded-lg "
         >
           <img
@@ -61,7 +61,7 @@ const ProjectDetail = () => {
             className="w-full h-full rounded-lg project-detail-top-img"
           />
           <div
-            style={{ border: "1px solid black" }}
+             
             className="md:absolute -bottom-1 md:right-28 rounded-md  md:pl-[55px] pl-[30px]   md:pt-[35px] pt-[20px] md:pb-[45px] pb-[25px] text-white bg-green-800 w-full max-w-[340px] project-detail-top-detail"
           >
             {projectDetailData.map((elm) => (
