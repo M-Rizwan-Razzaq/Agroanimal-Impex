@@ -65,10 +65,10 @@ const Testimonial = () => {
         <h1 className="text-3xl font-medium title-font text-gray-900 mb-12 text-center">
           Testimonials
         </h1>
-        <div className="px-4 py-6 testimonial-box">
+        <div className="md:px-4 p-1 py-6 testimonial-box">
           <Slider {...settings}>
             {testimonialData.map((elm, index) => (
-              <div className="p-4 md:w-1/2 w-full bg-transparent">
+              <div className="md:p-4 p-2 md:w-1/2 w-full bg-transparent">
                 <div
                   className={`h-full text-black p-8 rounded-lg  ${
                     index % 2 === 0 ? "card-test" : "card-test2"

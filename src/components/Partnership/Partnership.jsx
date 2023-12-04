@@ -1,12 +1,13 @@
 import React from "react";
 import "./partnership.css";
 import CompoHeader from "../common/CompoHeader";
+import { slideData } from "./PartnershipData";
 import PartnershipImage from "../../images/partnership.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
+import "./partnership.css";
+import { Pagination, Autoplay } from "swiper/modules";
 
 function Partnership() {
   return (
@@ -115,81 +116,34 @@ function Partnership() {
 
         <div className="opacity-100">
           <Swiper
-            effect={"coverflow"}
-            grabCursor={true}
-            centeredSlides={true}
-            slidesPerView={"auto"}
+            slidesPerView={3}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Autoplay, Pagination]}
+            className="mySwiper"
             autoplay={{
               delay: 3000,
               disableOnInteraction: true,
             }}
-            coverflowEffect={{
-              rotate: 50,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: true,
-            }}
-            pagination={true}
-            modules={[Autoplay, EffectCoverflow, Pagination]}
-            className="mySwiper"
           >
-            <SwiperSlide>
-              <div className="bg-green-900 rounded-lg text-black transform transition-all ease-in-out duration-300 hover:text-white">
-                <a href="/" className="flex flex-col text-3xl mt-4 ">
-                  <img
-                    className=""
-                    src="https://dynamicassets.basf.com/is/image/basf/CSF-T-shirt-pink:16x9?dpr=off&fmt=webp-alpha&fit=crop%2C1&wid=414&hei=233"
-                    alt=""
-                  />
-                  <span className="block text-base md:text-lg mt-4 md:mt-8 mb-4 md:mb-6 ml-4 md:ml-4  hover:text-white">
-                    Certified Sustainable FiberMax (CSF)
-                  </span>
-                </a>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="bg-green-900 rounded-lg text-black transform transition-all ease-in-out duration-300 hover:text-white">
-                <a href="/" className="flex flex-col text-3xl mt-4 ">
-                  <img
-                    className="w-[200px]"
-                    src="https://dynamicassets.basf.com/is/image/basf/cotton_banner:16x9?dpr=off&fmt=webp-alpha&fit=crop%2C1&wid=414&hei=233"
-                    alt=""
-                  />
-                  <span className="block text-base  md:text-lg mt-4 md:mt-8 mb-4 md:mb-6 ml-4 md:ml-4 hover:text-white">
-                    Certified Sustainable FiberMax (CSF)
-                  </span>
-                </a>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="bg-green-900 rounded-lg text-black transform transition-all ease-in-out duration-300 hover:text-white">
-                <a href="/" className="flex flex-col text-3xl mt-4 ">
-                  <img
-                    className=""
-                    src="https://dynamicassets.basf.com/is/image/basf/Climate-smart-barley-production:16x9?dpr=off&fmt=webp-alpha&fit=crop%2C1&wid=414&hei=233"
-                    alt=""
-                  />
-                  <span className="block text-base md:text-lg mt-4 md:mt-8 mb-4 md:mb-6 ml-4 md:ml-4 hover:text-white">
-                    Certified Sustainable FiberMax (CSF)
-                  </span>
-                </a>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="bg-green-900 rounded-lg text-black transform transition-all ease-in-out duration-300 hover:text-white">
-                <a href="/" className="flex flex-col text-3xl mt-4 ">
-                  <img
-                    className=""
-                    src="https://dynamicassets.basf.com/is/image/basf/P389_2283_B:16x9?dpr=off&fmt=webp-alpha&fit=crop%2C1&wid=414&hei=233"
-                    alt=""
-                  />
-                  <span className="block text-base md:text-lg mt-4 md:mt-8 mb-4 md:mb-6 ml-4 md:ml-4 hover:text-white ">
-                    Certified Sustainable FiberMax (CSF)
-                  </span>
-                </a>
-              </div>
-            </SwiperSlide>
+            {slideData.map((slide, index) => (
+              <SwiperSlide key={index}>
+                <div className="bg-green-900 rounded-lg text-black transform transition-all ease-in-out duration-300 hover:text-white">
+                  <a href="/" className="flex flex-col text-3xl mt-4">
+                    <img
+                      className=""
+                      src={slide.imageUrl}
+                      alt={slide.altText}
+                    />
+                    <span className="block text-base md:text-lg mt-4 md:mt-8 mb-4 md:mb-6 ml-4 md:ml-4 hover:text-white">
+                      {slide.description}
+                    </span>
+                  </a>
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </section>
