@@ -59,13 +59,13 @@
 .content {
   position: absolute;
   top: 20rem;
-  left: 5rem;
+  left: -100%; /* Start off-screen to the left */
   opacity: 0;
   width: 50%;
   color: #fff;
   padding: 3rem;
   background: rgba(0, 0, 0, 0.3);
-  animation: slide-up 1s ease 0.6s;
+  animation: slide-up 1s ease 0.5s, slide-in 1s ease 0.5s;
   animation-fill-mode: forwards;
   visibility: hidden;
 }
@@ -78,6 +78,15 @@
   100% {
     visibility: visible;
     top: 12rem;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    left: -100%; /* Start off-screen to the left */
+  }
+  100% {
+    left: 5rem; /* Slide in to the right */
   }
 }
 
@@ -97,7 +106,7 @@
 @media screen and (max-width: 420px) {
   .content {
     width: 70%;
-    height: 50%;
+    height: 60%;
   }
 
   .arrow:hover h1 {
