@@ -6,7 +6,7 @@ const CompoHeader = ({ name, image }) => {
   return (
     <div   className="relative text-center commo-header-img ">
       <img
-        className="contactimage h-[440px] w-full"
+        className="contactimage"
         src={image}
         alt="Contact Us"
         />
