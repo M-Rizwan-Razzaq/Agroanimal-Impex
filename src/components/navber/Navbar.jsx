@@ -138,7 +138,7 @@ const Navbar = () => {
       More <IoChevronDownOutline size={17} className="inline-block rotate-nav-icon" />
     </Link>
     {/* Dropdown menu for "About Us" */}
-    <ul className={`absolute hidden max-w-max ${!isScrolled?"no-scrolled":" bg-white text-black"} whitespace-nowrap  p-2  group-hover:block  space-y-2 py-2 px-2 rounded`}>
+    <ul className={`absolute hidden max-w-max ${!isScrolled?"no-scrolled":" bg-white text-black"} whitespace-nowrap  p-2  group-hover:block  space-y-2 py-2 px-4 rounded`}>
       <li>
         <Link to="/team" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>FAQ</Link>
       </li>
