@@ -5,8 +5,7 @@ import Navbar from "./components/navber/Navbar";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import ContanctUsPage from "./components/ContactUsPage/ContanctUsPage";
- import PressDetails from "./components/PressKit/PressDetails";
- 
+import PressDetails from "./components/PressKit/PressDetails";
 import Projects from "./components/Projects/Projects";
 import Blog from "./components/Blog/Blog";
 import Involved from "./components/Involved/Involved";
