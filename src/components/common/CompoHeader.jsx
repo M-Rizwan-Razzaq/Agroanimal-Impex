@@ -10,11 +10,11 @@ const CompoHeader = ({ name, image }) => {
         src={image}
         alt="Contact Us"
         />
-      <div className="links flex justify-between items-center ">
-        <a className="hover:text-yellow-400 mx-[15px] transition-all .2s ease-in-out" href="/">
+      <div className="links ">
+        <a className="hover:text-yellow-400  transition-all .2s ease-in-out" href="/">
           Home
         </a>
-        <h1 className="mx-[15px] transition-all .2s ease-in-out">{name}</h1>
+        <h1 className="transition-all .2s ease-in-out">{name}</h1>
       </div>
       <h1 className="textOnImageStyle">{name}</h1>
     </div>
