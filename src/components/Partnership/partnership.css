@@ -1,14 +1,9 @@
-/* body {
-  position: relative;
-  height: 100%;
-}
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-} */
+div {
+  font-family: "Comfortaa", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
 
 .swiper {
   width: 100%;
@@ -26,9 +21,8 @@ body {
 
 .swiper-slide img {
   display: block;
-  max-width: 90%;
-  object-fit: cover;
-
+  width: 360px;
+  height: 230px;
   border-top-left-radius: 8px;
 }
 

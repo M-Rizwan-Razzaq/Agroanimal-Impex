@@ -73,6 +73,61 @@ const Navbar = () => {
             onClick={toggleMenuBar}
           />
         )}
+        <ul
+          onClick={hideNavItems}
+          className={
+            isMobile
+              ? `flex flex-col gap-5 nav-bg  absolute h-[43vh] top-[50px] ${
+                  !menu ? "-right-[100%] " : "right-0 left-0"
+                } items-center  text-lg cursor-pointer scrolled`
+              : `flex justify-between items-center gap-10 nav-text ${
+                  isScrolled ? "text-[var(--logo-color)]" : "text-white"
+                }`
+          }
+        >
+          <Link
+            to="/"
+            className={`${isScrolled ? "nav-item" : "nav-item-hover"} ${
+              isMobile ? "mt-4" : ""
+            } `}
+          >
+            Home
+          </Link>
+          <Link
+            to="/ouraproach"
+            className={`${isScrolled ? "nav-item" : "nav-item-hover"} ${
+              isMobile ? "mt-4" : ""
+            } `}
+          >
+            Our Aproach
+          </Link>
+          <Link
+            to="/projects"
+            className={`${isScrolled ? "nav-item" : "nav-item-hover"} ${
+              isMobile ? "mt-4" : ""
+            } `}
+          >
+            Projects
+          </Link>
+          <Link
+            to="/"
+            className={`${isScrolled ? "nav-item" : "nav-item-hover"} `}
+          >
+            About Us
+          </Link>
+          <Link
+            to="/"
+            className={`${isScrolled ? "nav-item" : "nav-item-hover"} `}
+          >
+            Pages
+          </Link>
+          <Link
+            to="/"
+            className={`${isScrolled ? "nav-item" : "nav-item-hover"} `}
+          >
+            {" "}
+            Service
+          </Link>
        
 
 <ul
