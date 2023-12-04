@@ -2,7 +2,10 @@
     position: relative;
     overflow: hidden;
   }
-  
+  .group:hover .rotate-nav-icon{
+    transform: rotate(180deg);
+    transition:all .2s ease-in-out ;
+  }
   .nav-item::after {
     content: "";
     position: absolute;
