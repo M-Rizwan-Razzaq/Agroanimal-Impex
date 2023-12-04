@@ -25,7 +25,7 @@ const ContactUsPage = () => {
     <div>
       <CompoHeader name="contact" image={contactUsImage} />
 
-      <div className="main-box grid grid-cols-3 mt-[6%] mb-[6%] gap-4">
+      <div className="main-box grid md:grid-cols-3 mt-[6%] mb-[6%] gap-4">
         <div
           className="idenity grid grid-cols-2 "
           style={{
