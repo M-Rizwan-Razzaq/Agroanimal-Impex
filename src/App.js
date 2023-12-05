@@ -19,6 +19,7 @@ import ProjectDetail from "./components/ProjectDetail/ProjectDetail";
 import BlogDetail from "./components/BlogDetail/BlogDetail";
 import Service from "./components/Services/Service";
 import About from "./components/About/About";
+
 function App() {
   return (
     <div className="App">
