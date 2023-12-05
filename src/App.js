@@ -1,6 +1,6 @@
 import "tailwindcss/tailwind.css";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navber/Navbar";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
@@ -20,9 +20,6 @@ import BlogDetail from "./components/BlogDetail/BlogDetail";
 import Service from "./components/Services/Service";
 import About from "./components/About/About";
 function App() {
-
-
-
   return (
     <div className="App">
       <Router>
@@ -33,7 +30,7 @@ function App() {
           <Route path="/contactUs" element={<ContanctUsPage />} />
           <Route path="/aboutus" element={<About />} />
           <Route path="/ouraproach" element={<Aproach />} />
-         
+
           <Route path="/projects" element={<Projects />} />
           <Route path="/projectdetail/:id" element={<ProjectDetail />} />
 
@@ -42,16 +39,14 @@ function App() {
 
           <Route path="/involved" element={<Involved />} />
           <Route path="/blogDetail/:id" element={<BlogDetail />} />
-           <Route path="/involved" element={<Involved />} />
-          <Route path="/gallery" element={<Gallary />} />
+          <Route path="/involved" element={<Involved />} />
+          <Route path="/gallary" element={<Gallary />} />
 
           <Route path="/partnership" element={<Partnership />} />
           <Route path="/presskit" element={<Press />} />
           <Route path="/faq" element={<FAQ />} />
-          <Route path="/press/:id" element={<PressDetails/>} />
-          <Route path="/service"   element={<Service/>}/>
-       
-          
+          <Route path="/press/:id" element={<PressDetails />} />
+          <Route path="/service" element={<Service />} />
         </Routes>
         <Footer />
       </Router>
