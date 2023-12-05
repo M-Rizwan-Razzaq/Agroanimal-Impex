@@ -39,7 +39,6 @@ const Aproach = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    // Scroll to the top of the page when the location (route) changes
     window.scrollTo(0, 0);
   }, [pathname]);
 
@@ -111,7 +110,7 @@ const Aproach = () => {
             className="absolute bottom-[25%] left-[48%] hover:text-green-500"
             onClick={playVideo}
           >
-            <FaPlayCircle className="mt-10 text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl" />
+            <FaPlayCircle className="m-auto text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl" />
           </button>
 
           {isVideoPlaying && (
@@ -130,10 +129,7 @@ const Aproach = () => {
         </div>
       </section>
 
-      <section
-        className="circles-por mt-20 pr-6 mb-20"
-        // style={{ border: "5px solid red" }}
-      >
+      <section className="circles-por mt-20 pr-6 mb-20">
         <div className="mb-6 md:ml-1 lg:ml-2 ">
           <span className="flex justify-center items-center gap-1">
             <img className="w-6" src={secImg} alt="" />
@@ -147,19 +143,15 @@ const Aproach = () => {
         </div>
 
         <div
-          className="w-full mb-20 ml-5 mr-5 flex justify-center items-center h-[100vh]"
+          className="w-full mb-20 ml-5 mr-5 flex justify-center items-center h-[100vh] overflow-hidden"
           // style={{ border: "1px solid red" }}
         >
           <DottedCircle>
-            <img
-              src={centerImage}
-              className="approach-centerImage w-[430px] h-[300px]"
-              alt=""
-            />
+            <img src={centerImage} className="approach-centerImage " alt="" />
             {data.map((item, index) => (
               <React.Fragment key={index}>
                 <TextContainer
-                  className={`text-container${index + 1} w-[200px]`}
+                  className={`text-container${index + 1}`}
                   title={item.title}
                   description={item.description}
                 />
