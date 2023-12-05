@@ -73,61 +73,6 @@ const Navbar = () => {
             onClick={toggleMenuBar}
           />
         )}
-        <ul
-          onClick={hideNavItems}
-          className={
-            isMobile
-              ? `flex flex-col gap-5 nav-bg  absolute h-[43vh] top-[50px] ${
-                  !menu ? "-right-[100%] " : "right-0 left-0"
-                } items-center  text-lg cursor-pointer scrolled`
-              : `flex justify-between items-center gap-10 nav-text ${
-                  isScrolled ? "text-[var(--logo-color)]" : "text-white"
-                }`
-          }
-        >
-          <Link
-            to="/"
-            className={`${isScrolled ? "nav-item" : "nav-item-hover"} ${
-              isMobile ? "mt-4" : ""
-            } `}
-          >
-            Home
-          </Link>
-          <Link
-            to="/ouraproach"
-            className={`${isScrolled ? "nav-item" : "nav-item-hover"} ${
-              isMobile ? "mt-4" : ""
-            } `}
-          >
-            Our Aproach
-          </Link>
-          <Link
-            to="/projects"
-            className={`${isScrolled ? "nav-item" : "nav-item-hover"} ${
-              isMobile ? "mt-4" : ""
-            } `}
-          >
-            Projects
-          </Link>
-          <Link
-            to="/"
-            className={`${isScrolled ? "nav-item" : "nav-item-hover"} `}
-          >
-            About Us
-          </Link>
-          <Link
-            to="/"
-            className={`${isScrolled ? "nav-item" : "nav-item-hover"} `}
-          >
-            Pages
-          </Link>
-          <Link
-            to="/"
-            className={`${isScrolled ? "nav-item" : "nav-item-hover"} `}
-          >
-            {" "}
-            Service
-          </Link>
        
 
 <ul
@@ -151,7 +96,7 @@ const Navbar = () => {
     Home
   </Link>
   <Link
-    to="/"
+    to="/aboutus"
     className={`${isScrolled ? "nav-item" : "nav-item-hover"} ${
       isMobile ? "mt-4" : ""
     } `}
@@ -159,7 +104,7 @@ const Navbar = () => {
   About
   </Link>
   <Link
-    to="/"
+    to="/blog"
     className={`${isScrolled ? "nav-item" : "nav-item-hover"} ${
       isMobile ? "mt-4" : ""
     } `}
@@ -176,7 +121,7 @@ const Navbar = () => {
     Projects
   </Link>
   <Link
-    to="/projects"
+    to="/contactUs"
     className={`${isScrolled ? "nav-item" : "nav-item-hover"} ${
       isMobile ? "mt-4" : ""
     } `}
@@ -193,30 +138,33 @@ const Navbar = () => {
       More <IoChevronDownOutline size={17} className="inline-block rotate-nav-icon" />
     </Link>
     {/* Dropdown menu for "About Us" */}
-    <ul className={`absolute hidden max-w-max ${!isScrolled?"no-scrolled":" bg-white text-black"} whitespace-nowrap  p-2  group-hover:block  space-y-2 py-2 px-2 rounded`}>
+    <ul className={`absolute hidden max-w-max ${!isScrolled?"no-scrolled":" bg-white text-black"} whitespace-nowrap  p-2  group-hover:block  space-y-2 py-2 px-4 rounded`}>
       <li>
-        <Link to="/team" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>FAQ</Link>
+        <Link to="/faq" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>FAQ</Link>
       </li>
       <li>
-        <Link to="/values" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>Invloved</Link>
+        <Link to="/involved" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>Invloved</Link>
       </li>
       <li>
-        <Link to="/values" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>Patners</Link>
+        <Link to="/partnership" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>Patners</Link>
       </li>
       <li>
-        <Link to="/values" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>our Aproach</Link>
+        <Link to="/ouraproach" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>our Aproach</Link>
       </li>
       <li>
-        <Link to="/values" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>press kit</Link>
+        <Link to="/presskit" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>press kit</Link>
       </li>
       <li>
-        <Link to="/values" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>Service</Link>
+        <Link to="/successstories" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>Success Stories</Link>
+      </li>
+      <li>
+        <Link to="/service" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>Service</Link>
       </li>
       
-      {/* Add more dropdown items as needed */}
+    
     </ul>
   </li>
-  {/* ... (remaining menu items) */}
+   
 </ul>
  
 

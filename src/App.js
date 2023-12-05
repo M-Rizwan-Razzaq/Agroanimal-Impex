@@ -5,8 +5,7 @@ import Navbar from "./components/navber/Navbar";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import ContanctUsPage from "./components/ContactUsPage/ContanctUsPage";
- import PressDetails from "./components/PressKit/PressDetails";
-import SuccessStories from "./components/SuccessStories/SuccessStories";
+import PressDetails from "./components/PressKit/PressDetails";
 import Projects from "./components/Projects/Projects";
 import Blog from "./components/Blog/Blog";
 import Involved from "./components/Involved/Involved";
@@ -18,6 +17,8 @@ import Partnership from "./components/Partnership/Partnership";
 import Impact from "./components/Impact/Impact";
 import ProjectDetail from "./components/ProjectDetail/ProjectDetail";
 import BlogDetail from "./components/BlogDetail/BlogDetail";
+import Service from "./components/Services/Service";
+import About from "./components/About/About";
 function App() {
 
 
@@ -30,12 +31,13 @@ function App() {
           <Route path="/" element={<Home />} />
 
           <Route path="/contactUs" element={<ContanctUsPage />} />
+          <Route path="/aboutus" element={<About />} />
           <Route path="/ouraproach" element={<Aproach />} />
-          <Route path="/successstories" element={<SuccessStories />} />
+         
           <Route path="/projects" element={<Projects />} />
           <Route path="/projectdetail/:id" element={<ProjectDetail />} />
 
-          <Route path="/impact" element={<Impact />} />
+          <Route path="/successstories" element={<Impact />} />
           <Route path="/blog" element={<Blog />} />
 
           <Route path="/involved" element={<Involved />} />
@@ -47,7 +49,8 @@ function App() {
           <Route path="/presskit" element={<Press />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/press/:id" element={<PressDetails/>} />
-          <Route path="/faq" element={<FAQ/>} />
+          <Route path="/service"   element={<Service/>}/>
+       
           
         </Routes>
         <Footer />

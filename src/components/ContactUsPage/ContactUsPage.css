@@ -33,23 +33,24 @@
   cursor: pointer; /* Cursor style */
   transition: background-color 0.3s ease; /* Smooth transition for background color */
   margin-top: 10px;
+}
 
   /* Hover effect */
-  &:hover {
+  .submitButton:hover {
     background-color: #45a049; /* Darker green on hover */
   }
 
   /* Focus effect */
-  &:focus {
+  .submitButton:focus {
     outline: none; /* Remove default focus outline */
     box-shadow: 0 0 5px rgba(0, 128, 0, 0.7); /* Light green shadow on focus */
   }
 
   /* Active/Clicked effect */
-  &:active {
+  .submitButton:active {
     background-color: #4caf50; /* Restore original color on click */
   }
-}
+
 
 @media (max-width: 768px) {
   .contact {
@@ -58,7 +59,7 @@
   }
 
   .main-box {
-    display: grid;
+ 
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -91,7 +92,7 @@
   }
 
   .main-box {
-    display: grid;
+  
     grid-template-columns: repeat(1, 1fr);
   }
 
