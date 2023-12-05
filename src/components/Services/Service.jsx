@@ -1,14 +1,38 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import secImg from "../../images/TriasseaIcon.png";
+import { serviceData } from "./serviceData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-
+import { Pagination, Autoplay } from "swiper/modules";
 import "./service.css";
-import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 
 const Service = () => {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const newScreenWidth = window.innerWidth;
+      setScreenWidth(newScreenWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const getSlidesPerView = () => {
+    if (screenWidth <= 360) {
+      return 1; // For mobile screens
+    } else if (screenWidth <= 540) {
+      return 2; // For tablet screens
+    } else {
+      return 3; // For laptop screens
+    }
+  };
+
   return (
     <section className="service-div">
       <div className="lg:mt-20">
@@ -24,126 +48,34 @@ const Service = () => {
           </h1>
         </div>
       </div>
-      <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={"auto"}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: true,
-        }}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={true}
-        modules={[Autoplay, EffectCoverflow, Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <span>
-            <img
-              src="https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/sv-04.jpg"
-              alt=""
-            />
-            <a
-              href="/"
-              className="flex justify-center items-center text-3xl mt-2 hover:text-yellow-500"
-            >
-              Dairy Products
-            </a>
-          </span>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/sv-1.jpg"
-            alt=""
-          />
-          <a
-            href="/"
-            className="flex justify-center items-center text-3xl mt-2 hover:text-yellow-500"
-          >
-            Agriculture production
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/sv-2.jpg"
-            alt=""
-          />
-          <a
-            href="/"
-            className="flex justify-center items-center text-3xl mt-2 hover:text-yellow-500"
-          >
-            Organic products
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/sv-3.jpg"
-            alt=""
-          />
-          <a
-            href="/"
-            className="flex justify-center items-center text-3xl mt-2 hover:text-yellow-500"
-          >
-            Fresh vegetables
-          </a>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <img
-            src="https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/sv-05.jpg"
-            alt=""
-          />
-          <a
-            href="/"
-            className="flex justify-center items-center text-3xl mt-2 hover:text-yellow-500"
-          >
-            Water Managment
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/sv-06.jpg"
-            alt=""
-          />
-          <a
-            href="/"
-            className="flex justify-center items-center text-3xl mt-2 hover:text-yellow-500"
-          >
-            Vegetables Firms
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/sv-07.jpg"
-            alt=""
-          />
-          <a
-            href="/"
-            className="flex justify-center items-center text-3xl mt-2 hover:text-yellow-500"
-          >
-            Harvest Incentive
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/sv-08.jpg"
-            alt=""
-          />
-          <a
-            href="/"
-            className="flex justify-center items-center text-3xl mt-2 hover:text-yellow-500"
-          >
-            Farm House
-          </a>
-        </SwiperSlide>
-      </Swiper>
+      <div className="px-[6%]">
+        <Swiper
+          slidesPerView={getSlidesPerView()}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Autoplay, Pagination]}
+          className="mySwiper"
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: true,
+          }}
+        >
+          {serviceData.map((slide, index) => (
+            <SwiperSlide key={index}>
+              <div className="bg-green-900 rounded-lg text-black transform transition-all ease-in-out duration-300 hover:text-white">
+                <a href="/" className="flex flex-col text-3xl mt-4">
+                  <img className="" src={slide.imageUrl} alt={slide.altText} />
+                  <span className="block text-base md:text-lg mt-4 md:mt-8 mb-4 md:mb-6 ml-4 md:ml-4 hover:text-white">
+                    {slide.linkText}
+                  </span>
+                </a>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </section>
   );
 };

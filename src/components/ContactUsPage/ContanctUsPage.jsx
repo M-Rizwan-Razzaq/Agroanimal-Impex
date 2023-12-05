@@ -1,74 +1,31 @@
-import React from "react";
-import contactUsImage from "../../images/contactus1.jpg"; // Adjust the path to your image
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import contactUsImage from "../../images/contactus1.jpg";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { CalendarDaysIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
 import secImg from "../../images/TriasseaIcon.png";
 import "./ContactUsPage.css";
+import CompoHeader from "../common/CompoHeader";
 
 const ContactUsPage = () => {
-  const containerStyle = {
-    position: "relative",
-    textAlign: "center",
-    color: "rgb(201, 236, 236)",
-  };
-
-  const imageStyle = {
-    width: "100%",
-  };
-
-  const textOnImageStyle = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    fontSize: "70px",
-    // fontStyle: "bold",
-    lineHeight: "0.02rem",
-    marginTop: "0.8rem",
-  };
-
-  const links = {
-    position: "absolute",
-    top: "37%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    fontSize: "23px",
-    fontFamily: "cursive",
-    display: "flex",
-    justifyContent: "center",
-    width: "100%", // Ensure the links take up the full width
-  };
-
-  const linkStyle = {
-    margin: "0 15px",
-    transition: "all 0.2s ease-in-out",
-    // marginTop: "9%", // Adjust the margin as needed
-  };
-
   const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent the default form submission behavior
-    // Add your form submission logic here
+    event.preventDefault();
   };
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+   
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div>
-      <div className="something mt-[4.45%]" style={containerStyle}>
-        <img
-          className="contactimage h-[400px]"
-          src={contactUsImage}
-          alt="Contact Us"
-          style={imageStyle}
-        />
-        <div className="flex justify-between items-center " style={links}>
-          <a className="hover:text-yellow-400" style={linkStyle} href="/">
-            Home
-          </a>
-          <h1 style={linkStyle}>Contact</h1>
-        </div>
-        <h1 style={textOnImageStyle}>Contact</h1>
-      </div>
-      <div className="main-box grid grid-cols-3 mt-[6%] mb-[6%] gap-4 ml-3 mr-3">
+      <CompoHeader name="contact" image={contactUsImage} />
+
+      <div className="main-box grid md:grid-cols-3 mt-[6%] mb-[6%] gap-4">
         <div
           className="idenity grid grid-cols-2 "
           style={{
@@ -81,7 +38,7 @@ const ContactUsPage = () => {
               style={{ fontSize: "50px" }}
             />
           </div>
-          <div className="contact grid grid-cols-1 gap-10 justify-center items-center">
+          <div className="contact grid grid-cols-1 justify-center items-center">
             <p>Our Location</p>
             <h1>2nd Block Melbourne</h1>
           </div>
@@ -98,10 +55,7 @@ const ContactUsPage = () => {
               style={{ fontSize: "50px" }}
             />
           </div>
-          <div
-            className="contact grid grid-cols-1 gap-10 justify-center items-center"
-            style={{}}
-          >
+          <div className="contact grid grid-cols-1 justify-center items-center">
             <p>Hotline</p>
             <h1>+000 (123) 456 88</h1>
           </div>
@@ -118,14 +72,16 @@ const ContactUsPage = () => {
               style={{ fontSize: "50px" }}
             />
           </div>
-          <div className="contact grid grid-cols-1 gap-10 justify-center items-center">
+          <div className="contact grid grid-cols-1 justify-center items-center">
             <p>Email Address</p>
             <h1>support@gmail.com</h1>
           </div>
         </div>
       </div>
 
-      <section className="grid grid-cols-1 mb-10 mt-20 mr-5 gap-20 md:grid-cols-2 lg:grid-cols-2 gap-8">
+
+      
+      <section className="grid grid-cols-1 mb-10 mt-20 mr-5 md:grid-cols-2 lg:grid-cols-2 gap-8">
         <form onSubmit={handleSubmit} className="ml-6 mb-4">
           <div className="mb-10 md:ml-1 lg:ml-2 ">
             <span className="flex justify-start ml-0 items-center gap-1">
@@ -134,11 +90,11 @@ const ContactUsPage = () => {
                 Contact With Us
               </h3>
             </span>
-            <h1 className="form-hedding" style={{ fontSize: "50px" }}>
+            <h1 className="form-hedding text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl flex justify-center items-center">
               Ready to Work With Us
             </h1>
           </div>
-          {/* Form Fields */}
+
           <div className="grid grid-cols-2 justify-center items-center">
             <label
               htmlFor="name"
@@ -247,7 +203,7 @@ const ContactUsPage = () => {
           </button>
         </form>
 
-        <div className="mt-8 md:mt-0 lg:ml-10 lg:mt-5">
+        <div className="last-imgDiv mt-8 md:mt-0 lg:ml-10 lg:mt-5">
           <img
             className="final-img rounded-md cursor-pointer w-[600px] h-[600px]"
             src="https://demo2.themelexus.com/farmor/wp-content/uploads/2023/10/Contact-1.jpg"
@@ -256,7 +212,6 @@ const ContactUsPage = () => {
         </div>
       </section>
 
-      <section></section>
       <div className="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
@@ -334,8 +289,9 @@ const ContactUsPage = () => {
           />
         </div>
       </div>
+
     </div>
-  );
-};
+  )
+}
 
 export default ContactUsPage;
