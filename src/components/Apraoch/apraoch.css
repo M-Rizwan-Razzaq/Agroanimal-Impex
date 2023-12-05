@@ -5,6 +5,29 @@ div {
   font-family: "Poppins", sans-serif;
 }
 
+.our-approach-div {
+  position: relative;
+  text-align: center;
+  color: rgb(201, 236, 236);
+}
+
+.aproach-vid-text {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 23px;
+  font-family: cursive;
+  justify-content: center;
+  width: 100%;
+}
+.our-approach-vidImage {
+  height: 800px;
+  max-width: 100%;
+  object-fit: cover;
+  aspect-ratio: 21/9;
+}
+
 .form-hedding {
   margin-bottom: 10%;
 }
@@ -93,6 +116,10 @@ div {
     padding-right: 6%;
   }
 
+  .our-approach-vidImage {
+    height: 400px;
+  }
+
   .dotted-circle {
     position: relative;
     width: 370px;
@@ -158,6 +185,10 @@ div {
     margin-bottom: 5%;
     margin-left: 5%;
     text-align: center;
+  }
+
+  .our-approach-vidImage {
+    height: 250px;
   }
 
   .dotted-circle {

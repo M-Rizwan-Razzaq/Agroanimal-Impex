@@ -39,24 +39,6 @@ const textOnImageStyle = {
   transform: "translate(-50%, -50%)",
 };
 
-const containerStyle = {
-  position: "relative",
-  textAlign: "center",
-  color: "rgb(201, 236, 236)",
-};
-
-const links = {
-  position: "absolute",
-  top: "37%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  fontSize: "23px",
-  fontFamily: "cursive",
-  display: "flex",
-  justifyContent: "center",
-  width: "100%",
-};
-
 const Aproach = () => {
   const { pathname } = useLocation();
 
@@ -114,13 +96,13 @@ const Aproach = () => {
             Know about our work
           </h1>
         </div>
-        <div style={containerStyle}>
+        <div className="our-approach-div">
           <img
-            className="contactimage h-[800px] w-full"
+            className="our-approach-vidImage"
             src={vidimg}
             alt="Contact Us"
           />
-          <div className="flex justify-between items-center " style={links}>
+          <div className="aproach-vid-text flex items-center">
             <FaCanadianMapleLeaf className="mb-10 text-4xl mt-[-8%] md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-green-200" />
           </div>
           <h1
