@@ -152,10 +152,7 @@ const Aproach = () => {
         </div>
       </section>
 
-      <section
-        className="circles-por mt-20 pr-6 mb-20"
-        // style={{ border: "5px solid red" }}
-      >
+      <section className="circles-por mt-20 pr-6 mb-20">
         <div className="mb-6 md:ml-1 lg:ml-2 ">
           <span className="flex justify-center items-center gap-1">
             <img className="w-6" src={secImg} alt="" />
