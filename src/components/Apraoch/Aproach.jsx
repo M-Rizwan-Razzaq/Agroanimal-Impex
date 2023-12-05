@@ -12,11 +12,7 @@ import { FaPlayCircle } from "react-icons/fa";
 import YouTube from "react-youtube";
 
 const DottedCircle = ({ children }) => {
-  return (
-    <div className="dotted-circle md:w-96 md:h-96 lg:w-72 lg:h-72 xl:w-96 xl:h-96">
-      {children}
-    </div>
-  );
+  return <div className="dotted-circle ">{children}</div>;
 };
 
 const Image = ({ src, alt, className }) => {
@@ -150,7 +146,10 @@ const Aproach = () => {
           </h1>
         </div>
 
-        <div className="w-full mb-20 ml-5 mr-5 flex justify-center items-center h-[100vh]">
+        <div
+          className="w-full mb-20 ml-5 mr-5 flex justify-center items-center h-[100vh]"
+          // style={{ border: "1px solid red" }}
+        >
           <DottedCircle>
             <img
               src={centerImage}

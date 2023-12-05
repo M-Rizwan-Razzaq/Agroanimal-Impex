@@ -193,8 +193,8 @@ div {
 
   .dotted-circle {
     position: relative;
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
     border: 2px dotted green;
     border-radius: 50%;
     display: flex;
