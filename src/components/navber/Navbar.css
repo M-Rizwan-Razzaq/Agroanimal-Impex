@@ -2,10 +2,12 @@
   position: relative;
   overflow: hidden;
 }
-.group:hover .rotate-nav-icon{
+
+.group:hover .rotate-nav-icon {
   transform: rotate(180deg);
-  transition:all .2s ease-in-out ;
+  transition: all 0.2s ease-in-out;
 }
+
 .nav-item::after {
   content: "";
   position: absolute;
@@ -32,7 +34,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color:rgb(2, 67, 15);
+  background-color: rgb(2, 67, 15);
   transition: width 0.3s;
 }
 
@@ -47,8 +49,8 @@
   background-color: transparent;
   transition: all 0.3s ease;
 }
-.logo-img{
-  background-color:transparent;
+.logo-img {
+  background-color: transparent;
 }
 .login-btn:hover {
   background-color: white;
@@ -76,7 +78,6 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-
 .no-scrolled {
   background: rgba(0, 0, 0, 0.3);
 }
@@ -93,21 +94,19 @@
 
 @media (min-width: 1500px) {
   .responsive-header {
-    height:70px;
+    height: 70px;
     padding-left: 2.5rem;
     padding-right: 6rem;
-    
   }
- 
-  .logo-img{
+
+  .logo-img {
     width: 240px;
     height: 62px;
     margin-bottom: 1rem;
   }
-.nav-text{
-  font-size: 20px;
-}
-
+  .nav-text {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1800px) {
@@ -115,15 +114,13 @@
     height: 80px;
     padding-left: 5rem;
     padding-right: 9rem;
-    
   }
-  .logo-img{
+  .logo-img {
     width: 280px;
     height: 70px;
     margin-bottom: 1.25rem;
   }
-  .nav-text{
+  .nav-text {
     font-size: 28px;
   }
-
 }

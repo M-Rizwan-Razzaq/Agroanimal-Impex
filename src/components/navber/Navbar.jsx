@@ -55,7 +55,7 @@ const Navbar = () => {
           src={logo}
           alt=""
           className={`${
-            isMobile ? "w-[40px] h-[32px]" : "w-[57px] h-[45px] logo-img"
+            isMobile ? "w-[40px] h-[34px]" : "w-[57px] h-[45px] logo-img"
           }  `}
         />
         {isMobile && menu && (
