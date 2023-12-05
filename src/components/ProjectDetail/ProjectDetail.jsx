@@ -43,27 +43,19 @@ const ProjectDetail = () => {
     });
   }, [id]);
 
-  
-
   return (
     <div>
-      <CompoHeader name="project Detail" image={compoheaderimg} />
+      <CompoHeader name="project-Detail" image={compoheaderimg} />
 
       <div className="md:px-[30px] px-[10px] py-8">
         {/* top img div */}
-        <div
-          
-          className="w-full md:h-[90vh] h-45vh  relative md:overflow-hidden border rounded-lg "
-        >
+        <div className="w-full md:h-[90vh] h-45vh  relative md:overflow-hidden border rounded-lg ">
           <img
             src={currentProject.project.image}
             alt=""
-            className="w-full h-full rounded-lg project-detail-top-img"
+            className="max-w-full w-full  h-full rounded-lg object-cover project-detail-top-img"
           />
-          <div
-             
-            className="md:absolute -bottom-1 md:right-28 rounded-md  md:pl-[55px] pl-[30px]   md:pt-[35px] pt-[20px] md:pb-[45px] pb-[25px] text-white bg-green-800 w-full max-w-[340px] project-detail-top-detail"
-          >
+          <div className="md:absolute -bottom-1 md:right-28 rounded-md  md:pl-[55px] pl-[30px]   md:pt-[35px] pt-[20px] md:pb-[45px] pb-[25px] text-white bg-green-800 w-full max-w-[340px] project-detail-top-detail">
             {projectDetailData.map((elm) => (
               <div className="md:mt-5 mt-3 text-[18px]">
                 <p className="mb-[6px] text-gray-300">{elm.title}</p>
@@ -114,7 +106,7 @@ const ProjectDetail = () => {
           <ChangSolut />
           <ChangSolut />
         </div>
-        <h2 className="mt-7 text-2xl mb-5 font-semibold">Project Gallry</h2>
+        <h2 className="mt-7 text-2xl mb-5 font-semibold">Project Gallery</h2>
         <ProjectsGallery />
         <NextPre id={id} projectsData={projectsData} />
         <h2 className="mt-14 md:text-5xl text-3xl mb-7 font-semibold">
