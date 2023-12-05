@@ -9,7 +9,6 @@ import PressDetails from "./components/PressKit/PressDetails";
 import Projects from "./components/Projects/Projects";
 import Blog from "./components/Blog/Blog";
 import Involved from "./components/Involved/Involved";
-import Gallary from "./components/Gallary/Gallary";
 import Press from "./components/PressKit/Press";
 import FAQ from "./components/Faq/FAQ";
 import Aproach from "./components/Apraoch/Aproach";
@@ -19,7 +18,7 @@ import ProjectDetail from "./components/ProjectDetail/ProjectDetail";
 import BlogDetail from "./components/BlogDetail/BlogDetail";
 import Service from "./components/Services/Service";
 import About from "./components/About/About";
-
+import Gallery from "./components/Gallery/Gallery";
 function App() {
   return (
     <div className="App">
@@ -41,7 +40,7 @@ function App() {
           <Route path="/involved" element={<Involved />} />
           <Route path="/blogDetail/:id" element={<BlogDetail />} />
           <Route path="/involved" element={<Involved />} />
-          <Route path="/gallary" element={<Gallary />} />
+          <Route path="/gallery" element={<Gallery />} />
 
           <Route path="/partnership" element={<Partnership />} />
           <Route path="/presskit" element={<Press />} />

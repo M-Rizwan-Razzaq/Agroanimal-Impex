@@ -51,7 +51,7 @@ const Projects = () => {
               <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-10 lg:space-y-0">
                 {data.map((callout) => (
                   <div key={callout.id} className="group relative">
-                    <div className="project-content relative w-full h-[440px] mb-8 overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1">
+                    <div className="project-content  relative w-full h-[440px] mb-8 overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1">
                       <img
                         src={callout.imageSrc}
                         alt={callout.imageAlt}
@@ -59,7 +59,7 @@ const Projects = () => {
                       />
                       {/* Display on hover */}
                       <div
-                        className="absolute top-0 bottom-0 left-0 right-0 project-detail bg-green-600 opacity-0 hover:opacity-60 flex flex-col justify-center items-center text-center px-10"
+                        className="absolute top-0 bottom-0 left-0 right-0 project-detail bg-green-600 opacity-0 transition-all duration-500 ease-linear transform hover:scale-110 hover:opacity-60 flex flex-col justify-center items-center text-center px-10"
                         onClick={() => navigate(`/projectdetail/${callout.id}`)}
                       >
                         <h3 className="text-3xl font-semibold text-white mb-2">
@@ -161,8 +161,7 @@ const Projects = () => {
           </svg>
         </button>
       </section>
-      </div>
- 
+    </div>
   );
 };
 
