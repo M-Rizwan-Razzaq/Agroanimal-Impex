@@ -12,11 +12,7 @@ import { FaPlayCircle } from "react-icons/fa";
 import YouTube from "react-youtube";
 
 const DottedCircle = ({ children }) => {
-  return (
-    <div className="dotted-circle md:w-96 md:h-96 lg:w-72 lg:h-72 xl:w-96 xl:h-96">
-      {children}
-    </div>
-  );
+  return <div className="dotted-circle ">{children}</div>;
 };
 
 const Image = ({ src, alt, className }) => {
@@ -39,29 +35,10 @@ const textOnImageStyle = {
   transform: "translate(-50%, -50%)",
 };
 
-const containerStyle = {
-  position: "relative",
-  textAlign: "center",
-  color: "rgb(201, 236, 236)",
-};
-
-const links = {
-  position: "absolute",
-  top: "37%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  fontSize: "23px",
-  fontFamily: "cursive",
-  display: "flex",
-  justifyContent: "center",
-  width: "100%",
-};
-
 const Aproach = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    // Scroll to the top of the page when the location (route) changes
     window.scrollTo(0, 0);
   }, [pathname]);
 
@@ -114,13 +91,13 @@ const Aproach = () => {
             Know about our work
           </h1>
         </div>
-        <div style={containerStyle}>
+        <div className="our-approach-div">
           <img
-            className="contactimage h-[800px] w-full"
+            className="our-approach-vidImage"
             src={vidimg}
             alt="Contact Us"
           />
-          <div className="flex justify-between items-center " style={links}>
+          <div className="aproach-vid-text flex items-center">
             <FaCanadianMapleLeaf className="mb-10 text-4xl mt-[-8%] md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-green-200" />
           </div>
           <h1
@@ -133,7 +110,7 @@ const Aproach = () => {
             className="absolute bottom-[25%] left-[48%] hover:text-green-500"
             onClick={playVideo}
           >
-            <FaPlayCircle className="mt-10 text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl" />
+            <FaPlayCircle className="m-auto text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl" />
           </button>
 
           {isVideoPlaying && (
@@ -165,17 +142,16 @@ const Aproach = () => {
           </h1>
         </div>
 
-        <div className="w-full mb-20 ml-5 mr-5 flex justify-center items-center h-[100vh]">
+        <div
+          className="w-full mb-20 ml-5 mr-5 flex justify-center items-center h-[100vh]"
+          // style={{ border: "1px solid red" }}
+        >
           <DottedCircle>
-            <img
-              src={centerImage}
-              className="approach-centerImage w-[430px] h-[300px]"
-              alt=""
-            />
+            <img src={centerImage} className="approach-centerImage " alt="" />
             {data.map((item, index) => (
               <React.Fragment key={index}>
                 <TextContainer
-                  className={`text-container${index + 1} w-[200px]`}
+                  className={`text-container${index + 1}`}
                   title={item.title}
                   description={item.description}
                 />

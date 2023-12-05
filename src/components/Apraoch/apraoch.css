@@ -5,12 +5,36 @@ div {
   font-family: "Poppins", sans-serif;
 }
 
+.our-approach-div {
+  position: relative;
+  text-align: center;
+  color: rgb(201, 236, 236);
+}
+
+.aproach-vid-text {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 23px;
+  font-family: cursive;
+  justify-content: center;
+  width: 100%;
+}
+.our-approach-vidImage {
+  height: 800px;
+  max-width: 100%;
+  object-fit: cover;
+  aspect-ratio: 21/9;
+}
+
 .form-hedding {
   margin-bottom: 10%;
 }
 
 .text-container1 {
   position: absolute;
+  width: 200px;
   top: -12%;
   left: 18%;
   transform: translateX(-100%);
@@ -18,6 +42,7 @@ div {
 
 .text-container2 {
   position: absolute;
+  width: 200px;
   top: 92%;
   left: 25%;
   transform: translateX(-100%);
@@ -25,6 +50,7 @@ div {
 
 .text-container3 {
   position: absolute;
+  width: 200px;
   top: -13%;
   right: -56%;
   transform: translateX(-100%);
@@ -32,6 +58,7 @@ div {
 
 .text-container4 {
   position: absolute;
+  width: 200px;
   top: 94%;
   right: -53%;
   transform: translateX(-100%);
@@ -55,6 +82,8 @@ div {
 }
 
 .approach-centerImage {
+  height: 300px;
+  width: 430px;
   position: absolute;
   top: 20%;
   left: 12%;
@@ -91,6 +120,10 @@ div {
 
   .circles-por {
     padding-right: 6%;
+  }
+
+  .our-approach-vidImage {
+    height: 400px;
   }
 
   .dotted-circle {
@@ -160,60 +193,61 @@ div {
     text-align: center;
   }
 
+  .our-approach-vidImage {
+    height: 250px;
+  }
+
   .dotted-circle {
     position: relative;
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 280px;
     border: 2px dotted green;
     border-radius: 50%;
     display: flex;
   }
 
   .text-container1 {
-    width: 150px;
-    /* border: 1px solid red; */
+    width: 130px;
     position: absolute;
-    top: -16%;
-    left: 42%;
+    top: -25%;
+    left: 45%;
     transform: translateX(-100%);
   }
 
   .text-container2 {
-    width: 150px;
-    /* border: 1px solid red; */
+    width: 130px;
     position: absolute;
     top: 90%;
-    left: 40%;
+    left: 45%;
     transform: translateX(-100%);
   }
 
   .text-container3 {
-    width: 150px;
-    /* border: 1px solid red; */
+    width: 130px;
     position: absolute;
-    top: -12%;
-    right: -46%;
+    top: -22%;
+    right: -50%;
     transform: translateX(-100%);
   }
 
   .text-container4 {
     width: 130px;
-    /* border: 1px solid red; */
     position: absolute;
     top: 92%;
-    right: -38%;
+    right: -50%;
     transform: translateX(-100%);
   }
+
   .approach-centerImage {
     position: absolute;
     top: 18%;
     left: 3%;
-    height: 200px;
-    width: 300px;
+    height: 180px;
+    width: 270px;
   }
   .circle-image {
-    width: 70px; /* Adjust the image size as needed */
-    height: 70px;
+    width: 60px; /* Adjust the image size as needed */
+    height: 60px;
   }
 
   .title-text {
