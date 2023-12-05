@@ -1,9 +1,16 @@
-import React from 'react'
-import "./gallary.css"
+import React from "react";
+import gallaryHead from "../../images/gallaryHead.jpg";
+
+import "./gallary.css";
+import CompoHeader from "../common/CompoHeader";
 const Gallary = () => {
   return (
-    <div>Gallary</div>
-  )
-}
+    <div>
+      <section>
+        <CompoHeader name="Gallary" image={gallaryHead} />
+      </section>
+    </div>
+  );
+};
 
-export default Gallary
+export default Gallary;
