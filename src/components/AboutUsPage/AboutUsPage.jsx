@@ -53,7 +53,7 @@ const AboutUsPage = () => {
               slidesPerView={getSlidesPerView()}
               spaceBetween={30}
               modules={[Autoplay]}
-              className="mySwiper "
+              className="About-mySwiper"
               loop={true}
               autoplay={{
                 delay: 3000,
@@ -61,7 +61,7 @@ const AboutUsPage = () => {
               }}
             >
               {imageUrls.map((imageUrl, index) => (
-                <SwiperSlide key={index} className="swiper-slide">
+                <SwiperSlide key={index} className="about-swiper-slide">
                   <img
                     className="transition duration-300 opacity-50 hover:opacity-100 transform"
                     src={imageUrl}

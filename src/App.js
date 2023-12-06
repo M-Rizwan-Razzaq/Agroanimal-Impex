@@ -17,7 +17,6 @@ import Impact from "./components/Impact/Impact";
 import ProjectDetail from "./components/ProjectDetail/ProjectDetail";
 import BlogDetail from "./components/BlogDetail/BlogDetail";
 import Service from "./components/Services/Service";
-// import About from "./components/About/About";
 import Gallery from "./components/Gallery/Gallery";
 import AboutUsPage from "./components/AboutUsPage/AboutUsPage";
 function App() {
