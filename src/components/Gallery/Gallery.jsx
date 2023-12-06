@@ -4,10 +4,25 @@ import secImg from "../../images/TriasseaIcon.png";
 import CompoHeader from "../common/CompoHeader";
 import { media } from "./media";
 import { IoClose } from "react-icons/io5";
+import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import "./gallery.css";
 
 const Gallery = () => {
-  const [file, setFile] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(null);
+
+  const handleImageClick = (index) => {
+    setCurrentIndex(index);
+  };
+
+  const handleArrowClick = (direction) => {
+    if (currentIndex !== null) {
+      let newIndex =
+        direction === "left"
+          ? (currentIndex - 1 + media.length) % media.length
+          : (currentIndex + 1) % media.length;
+      setCurrentIndex(newIndex);
+    }
+  };
 
   return (
     <div>
@@ -34,7 +49,11 @@ const Gallery = () => {
       <section className="gallery-container">
         <div className="media-container">
           {media.map((el, index) => (
-            <div className="media" key={index} onClick={() => setFile(el)}>
+            <div
+              className="media"
+              key={index}
+              onClick={() => handleImageClick(index)}
+            >
               {el.type === "image" ? (
                 <img src={el.url} alt="" />
               ) : (
@@ -45,13 +64,33 @@ const Gallery = () => {
         </div>
         <div
           className="popup-media"
-          style={{ display: file ? "block" : "none" }}
+          style={{ display: currentIndex !== null ? "block" : "none" }}
         >
-          <IoClose className="gallery-closeBtn" onClick={() => setFile(null)} />
-          {file?.type === "video" ? (
-            <video src={file.url} muted autoPlay controls />
-          ) : (
-            <img src={file?.url} alt="" />
+          <IoClose
+            className="gallery-closeBtn hover:text-green-600 transition-all transform ease-linear duration-300"
+            onClick={() => setCurrentIndex(null)}
+          />
+          {currentIndex !== null && currentIndex !== 0 && (
+            <GoArrowLeft
+              className="gallery-leftBtn hover:text-green-600 transition-all transform ease-linear duration-300"
+              onClick={() => handleArrowClick("left")}
+            />
+          )}
+          {currentIndex !== null && currentIndex !== media.length - 1 && (
+            <GoArrowRight
+              className="gallery-rightBtn hover:text-green-600 transition-all transform ease-linear duration-300"
+              onClick={() => handleArrowClick("right")}
+            />
+          )}
+
+          {currentIndex !== null && (
+            <>
+              {media[currentIndex].type === "video" ? (
+                <video src={media[currentIndex].url} muted autoPlay controls />
+              ) : (
+                <img src={media[currentIndex].url} alt="" />
+              )}
+            </>
           )}
         </div>
       </section>
