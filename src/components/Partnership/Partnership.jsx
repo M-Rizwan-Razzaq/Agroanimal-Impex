@@ -26,7 +26,7 @@ function Partnership() {
   }, []);
 
   const getSlidesPerView = () => {
-    if (screenWidth <= 360) {
+    if (screenWidth <= 400) {
       return 1; // For mobile screens
     } else if (screenWidth <= 540) {
       return 2; // For tablet screens
