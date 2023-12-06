@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 // import logo from "../../assest/agri_logo.png";
 import logo from "../../images/logonew.png";
 import "./Navbar.css";
@@ -11,42 +11,47 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [menu, setMenu] = useState(false);
+const[More,setMore]  =useState(false)
+ 
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+useEffect(() => {
+  window.addEventListener("scroll", handleScroll);
+  window.addEventListener("resize", handleResize);
+   
 
-  const handleScroll = () => {
-    if (window.scrollY > 30) {
-      setIsScrolled(true);
-    } else {
-      setIsScrolled(false);
-    }
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+    window.removeEventListener("resize", handleResize);
+     
   };
+}, []);
 
-  const handleResize = () => {
-    setIsMobile(window.innerWidth <= 768);
-  };
+const handleScroll = () => {
+  setIsScrolled(window.scrollY > 30);
+  setMore(false)
+};
 
-  const toggleMenuBar = () => {
-    setMenu(!menu);
-  };
+const handleResize = () => {
+  setIsMobile(window.innerWidth <= 768);
+};
 
-  const hideNavItems = () => {
-    setMenu(false);
-  };
+const toggleMenuBar = () => {
+  setMenu(!menu);
+};
+
+const hideNavItems = () => {
+  setMenu(false);
+};
+
+ 
+
 
   return (
     <div
-      className={`w-[100%] max-w-[2600px]  h-[60px] responsive-header pl-6 pr-20   ${
+      className={`w-[100%] max-w-[2600px]  h-[60px] responsive-header pl-6 pr-20 ${
         isScrolled ? "scrolled" : "no-scrolled"
       } 
-      }   ${menu ? "bg-white" : ""} fixed top-0 z-10`}
+      }   ${menu ? "bg-white max-h-max" : ""} fixed top-0 z-10`}
     >
       <header className="h-full w-full box-border flex justify-between items-center">
         <img
@@ -79,78 +84,76 @@ const Navbar = () => {
           onClick={hideNavItems}
           className={
             isMobile
-              ? `flex flex-col gap-5 nav-bg  absolute h-[43vh] top-[50px] ${
-                  !menu ? "-right-[100%] " : "right-0 left-0"
+              ? `flex flex-col gap-2 nav-bg py-3 w-full  absolute h-max top-[50px] ${
+                  !menu ? "-right-[100%] " : "right-0 transition-all .5s ease-in"
                 } items-center  text-lg cursor-pointer scrolled`
               : `flex justify-between items-center gap-10 nav-text ${
-                  isScrolled ? "text-[var(--logo-color)]" : "text-white"
+                  isScrolled ? "text-black " : "text-white"
                 }`
           }
         >
           <Link
             to="/"
-            className={`${isScrolled ? "nav-item" : "nav-item-hover"} ${
-              isMobile ? "mt-4" : ""
-            } `}
+            className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}
           >
             Home
           </Link>
           <Link
             to="/aboutus"
-            className={`${isScrolled ? "nav-item" : "nav-item-hover"} ${
-              isMobile ? "mt-4" : ""
-            } `}
+            className={`${isScrolled ? "nav-item" : "nav-item-hover"} `}
           >
             About
           </Link>
           <Link
             to="/blog"
-            className={`${isScrolled ? "nav-item" : "nav-item-hover"} ${
-              isMobile ? "mt-4" : ""
-            } `}
+            className={`${isScrolled ? "nav-item" : "nav-item-hover"} 
+               
+          `}
           >
             Blog
           </Link>
 
           <Link
             to="/projects"
-            className={`${isScrolled ? "nav-item" : "nav-item-hover"} ${
-              isMobile ? "mt-4" : ""
-            } `}
+            className={`${isScrolled ? "nav-item" : "nav-item-hover"} `}
+             
           >
             Projects
           </Link>
           <Link
             to="/contactUs"
-            className={`${isScrolled ? "nav-item" : "nav-item-hover"} ${
-              isMobile ? "mt-4" : ""
-            } `}
+            className={`${isScrolled ? "nav-item" : "nav-item-hover"} `}
           >
             Contact us
           </Link>
           <li className="relative group">
             <Link
-              to="/"
+              to="#"
               className={`${isScrolled ? "nav-item" : "nav-item-hover"} ${
-                isMobile ? "mt-4" : ""
+                isMobile ? " hidden" : ""
               } `}
+              onClick={()=>setMore(!More)}
             >
-              More{" "}
+              More
               <IoChevronDownOutline
                 size={17}
-                className="inline-block rotate-nav-icon"
+                className={`md:inline-block none ${More?"rotate-nav-icon":""}`}
               />
             </Link>
+
             {/* Dropdown menu for "About Us" */}
+
             <ul
-              className={`absolute hidden max-w-max ${
-                !isScrolled ? "no-scrolled" : " bg-white text-black"
-              } whitespace-nowrap  p-2  group-hover:block  space-y-2 py-2 px-4 rounded`}
+              className={`${isMobile?"flex flex-col text-black items-center gap-2":`absolute ${More?"block":"hidden"} max-w-max whitespace-nowrap    space-y-2 py-2  px-4 -right-14  rounded`}   ${
+                !isScrolled && !isMobile ? "no-scrolled" : " bg-white text-black"
+              }`}
+              onClick={()=>setMore(false)}
             >
-              <li>
+              <li  >
                 <Link
                   to="/faq"
-                  className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}
+                  className={` w-[100%] ${isScrolled ? "nav-item" : "nav-item-hover"}`}
+                  
                 >
                   FAQ
                 </Link>

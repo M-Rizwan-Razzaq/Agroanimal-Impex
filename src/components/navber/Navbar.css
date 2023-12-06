@@ -1,12 +1,14 @@
 .nav-item {
   position: relative;
-  overflow: hidden;
+  
+  
 }
 
-.group:hover .rotate-nav-icon {
+.rotate-nav-icon {
   transform: rotate(180deg);
   transition: all 0.2s ease-in-out;
 }
+
 
 .nav-item::after {
   content: "";
@@ -81,15 +83,20 @@
 .no-scrolled {
   background: rgba(0, 0, 0, 0.3);
 }
+.no-scrolled-mobile {
+  background: rgba(0, 0, 0, 0.3);
+}
 .nav-bg {
-  background-color: rgb(245, 243, 243);
-  color: var(--logo-color);
+  background-color:white;
+  /* color: var(--logo-color); */
+  color: black;
 }
 @media (max-width: 768px) {
   .responsive-header {
     height: 50px;
     padding: 0 1rem;
   }
+  
 }
 
 @media (min-width: 1500px) {

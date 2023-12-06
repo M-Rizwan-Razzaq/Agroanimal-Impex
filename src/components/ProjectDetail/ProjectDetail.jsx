@@ -107,8 +107,8 @@ const ProjectDetail = () => {
           <ChangSolut />
         </div>
         <h2 className="mt-7 text-2xl mb-5 font-semibold">Project Gallery</h2>
-        <ProjectsGallery />
-        <NextPre id={id} projectsData={projectsData} />
+        <ProjectsGallery Gallery={currentProject?.project?.projectGallery}/>
+        <NextPre id={id} currentProject={currentProject} projectsData={projectsData} />
         <h2 className="mt-14 md:text-5xl text-3xl mb-7 font-semibold">
           Related Project
         </h2>
@@ -127,7 +127,7 @@ const ProjectDetail = () => {
               1424: { items: 4 },
             }}
           >
-            {projectsData.map((elm) => (
+            {[...projectsData.slice(0,6)].map((elm) => (
               <ProjectDetailCard
                 elm={elm}
                 hovered={hovered}
