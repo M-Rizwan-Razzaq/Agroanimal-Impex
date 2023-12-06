@@ -5,13 +5,13 @@ div {
   font-family: "Poppins", sans-serif;
 }
 
-.swiper {
+.partnership-mySwiper {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 80px;
 }
 
-.swiper-slide {
+.partner-swiper-slide {
   background-position: center;
   background-size: cover;
   width: 400px;
@@ -19,21 +19,21 @@ div {
   margin-bottom: 120px;
 }
 
-.swiper-slide img {
+.partner-swiper-slide img {
   display: block;
   width: 360px;
   height: 230px;
   border-top-left-radius: 8px;
 }
 
-.swiper-slide img:hover {
+.partner-swiper-slide img:hover {
   border-top-left-radius: 0px;
   scale: 1.08;
   transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 786px) {
-  .swiper {
+  .partnership-mySwiper {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 80px;
@@ -41,14 +41,14 @@ div {
     margin-top: -30px;
   }
 
-  .swiper-slide {
+  .partner-swiper-slide {
     background-position: center;
     background-size: cover;
     width: 50%; /* Make slides full width */
     height: 280px; /* Adjust height for small screens */
   }
 
-  .swiper-slide img {
+  .partner-swiper-slide img {
     display: block;
     width: 90%;
     height: 90%;
@@ -56,7 +56,7 @@ div {
   }
 }
 @media (max-width: 540px) {
-  .swiper {
+  .partnership-mySwiper {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 80px;
@@ -64,14 +64,14 @@ div {
     margin-top: -30px;
   }
 
-  .swiper-slide {
+  .partner-swiper-slide {
     background-position: center;
     background-size: cover;
     width: 60%; /* Make slides full width */
     height: 180px; /* Adjust height for small screens */
   }
 
-  .swiper-slide img {
+  .partner-swiper-slide img {
     display: block;
     width: 90%;
     height: 90%;

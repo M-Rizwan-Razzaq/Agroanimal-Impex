@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./partnership.css";
 import CompoHeader from "../common/CompoHeader";
 import { slideData } from "./PartnershipData";
@@ -10,6 +10,30 @@ import "./partnership.css";
 import { Pagination, Autoplay } from "swiper/modules";
 
 function Partnership() {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const newScreenWidth = window.innerWidth;
+      setScreenWidth(newScreenWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const getSlidesPerView = () => {
+    if (screenWidth <= 360) {
+      return 1; // For mobile screens
+    } else if (screenWidth <= 540) {
+      return 2; // For tablet screens
+    } else {
+      return 3; // For laptop screens
+    }
+  };
   return (
     <div>
       <section>
@@ -116,21 +140,21 @@ function Partnership() {
 
         <div className="opacity-100">
           <Swiper
-            slidesPerView={3}
+            slidesPerView={getSlidesPerView()}
             spaceBetween={30}
             pagination={{
               clickable: true,
             }}
             modules={[Autoplay, Pagination]}
-            className="mySwiper"
+            className="partnership-mySwiper"
             autoplay={{
               delay: 3000,
               disableOnInteraction: true,
             }}
           >
             {slideData.map((slide, index) => (
-              <SwiperSlide key={index}>
-                <div className="bg-green-900 rounded-lg text-black transform transition-all ease-in-out duration-300 hover:text-white">
+              <SwiperSlide key={index} className="partner-swiper-slide">
+                <div className=" bg-green-900 rounded-lg text-black transform transition-all ease-in-out duration-300 hover:text-white">
                   <a href="/" className="flex flex-col text-3xl mt-4">
                     <img
                       className=""
