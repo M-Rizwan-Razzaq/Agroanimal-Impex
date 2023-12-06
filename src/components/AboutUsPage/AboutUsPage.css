@@ -67,6 +67,7 @@
   border: 2px solid transparent; /* Set a transparent border by default */
   border-radius: 8px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .aboutus-grid:hover {
@@ -74,10 +75,25 @@
 }
 
 .aboutus-grid .aboutus-small h1 {
+  transition: all 0.3s ease-in-out;
   color: rgb(143, 140, 140);
 }
+
 .aboutus-grid:hover .aboutus-small h1 {
   color: rgb(132, 187, 50);
+}
+
+.aboutus-grid .symbol1 {
+  color: rgb(233, 59, 59);
+  transition: all 0.3s ease-in-out;
+}
+
+.aboutus-grid:hover .symbol1 {
+  color: rgb(132, 187, 50);
+}
+
+.aboutus-grid .aboutus-small {
+  transition: all 0.3s ease-in-out;
 }
 
 .aboutus-grid:hover .aboutus-small {
