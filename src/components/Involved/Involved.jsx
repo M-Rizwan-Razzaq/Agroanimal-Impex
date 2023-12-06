@@ -17,7 +17,7 @@ const Involved = () => {
           <h1 className="text-4xl font-bold">Get Involved</h1>
           <p className="text-lg mt-4">Agricultural producers like you are the backbone of what we do. You’re not only who we serve, but who we learn from. We rely on your expertise to help us develop programs and offer services that best suit local needs. Your relationships with other producers in your community help us expand our reach to ensure all farmers, ranchers and forest landowners have access to available USDA programs.</p>
           <button className="bg-green-500 text-white font-bold py-2 px-4 rounded mt-8">
-            Learn More
+             Join Now
           </button>
         </div>
       </section>
