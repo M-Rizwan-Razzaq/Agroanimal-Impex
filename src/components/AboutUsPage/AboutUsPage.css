@@ -54,3 +54,36 @@
     height: 160px;
   }
 }
+
+.aboutus-grid {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 5%;
+  align-items: center;
+  letter-spacing: 1.3px;
+  border: 2px solid transparent; /* Set a transparent border by default */
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.aboutus-grid:hover {
+  border-color: rgb(132, 187, 50); /* Make the border color opaque on hover */
+}
+
+.aboutus-grid .aboutus-small h1 {
+  color: rgb(143, 140, 140);
+}
+.aboutus-grid:hover .aboutus-small h1 {
+  color: rgb(132, 187, 50);
+}
+
+.aboutus-grid:hover .aboutus-small {
+  color: rgb(132, 187, 50);
+}
+
+.aboutus-heading:hover {
+  color: rgb(132, 187, 50);
+}
