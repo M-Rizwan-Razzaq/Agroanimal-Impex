@@ -43,7 +43,7 @@ const AboutUsPage = () => {
         <About />
       </section>
 
-      <section className="mt-20">
+      <section className="mt-20 main-aboutus">
         <h2 className="text-center leading-8 text-gray-900">
           Trusted by the world’s most innovative teams
         </h2>

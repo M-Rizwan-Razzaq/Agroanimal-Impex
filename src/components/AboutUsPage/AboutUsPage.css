@@ -10,7 +10,7 @@
   /* height: 200px; */
 }
 
-h2 {
+.main-aboutus h2 {
   font-size: 36px;
   font-family: sans-serif;
 }
@@ -45,12 +45,12 @@ h2 {
     transition: opacity 0.3s;
   }
 
-  h2 {
+  .main-aboutus h2 {
     font-size: 20px;
     margin-bottom: 20px;
   }
 
-  .swiper {
+  .About-mySwiper {
     height: 160px;
   }
 }
