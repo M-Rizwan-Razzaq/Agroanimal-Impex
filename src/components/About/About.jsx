@@ -102,19 +102,19 @@ const About = () => {
         </a>
       </div>
 
-      <div className="image-container mt-8 md:mt-0 lg:ml-20 lg:mt-20">
+      <div className="image-container mt-8 md:mt-0 lg:ml-20 lg:mt-20 grid grid-cols-1 md:grid-cols-2 gap-4">
         <img
-          className="hover:scale-105 transition duration-500 cursor-pointer w-full"
+          className="hover:scale-110 transition duration-500 cursor-pointer w-full md:w-auto md:max-w-1/2"
           src="https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/h1-banner03.svg"
           alt=""
         />
         <img
-          className="hover:scale-105 transition duration-500 cursor-pointer w-full mt-4 md:mt-0 "
+          className="hover:scale-110 transition duration-500 cursor-pointer w-full mt-4 md:mt-0 md:w-auto md:max-w-1/2"
           src={mainImage1}
           alt=""
         />
         <img
-          className="hover:scale-105 transition duration-500 cursor-pointer mt-4 md:mt-0"
+          className="hover:scale-110 transition duration-500 cursor-pointer w-full mt-4 md:mt-0 md:w-auto md:max-w-1/2"
           src={mainImage2}
           alt=""
         />
