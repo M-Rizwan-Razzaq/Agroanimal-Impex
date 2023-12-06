@@ -24,7 +24,7 @@ const Service = () => {
   }, []);
 
   const getSlidesPerView = () => {
-    if (screenWidth <= 360) {
+    if (screenWidth <= 400) {
       return 1; // For mobile screens
     } else if (screenWidth <= 540) {
       return 2; // For tablet screens
@@ -65,7 +65,7 @@ const Service = () => {
           {serviceData.map((slide, index) => (
             <SwiperSlide key={index}>
               <div className="bg-green-900 rounded-lg text-black transform transition-all ease-in-out duration-300 hover:text-white">
-                <a href="/" className="flex flex-col text-3xl mt-4">
+                <a href="#" className="flex flex-col text-3xl mt-4">
                   <img className="" src={slide.imageUrl} alt={slide.altText} />
                   <span className="block text-base md:text-lg mt-4 md:mt-8 mb-4 md:mb-6 ml-4 md:ml-4 hover:text-white">
                     {slide.linkText}
