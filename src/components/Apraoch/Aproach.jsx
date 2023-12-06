@@ -143,7 +143,7 @@ const Aproach = () => {
         </div>
 
         <div
-          className="w-full mb-20 ml-5 mr-5 flex justify-center items-center h-[100vh]"
+          className="w-full ml-5 mr-5 flex justify-center items-center h-[100vh]"
           // style={{ border: "1px solid red" }}
         >
           <DottedCircle>
