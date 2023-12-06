@@ -1,19 +1,19 @@
-import React from 'react'
+import React from "react";
 
-const ProjectsGallery = () => {
+const ProjectsGallery = ({Gallery}) => {
   return (
-    <div className="grid grid-cols-4 gap-8  project-gallery-box">
-    {[...new Array(8)].map((elm) => (
-      <div className="md:h-[57vh] h-[48vh] max-w-[300px] m-auto">
-        <img
-          src="https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/gallery-footer-04.jpg"
-          alt=""
-          className="rounded-lg w-full h-full"
-        />
-      </div>
-    ))}
-  </div>
-  )
-}
+    <div className="projects-gallery-box">
+      {Gallery?.map((elm) => (
+        <div className="md:h-[51vh] h-[48vh]  max-w-[300px] m-auto">
+          <img
+            src={elm}
+            alt=""
+            className="rounded-lg w-full  object-cover h-full"
+          />
+        </div>
+      ))}
+    </div>
+  );
+};
 
-export default ProjectsGallery
+export default ProjectsGallery;
