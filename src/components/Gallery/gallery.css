@@ -100,4 +100,11 @@
   .gallery-container .popup-media img {
     aspect-ratio: 4/3;
   }
+
+  .gallery-leftBtn {
+    color: rgb(70, 69, 69);
+  }
+  .gallery-rightBtn {
+    color: rgb(70, 69, 69);
+  }
 }
