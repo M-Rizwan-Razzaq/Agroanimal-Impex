@@ -21,7 +21,7 @@ body {
   background-size: cover;
   width: 400px;
   height: 230px;
-  margin-bottom: 120px;
+  margin-bottom: 180px;
 }
 
 .swiper-slide img {
@@ -51,7 +51,9 @@ body {
     background-position: center;
     background-size: cover;
     width: 50%; /* Make slides full width */
-    height: 280px; /* Adjust height for small screens */
+    height: 280px;
+    /* Adjust height for small screens */
+    margin-bottom: 0px;
   }
 
   .swiper-slide img {
@@ -74,7 +76,9 @@ body {
     background-position: center;
     background-size: cover;
     width: 60%; /* Make slides full width */
-    height: 180px; /* Adjust height for small screens */
+    height: 180px;
+    /* Adjust height for small screens */
+    margin-bottom: 50px;
   }
 
   .swiper-slide img {
@@ -82,5 +86,10 @@ body {
     width: 90%;
     height: 90%;
     border-top-left-radius: 0; /* Remove border radius on small screens */
+  }
+}
+@media (max-width: 400px) {
+  .swiper-slide {
+    margin-bottom: 160px;
   }
 }

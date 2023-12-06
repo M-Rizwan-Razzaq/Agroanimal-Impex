@@ -73,6 +73,8 @@ const AboutUsPage = () => {
           </div>
         </div>
       </section>
+
+      <section></section>
     </div>
   );
 };
