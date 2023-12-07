@@ -39,7 +39,7 @@ const Involved = () => {
             </p>
           </div>
 
-          {/* Volunteer Opportunity 2 */}
+         
           <div className="rounded-lg shadow-md p-4">
             <img
               src="https://cdn.pixabay.com/photo/2016/01/02/00/40/green-1117267_1280.jpg"
@@ -52,7 +52,7 @@ const Involved = () => {
             </p>
           </div>
 
-          {/* Volunteer Opportunity 3 */}
+         
           <div className="rounded-lg shadow-md p-4">
             <img
               src="https://cdn.pixabay.com/photo/2014/11/26/15/33/man-546322_1280.jpg"
