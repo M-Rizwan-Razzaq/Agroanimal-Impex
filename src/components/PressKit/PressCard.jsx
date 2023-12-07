@@ -13,7 +13,7 @@ const PressCard = ({press,index}) => {
   return (
     <div key={index} className="bg-white shadow overflow-hidden rounded-lg" onClick={()=>navigate(`/press/${index+1}`)}>
         <img
-          className="w-full h-48   object-center"
+          className="w-full h-48  object-cover  object-center"
           src={`https://picsum.photos/200/300?image=${index + 1000}`}
           alt={`Press Kit ${index + 1}`}
         />
