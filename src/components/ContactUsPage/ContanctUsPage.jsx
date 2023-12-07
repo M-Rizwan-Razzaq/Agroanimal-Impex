@@ -24,7 +24,7 @@ const ContactUsPage = () => {
     <div>
       <CompoHeader name="contact" image={contactUsImage} />
 
-      <div className="main-box grid md:grid-cols-3 mt-[6%] mb-[6%] gap-4">
+      <div className="main-box grid md:grid-cols-3 mt-[6%] mb-[6%] gap-4 md:px-6">
         <div
           className="idenity grid grid-cols-2 "
           style={{
@@ -78,7 +78,7 @@ const ContactUsPage = () => {
         </div>
       </div>
 
-      <section className="grid grid-cols-1 mb-10 mt-20 mr-5 md:grid-cols-2 lg:grid-cols-2 gap-8">
+      <section className="grid grid-cols-1 mb-10 mt-20 mr-5 md:grid-cols-2 lg:grid-cols-2 gap-8 md:px-6  ">
         <form onSubmit={handleSubmit} className="ml-6 mb-4">
           <div className="mb-10 md:ml-1 lg:ml-2 ">
             <span className="flex justify-start ml-0 items-center gap-1">
@@ -209,7 +209,7 @@ const ContactUsPage = () => {
         </div>
       </section>
 
-      <div className="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
+      <div className="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32 md:px-6  ">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
             <div className="max-w-xl lg:max-w-lg">

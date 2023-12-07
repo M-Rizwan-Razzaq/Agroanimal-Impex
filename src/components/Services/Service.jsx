@@ -67,7 +67,7 @@ const Service = () => {
               <div className="bg-green-900 rounded-lg text-black transform transition-all ease-in-out duration-300 hover:text-white">
                 <a href="#" className="flex flex-col text-3xl mt-4">
                   <img className="" src={slide.imageUrl} alt={slide.altText} />
-                  <span className="block text-base md:text-lg mt-4 md:mt-8 mb-4 md:mb-6 ml-4 md:ml-4 hover:text-white">
+                  <span className="block text-base  md:text-lg mt-4 md:mt-8 mb-4 md:mb-6 ml-4 md:ml-4 text-white">
                     {slide.linkText}
                   </span>
                 </a>

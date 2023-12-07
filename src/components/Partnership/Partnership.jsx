@@ -142,7 +142,7 @@ function Partnership() {
       </section>
 
       <section className="mt-20 ml-6 mr-6 md:mx-10 py-4 md:mr-10 shadow-2xl rounded-lg">
-        <h1 className="text-3xl md:text-5xl text-center md:ml-8 mt-8 text-green-900 opacity-100">
+        <h1 className="text-3xl md:text-5xl text-center md:ml-8 mt-8 text-[#f8931f] opacity-100">
           Examples of collaborations and joint initiatives
         </h1>
 
@@ -162,14 +162,14 @@ function Partnership() {
           >
             {slideData.map((slide, index) => (
               <SwiperSlide key={index} className="partner-swiper-slide">
-                <div className=" bg-green-900 rounded-lg text-black transform transition-all ease-in-out duration-300 hover:text-white">
+                <div className=" bg-green-900 rounded-lg  transform transition-all ease-in-out duration-300 text-white">
                   <a href="/" className="flex flex-col text-3xl mt-4">
                     <img
                       className=""
                       src={slide.imageUrl}
                       alt={slide.altText}
                     />
-                    <span className="block text-base md:text-lg mt-4 md:mt-8 mb-4 md:mb-6 ml-4 md:ml-4 hover:text-white">
+                    <span className="block text-base md:text-lg mt-4 md:mt-8 mb-4 md:mb-6 ml-4 md:ml-4 text-white">
                       {slide.description}
                     </span>
                   </a>
@@ -204,7 +204,7 @@ function Partnership() {
           Change drivers within Partnerships for Sustainable Agriculture
         </h1>
         <div className="text-lg ml-6 pb-8 ">
-          <div className="flex flex-row items-center gap-2 mb-2 transform transition-all ease-in-out duration-300 cursor-pointer hover:text-yellow-300">
+          <div className="flex flex-row items-center gap-2 mb-2 transform transition-all ease-in-out duration-300 cursor-pointer text-cyan-100">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -222,7 +222,7 @@ function Partnership() {
 
             <p>SmallHolder Empowerment</p>
           </div>
-          <div className="flex flex-row items-center gap-2 mb-2 transform transition-all ease-in-out duration-300 cursor-pointer hover:text-yellow-300">
+          <div className="flex flex-row items-center gap-2 mb-2 transform transition-all ease-in-out duration-300 cursor-pointer text-cyan-100">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

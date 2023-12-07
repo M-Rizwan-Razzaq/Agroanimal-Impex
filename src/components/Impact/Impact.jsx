@@ -100,8 +100,8 @@ const Impact = () => {
         </div>
       </section>
 
-      <section className="bg-gray-100 py-16" id="success-stories">
-        <div className="container mx-auto">
+      <section className="bg-gray-100 py-16" id="success-stories ">
+        <div className="container mx-auto md:px-8 px-3">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-800 mb-2">
               Success Stories
@@ -112,18 +112,18 @@ const Impact = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2  xl:grid-cols-3  2xl:grid-cols-4 gap-8">
             {successStoriesData.map((story, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 mb-8"
+                className="bg-white m-auto max-w-[400px] flex flex-col justify-between h-full rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 mb-8"
               >
                 <img
                   src={story.imageSrc}
                   alt=""
                   className="w-full h-60 object-cover"
                 />
-                <div className="p-6">
+                <div className="p-6 flex h-full flex-col justify-around">
                   <h3 className="text-xl font-semibold mb-2">{story.title}</h3>
                   <p className="text-gray-700 mb-4">{story.description}</p>
                   <div className="flex items-center">
