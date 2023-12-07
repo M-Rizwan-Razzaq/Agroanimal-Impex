@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import galleryHead from "../../images/gallaryHead.jpg";
 import secImg from "../../images/TriasseaIcon.png";
 import CompoHeader from "../common/CompoHeader";
@@ -23,6 +24,12 @@ const Gallery = () => {
       setCurrentIndex(newIndex);
     }
   };
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <div>

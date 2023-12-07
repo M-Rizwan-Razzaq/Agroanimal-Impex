@@ -17,7 +17,6 @@ const ContactUsPage = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-   
     window.scrollTo(0, 0);
   }, [pathname]);
 
@@ -79,8 +78,6 @@ const ContactUsPage = () => {
         </div>
       </div>
 
-
-      
       <section className="grid grid-cols-1 mb-10 mt-20 mr-5 md:grid-cols-2 lg:grid-cols-2 gap-8">
         <form onSubmit={handleSubmit} className="ml-6 mb-4">
           <div className="mb-10 md:ml-1 lg:ml-2 ">
@@ -289,9 +286,8 @@ const ContactUsPage = () => {
           />
         </div>
       </div>
-
     </div>
-  )
-}
+  );
+};
 
 export default ContactUsPage;

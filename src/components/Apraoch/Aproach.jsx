@@ -36,12 +36,6 @@ const textOnImageStyle = {
 };
 
 const Aproach = () => {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   const playVideo = () => {
@@ -73,6 +67,13 @@ const Aproach = () => {
       autoplay: 1,
     },
   };
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div>
       <section>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import aboutUsHeader from "../../images/AboutUs.jpg";
+import { useLocation } from "react-router-dom";
 import CompoHeader from "../common/CompoHeader";
 import About from "../About/About";
 import secImg from "../../images/TriasseaIcon.png";
@@ -17,6 +18,12 @@ import "./AboutUsPage.css";
 
 const AboutUsPage = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -144,6 +151,8 @@ const AboutUsPage = () => {
           </div>
         </div>
       </section>
+
+      <section className="mt-10"></section>
 
       <section className="mb-10">
         <About />

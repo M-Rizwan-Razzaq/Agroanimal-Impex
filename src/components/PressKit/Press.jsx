@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "./press.css";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { BiNews } from "react-icons/bi";
@@ -10,6 +11,12 @@ import PressCard from "./PressCard";
 import pressKitData from "./pressData";
 
 const Press = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div>
       <CompoHeader name="press-Kit" image={compoheaderimg} />
