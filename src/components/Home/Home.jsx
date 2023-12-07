@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { HashLoader } from "react-spinners";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import About from "../About/About";
 import Service from "../Services/Service";
 import NHerosection from "../NHeroSection/NHerosection";
@@ -11,6 +11,12 @@ import "./home.css";
 const Home = () => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   useEffect(() => {
     const fetchData = async () => {

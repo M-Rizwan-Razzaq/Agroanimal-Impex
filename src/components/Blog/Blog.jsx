@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./blog.css";
-import { AiOutlineUser, AiOutlineComment } from "react-icons/ai";
+// import { AiOutlineUser, AiOutlineComment } from "react-icons/ai";
 import CompoHeader from "../common/CompoHeader";
 import compoheaderimg from "../../images/contactus1.jpg";
 
 import blogData from "./blogdata";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 import BlogCard from "./BlogCard";
 import ButtonSection from "./buttonSection";
@@ -21,6 +21,12 @@ const Blog = () => {
     setBlogData(blogData[1]);
     setpage(2);
   };
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <div>

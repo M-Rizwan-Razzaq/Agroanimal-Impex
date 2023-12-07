@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "./partnership.css";
 import CompoHeader from "../common/CompoHeader";
 import { slideData } from "./PartnershipData";
@@ -34,6 +35,13 @@ function Partnership() {
       return 3; // For laptop screens
     }
   };
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div>
       <section>

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { data, successStoriesData } from "./impactdata";
 import CompoHeader from "../common/CompoHeader";
 import impact from "../../images/impacts.jpg";
@@ -15,6 +16,12 @@ const countersData = [
 
 const Impact = () => {
   const [counterOn, seCounterOn] = useState(false);
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <div>
