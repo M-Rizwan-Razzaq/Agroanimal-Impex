@@ -102,7 +102,27 @@ const Navbar = () => {
           >
             Blog
           </Link>
-          <li className="relative group">
+         
+
+          <Link
+            to="/projects"
+            className={`${isScrolled ? "nav-item" : "nav-item-hover"} `}
+          >
+            Projects
+          </Link>
+          <Link
+            to="/aboutus"
+            className={`${isScrolled ? "nav-item" : "nav-item-hover"} `}
+          >
+            About
+          </Link>
+          <Link
+                  to="/contactUs"
+                  className={`${isScrolled ? "nav-item" : "nav-item-hover"} `}
+                >
+                  Contact us
+                </Link>
+                <li className="relative group">
             <Link
               to="#"
               className={`${isScrolled ? "nav-item" : "nav-item-hover"} ${
@@ -185,34 +205,16 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/contactUs"
-                  className={`${isScrolled ? "nav-item" : "nav-item-hover"} `}
-                >
-                  Contact us
-                </Link>
-              </li>
-            </ul>
-          </li>
-
-          <Link
-            to="/projects"
-            className={`${isScrolled ? "nav-item" : "nav-item-hover"} `}
-          >
-            Projects
-          </Link>
-          <Link
-            to="/aboutus"
-            className={`${isScrolled ? "nav-item" : "nav-item-hover"} `}
-          >
-            About
-          </Link>
-          <Link
+              <Link
             to="/faq"
             className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}
           >
             FAQ
           </Link>
+               
+              </li>
+            </ul>
+          </li>
         </ul>
       </header>
     </div>
