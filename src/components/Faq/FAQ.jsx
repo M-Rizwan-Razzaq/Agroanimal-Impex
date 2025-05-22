@@ -58,8 +58,8 @@ const FAQ = () => {
               Frequently asked questions
             </h1>
             <p className="my-4 text-lg text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipisic ing elit, sed do
-              eiusmod tempor incididu ut labore et dolore magna aliqu.
+            Discover answers to common questions about our agricultural and
+            livestock products, services, and payment options.
             </p>
           </div>
           <div className="flex flex-col items-start gap-4 ml-6 text-lg">

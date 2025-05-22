@@ -39,7 +39,7 @@ const ContactUsPage = () => {
           </div>
           <div className="contact grid grid-cols-1 justify-center items-center">
             <p>Our Location</p>
-            <h1>2nd Block Melbourne</h1>
+            <h1>Tehsil & District Khanewal, Pakistan</h1>
           </div>
         </div>
         <div
@@ -56,7 +56,7 @@ const ContactUsPage = () => {
           </div>
           <div className="contact grid grid-cols-1 justify-center items-center">
             <p>Hotline</p>
-            <h1>+000 (123) 456 88</h1>
+            <h1>+92306 7422685</h1>
           </div>
         </div>
         <div
@@ -73,7 +73,7 @@ const ContactUsPage = () => {
           </div>
           <div className="contact grid grid-cols-1 justify-center items-center">
             <p>Email Address</p>
-            <h1>support@gmail.com</h1>
+            <h1>agroanimalimpex.com</h1>
           </div>
         </div>
       </div>
@@ -217,8 +217,7 @@ const ContactUsPage = () => {
                 Subscribe to our newsletter.
               </h2>
               <p className="mt-4 text-lg leading-8 text-gray-300">
-                Nostrud amet eu ullamco nisi aute in ad minim nostrud
-                adipisicing velit quis. Duis tempor incididunt dolore.
+              True effort comes from within; dedication knows no shortcuts. Success follows patience and persistence.
               </p>
               <div className="mt-6 flex max-w-md gap-x-4">
                 <label htmlFor="email-address" className="sr-only">
@@ -253,8 +252,7 @@ const ContactUsPage = () => {
                   Weekly articles
                 </dt>
                 <dd className="mt-2 leading-7 text-gray-400">
-                  Non laboris consequat cupidatat laborum magna. Eiusmod non
-                  irure cupidatat duis commodo amet.
+                Non-labor efforts bring great rewards. True dedication comes from passion, not just obligation.
                 </dd>
               </div>
               <div className="flex flex-col items-start">
@@ -266,8 +264,7 @@ const ContactUsPage = () => {
                 </div>
                 <dt className="mt-4 font-semibold text-white">No spam</dt>
                 <dd className="mt-2 leading-7 text-gray-400">
-                  Officia excepteur ullamco ut sint duis proident non
-                  adipisicing. Voluptate incididunt anim.
+                Official excipient does not use synthetic duis proident non-advertising. Pleasure incident animation.
                 </dd>
               </div>
             </dl>

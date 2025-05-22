@@ -1,156 +1,165 @@
+import wheatStraw from "../../assest/wheatstraw.jpg";
+import silage from "../../assest/silage.jpg";
+import bones from "../../assest/bones.jpg";
+import meat from "../../assest/meat.jpg";
+import salts from "../../assest/salts.jpg";
+import garlic from "../../assest/garlic.jpg";
+import ginger from "../../assest/ginger.jpg";
+import surgical from "../../assest/Sergical.jpg";
+
 const dataArray = [
   [
     {
       id: 1,
-      name: "Desk and Office",
+      name: "WheatStraw",
       description:
         "It is a long established fact that reader will the readable content",
       imageSrc:
-        "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-15.jpg",
+        wheatStraw,
       imageAlt:
         "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
       href: "#",
     },
     {
       id: 2,
-      name: "Self-Improvement",
+      name: "Silage",
       description:
         "It is a long established fact that reader will the readable content",
       imageSrc:
-        "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-14.jpg",
+        silage,
       imageAlt:
         "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
       href: "#",
     },
     {
       id: 3,
-      name: "Travel",
+      name: "Bones",
       description:
         "It is a long established fact that reader will the readable content",
       imageSrc:
-        "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-13.jpg",
+        bones,
       imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
       href: "#",
     },
     {
       id: 4,
-      name: "Desk and Office",
+      name: "Meat",
       description:
         "It is a long established fact that reader will the readable content",
       imageSrc:
-        "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-12.jpg",
+        meat,
       imageAlt:
         "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
       href: "#",
     },
     {
       id: 5,
-      name: "Self-Improvement",
+      name: "Salts",
       description:
         "It is a long established fact that reader will the readable content",
       imageSrc:
-        "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-11.jpg",
+        salts,
       imageAlt:
         "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
       href: "#",
     },
     {
       id: 6,
-      name: "Travel",
+      name: "Garlic",
       description:
         "It is a long established fact that reader will the readable content",
       imageSrc:
-        "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-10.jpg",
+        garlic,
       imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
       href: "#",
     },
     {
       id: 7,
-      name: "Desk and Office",
+      name: "Ginger",
       description:
         "It is a long established fact that reader will the readable content",
       imageSrc:
-        "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-09.jpg",
+       ginger,
       imageAlt:
         "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
       href: "#",
     },
     {
       id: 8,
-      name: "Self-Improvement",
+      name: "Surgical",
       description:
         "It is a long established fact that reader will the readable content",
       imageSrc:
-        "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-08.jpg",
+       surgical,
       imageAlt:
         "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
       href: "#",
     },
-    {
-      id: 9,
-      name: "Travel",
-      description:
-        "It is a long established fact that reader will the readable content",
-      imageSrc:
-        "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-07.jpg",
-      imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
-      href: "#",
-    },
-  ],
-  [
-    {
-      id: 10,
-      name: "Self-Improvement",
-      description:
-        "It is a long established fact that reader will the readable content",
-      imageSrc:
-        "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-06.jpg",
-      imageAlt:
-        "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
-      href: "#",
-    },
-    {
-      id: 11,
-      name: "Travel",
-      description:
-        "It is a long established fact that reader will the readable content",
-      imageSrc:
-        "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-05.jpg",
-      imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
-      href: "#",
-    },
-    {
-      id: 12,
-      name: "Desk and Office",
-      description:
-        "It is a long established fact that reader will the readable content",
-      imageSrc:
-        "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-04.jpg",
-      imageAlt:
-        "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
-      href: "#",
-    },
-    {
-      id: 13,
-      name: "Self-Improvement",
-      description:
-        "It is a long established fact that reader will the readable content",
-      imageSrc:
-        "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-03.jpg",
-      imageAlt:
-        "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
-      href: "#",
-    },
-    {
-      id: 14,
-      name: "Travel",
-      description:
-        "It is a long established fact that reader will the readable content",
-      imageSrc:
-        "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-02.jpg",
-      imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
-      href: "#",
-    },
+  //   {
+  //     id: 9,
+  //     name: "Travel",
+  //     description:
+  //       "It is a long established fact that reader will the readable content",
+  //     imageSrc:
+  //       "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-07.jpg",
+  //     imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
+  //     href: "#",
+  //   },
+  // ],
+  // [
+  //   {
+  //     id: 10,
+  //     name: "Self-Improvement",
+  //     description:
+  //       "It is a long established fact that reader will the readable content",
+  //     imageSrc:
+  //       "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-06.jpg",
+  //     imageAlt:
+  //       "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
+  //     href: "#",
+  //   },
+  //   {
+  //     id: 11,
+  //     name: "Travel",
+  //     description:
+  //       "It is a long established fact that reader will the readable content",
+  //     imageSrc:
+  //       "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-05.jpg",
+  //     imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
+  //     href: "#",
+  //   },
+  //   {
+  //     id: 12,
+  //     name: "Desk and Office",
+  //     description:
+  //       "It is a long established fact that reader will the readable content",
+  //     imageSrc:
+  //       "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-04.jpg",
+  //     imageAlt:
+  //       "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
+  //     href: "#",
+  //   },
+  //   {
+  //     id: 13,
+  //     name: "Self-Improvement",
+  //     description:
+  //       "It is a long established fact that reader will the readable content",
+  //     imageSrc:
+  //       "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-03.jpg",
+  //     imageAlt:
+  //       "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
+  //     href: "#",
+  //   },
+  //   {
+  //     id: 14,
+  //     name: "Travel",
+  //     description:
+  //       "It is a long established fact that reader will the readable content",
+  //     imageSrc:
+  //       "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-02.jpg",
+  //     imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
+  //     href: "#",
+  //   },
   ],
 ];
 

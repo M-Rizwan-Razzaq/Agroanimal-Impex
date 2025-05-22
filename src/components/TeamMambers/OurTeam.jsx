@@ -3,34 +3,23 @@ import { FaFacebook, FaEnvelope, FaLinkedin, FaTwitter } from "react-icons/fa";
 import "./TeamMembers.css";
 import shalinipatel from "../../assest/team1.jpg";
 import omkarjypuria from "../../assest/team2.jpg";
-import Gadadharmartha from "../../assest/team3.jpg";
-import Amitkumarpatel from "../../assest/team4.jpg";
+// import Gadadharmartha from "../../assest/team3.jpg";
+// import Amitkumarpatel from "../../assest/team4.jpg";
 
 const teamData = [
     {
-      name: "Omkar Jaypuria",
-      role: "agriculture Engineer",
+      name: "Muhammad Tayyab Iqbal",
+      role: "Agriculture Engineer",
       email: "agriculture@gmail.com",
       imageSrc: omkarjypuria,
     },
-    {
-      name: "Gadadhar Martha",
-      role: "agriculture Engineer",
-      email: "agriculture@gmail.com",
-      imageSrc: Gadadharmartha,
-    },
-    {
-      name: "Shalini Patel",
-      role: "Architect",
-      email: "agriculture@gmail.com",
-      imageSrc: shalinipatel,
-    },
-    {
-      name: "Amitkumar Patel",
-      role: "agriculture cum founder",
-      email: "agriculture@gmail.com",
-      imageSrc: Amitkumarpatel,
-    },
+    // {
+    //   name: "Muhammad Rizwan",
+    //   role: "Software Engineer Engineer",
+    //   email: "mrizwandev508@gmail.com",
+    //   imageSrc: Gadadharmartha,
+    // },
+
   
   ];
 
@@ -68,12 +57,12 @@ const Team = () => {
               <div className="overlay absolute bg-green-500 bg-opacity-0 group-hover:bg-opacity-70 grid place-items-center transition-colors ease-in delay-100">
                 <ul className="logos w-full opacity-0 transition-opacity group-hover:opacity-100 ease-in-out delay-150 flex flex-wrap gap-1 text-xl place-items-center transform rotate-45">
                   <li className="icon-box1 w-11 h-11 bg-gray-700 flex items-center justify-center cursor-pointer hover:bg-gray-600">
-                    <a href="#">
+                    <a href="https://www.facebook.com/share/1FmkbiKTvt/">
                       <FaFacebook className="text-white" />
                     </a>
                   </li>
                   <li className="icon-box2 w-11 h-11 bg-gray-700 flex items-center justify-center cursor-pointer hover:bg-gray-600">
-                    <a href="#">
+                    <a href="mailto:http://agroanimalimpex@gmail.com">
                       <FaEnvelope className="text-white" />
                     </a>
                   </li>

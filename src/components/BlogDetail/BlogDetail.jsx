@@ -6,7 +6,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa6";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
 
-import { projectsData } from "../ProjectDetail/PorojectsData";
+import { productsData } from "../ProjectDetail/PorojectsData";
 import { RiReplyLine } from "react-icons/ri";
 import { LuPhoneCall } from "react-icons/lu";
 import secImg from "../../images/TriasseaIcon.png";
@@ -184,7 +184,7 @@ const BlogDetail = () => {
               </div>
             )}
 
-            {Number(id) !== projectsData.length && (
+            {Number(id) !== productsData.length && (
               <div
                 className="flex ml-auto gap-3 cursor-pointer"
                 onClick={() => navigate(`/blogDetail/${Number(id) + 1}`)}

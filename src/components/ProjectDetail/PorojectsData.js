@@ -2,10 +2,19 @@ import project1 from "../../assest/project1.jpg";
 import project2 from "../../assest/project2.jpg";
 import project3 from "../../assest/project3.jpg";
 import project4 from "../../assest/project4.jpg";
+import wheatStraw from "../../assest/wheatstraw.jpg";
+import silage from "../../assest/silage.jpg";
+import bones from "../../assest/bones.jpg";
+import meat from "../../assest/meat.jpg";
+import salts from "../../assest/salts.jpg";
+import garlic from "../../assest/garlic.jpg";
+import ginger from "../../assest/ginger.jpg";
+import surgical from "../../assest/Sergical.jpg";
 
-export const projectDetailData = [
+
+export const productDetailData = [
     {
-      title: "Date:",
+      title: "Wheat Straw",
       ans: "September 22, 2023",
     },
     {
@@ -21,15 +30,15 @@ export const projectDetailData = [
       ans: "Melbourne, Australia",
     },
   ];
-  export const projectsData = [
+  export const productsData = [
     
       {
         id: 1,
-        title: "Desk and Office",
+        title: "Wheat Straw",
         description:
           "It is a long established fact that reader will the readable content",
         image:
-          "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-15.jpg",
+          wheatStraw,
         imageAlt:
           "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
         href: "#",
@@ -39,11 +48,11 @@ export const projectDetailData = [
       },
       {
         id: 2,
-        title: "Self-Improvement",
+        title: "Silage",
         description:
           "It is a long established fact that reader will the readable content",
         image:
-          "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-14.jpg",
+          silage,
         imageAlt:
           "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
         href: "#",
@@ -53,11 +62,11 @@ export const projectDetailData = [
       },
       {
         id: 3,
-        title: "Travel",
+        title: "Bones",
         description:
           "It is a long established fact that reader will the readable content",
         image:
-          "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-13.jpg",
+          bones,
         imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
         href: "#",
         projectGallery:[
@@ -66,11 +75,11 @@ export const projectDetailData = [
       },
       {
         id: 4,
-        title: "Desk and Office",
+        title: "Meat",
         description:
           "It is a long established fact that reader will the readable content",
         image:
-          "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-12.jpg",
+          meat,
         imageAlt:
           "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
         href: "#",
@@ -80,11 +89,11 @@ export const projectDetailData = [
       },
       {
         id: 5,
-        title: "Self-Improvement",
+        title: "Salts",
         description:
           "It is a long established fact that reader will the readable content",
         image:
-          "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-11.jpg",
+          salts,
         imageAlt:
           "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
         href: "#",
@@ -94,11 +103,11 @@ export const projectDetailData = [
       },
       {
         id: 6,
-        title: "Travel",
+        title: "Garlic",
         description:
           "It is a long established fact that reader will the readable content",
         image:
-          "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-10.jpg",
+        garlic,
         imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
         href: "#",
         projectGallery:[
@@ -107,11 +116,11 @@ export const projectDetailData = [
       },
       {
         id: 7,
-        title: "Desk and Office",
+        title: "Ginger",
         description:
           "It is a long established fact that reader will the readable content",
         image:
-          "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-09.jpg",
+         ginger,
         imageAlt:
           "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
         href: "#",
@@ -121,11 +130,11 @@ export const projectDetailData = [
       },
       {
         id: 8,
-        title: "Self-Improvement",
+        title: "Surgical",
         description:
           "It is a long established fact that reader will the readable content",
         image:
-          "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-08.jpg",
+          surgical,
         imageAlt:
           "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
         href: "#",
@@ -133,88 +142,7 @@ export const projectDetailData = [
           "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-13.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-12.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-11.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-10.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-09.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-08.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-07.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-06.jpg"
         ],
       },
-      {
-        id: 9,
-        title: "Travel",
-        description:
-          "It is a long established fact that reader will the readable content",
-        image:
-          "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-07.jpg",
-        imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
-        href: "#",
-        projectGallery:[
-          "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-13.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-12.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-11.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-10.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-09.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-08.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-07.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-06.jpg"
-        ],
-      },
-    
-        {
-          id: 10,
-          title: "Self-Improvement",
-          description:
-            "It is a long established fact that reader will the readable content",
-          image:
-            "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-06.jpg",
-          imageAlt:
-            "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
-          href: "#",
-          projectGallery:[
-            "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-13.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-12.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-11.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-10.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-09.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-08.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-07.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-06.jpg"
-          ],
-        },
-        {
-          id: 11,
-          title: "Travel",
-          description:
-            "It is a long established fact that reader will the readable content",
-          image:
-            "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-05.jpg",
-          imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
-          href: "#",
-          projectGallery:[
-            "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-13.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-12.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-11.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-10.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-09.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-08.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-07.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-06.jpg"
-          ],
-        },
-        {
-          id: 12,
-          title: "Desk and Office",
-          description:
-            "It is a long established fact that reader will the readable content",
-          image:
-            "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-04.jpg",
-          imageAlt:
-            "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
-          href: "#",
-          projectGallery:[
-            "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-13.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-12.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-11.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-10.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-09.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-08.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-07.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-06.jpg"
-          ],
-        },
-        {
-          id: 13,
-          title: "Self-Improvement",
-          description:
-            "It is a long established fact that reader will the readable content",
-          image:
-            "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-03.jpg",
-          imageAlt:
-            "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
-          href: "#",
-          projectGallery:[
-            "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-13.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-12.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-11.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-10.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-09.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-08.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-07.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-06.jpg"
-          ],
-        },
-        {
-          id: 14,
-          title: "Travel",
-          description:
-            "It is a long established fact that reader will the readable content",
-          image:
-            "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-02.jpg",
-          imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
-          href: "#",
-          projectGallery:[
-            "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-13.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-12.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-11.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-10.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-09.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-08.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-07.jpg","https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-06.jpg"
-          ],
-        },
+     
     
     
      

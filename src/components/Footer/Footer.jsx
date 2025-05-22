@@ -1,5 +1,4 @@
 import React from "react";
-import "./Footer.css";
 import {
   AiOutlineWhatsApp,
   AiOutlineInstagram,
@@ -7,120 +6,67 @@ import {
   AiOutlineYoutube,
   AiOutlineFacebook,
 } from "react-icons/ai";
-import { Link, useNavigate } from "react-router-dom";
+import { CiLinkedin } from "react-icons/ci";
+import { Link } from "react-router-dom";
+
 function Footer() {
-  const navigate = useNavigate();
   return (
-    <div>
-      <footer className="footer">
-        <div className="footer__addr">
-          <h1 className="footer__logo">Agricultural Dynamics</h1>
-
-          <h2>Contact</h2>
-
-          <address>
-            Farm Plot No: 363, Near Crops Overbridge Agriville
+    <footer className="bg-gray-900 text-white py-8 px-6">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div>
+          <h1 className="text-xl font-bold">AgroAnimal Impex</h1>
+          <h2 className="mt-4 font-semibold">Contact</h2>
+          <address className="mt-2 text-sm">
+            Lhr More- Kabirwala Road. near Ahmad Flour Mill Khanewal
             <br />
-            Agriculture City, Harvestland-752054
-            <br />
-            <div className="flex gap-2 p-4 cursor-pointer">
-              <a href="#" target="_blank">
-                <AiOutlineWhatsApp className="socialmedia-icons" />
-              </a>
-
-              <a href="#" target="_blank">
-                <AiOutlineInstagram className="socialmedia-icons" />
-              </a>
-              <a href="#" target="_blank">
-                <AiOutlineMail className="socialmedia-icons" />
-              </a>
-              <a href="#" target="_blank">
-                <AiOutlineFacebook className="socialmedia-icons" />
-              </a>
-              <a href="#" target="_blank">
-                <AiOutlineYoutube className="socialmedia-icons" />
-              </a>
-            </div>
+            Punjab
           </address>
-        </div>
-
-        <ul className="footer__nav">
-          <li className="nav__item">
-            <h2 className="nav__title">Agricultural Media</h2>
-
-            <ul className="nav__ul">
-              <li>
-                <a href="#">Crop Management</a>
-              </li>
-
-              <li>
-                <a href="#">Soil Health</a>
-              </li>
-
-              <li>
-                <a href="#">Agricultural Technology</a>
-              </li>
-              <li>
-                <a href="#">Environmental Impact</a>
-              </li>
-              <li>
-                <a href="#">Field Survey & Mapping</a>
-              </li>
-            </ul>
-          </li>
-
-          <li className="nav__item nav__item--extra">
-            <Link to={"/about"} className="nav__title">
-              About Agriculture
-            </Link>
-
-            <ul className="nav__ul nav__ul--extra">
-              <li>
-                <Link to={"/"}>Our Farming Mission & Vision</Link>
-              </li>
-
-              <li>
-                <Link to={"/"}>Expert Agriculturists</Link>
-              </li>
-
-              <li>
-                <Link to={"/contactUs"}>Contact Our Farm</Link>
-              </li>
-            </ul>
-          </li>
-
-          <li className="nav__item">
-            <h2 className="nav__title">Agricultural Legal</h2>
-
-            <ul className="nav__ul">
-              <li>
-                <a href="#">Farm Privacy Policy</a>
-              </li>
-
-              <li>
-                <a href="#">Terms of Agricultural Use</a>
-              </li>
-
-              <li>
-                <a href="#">Farm Sitemap</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-
-        <div className="legal">
-          <p>&copy; 2023 Agricultural Dynamics. All rights reserved.</p>
-
-          <div className="legal__links">
-            <span>
-              Cultivated with <span className="heart">♥</span> to build a strong
-              agricultural community.
-            </span>
+          <div className="flex gap-4 mt-4">
+            <a href="https://wa.me/923067422685" target="_blank" rel="noopener noreferrer">
+              <AiOutlineWhatsApp className="text-2xl hover:text-green-500 transition-all duration-300 cursor-pointer" />
+            </a>
+            <a href="https://www.instagram.com/tayyabmindset?igsh=MW5lYmdwOXNxaG05eg==" target="_blank" rel="noopener noreferrer">
+              <AiOutlineInstagram className="text-2xl hover:text-pink-500 transition-all duration-300 cursor-pointer" />
+            </a>
+            <a href="mailto:http://agroanimalimpex@gmail.com">
+              <AiOutlineMail className="text-2xl hover:text-red-500 transition-all duration-300 cursor-pointer" />
+            </a>
+            <a href="https://www.facebook.com/share/1FmkbiKTvt/" target="_blank" rel="noopener noreferrer">
+              <AiOutlineFacebook className="text-2xl hover:text-blue-500 transition-all duration-300 cursor-pointer" />
+            </a>
+            <a href="https://www.linkdin.com" target="_blank" rel="noopener noreferrer">
+              <CiLinkedin className="text-2xl hover:text-blue-500 transition-all duration-300 cursor-pointer" />
+            </a>
+           
           </div>
         </div>
-      </footer>
-    </div>
+
+        <div>
+          <h2 className="text-lg font-semibold">AgroAnimal Services</h2>
+          <ul className="mt-2 space-y-1 text-sm">
+            <li><a href="#">Animal Nutrition</a></li>
+            <li><a href="#">Livestock Management</a></li>
+            <li><a href="#">Veterinary Solutions</a></li>
+            <li><a href="#">Dairy Farming</a></li>
+            <li><a href="#">Animal Health Research</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-lg font-semibold">About AgroAnimal Implex</h2>
+          <ul className="mt-2 space-y-1 text-sm">
+            <li><Link to="/">Our Mission & Vision</Link></li>
+            <li><Link to="/">Expert Veterinarians</Link></li>
+            <li><Link to="/contactUs">Contact Us</Link></li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="text-center mt-6 text-sm">
+        <p>&copy; 2025 AgroAnimal Implex. All rights reserved.</p>
+        <p className="mt-2">Dedicated to animal welfare and sustainable livestock management.</p>
+      </div>
+    </footer>
   );
 }
-
 export default Footer;

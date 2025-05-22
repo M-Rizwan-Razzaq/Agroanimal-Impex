@@ -8,7 +8,7 @@ import "./projectdetail.css";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
-import { projectDetailData, projectsData } from "./PorojectsData";
+import { productDetailData, productsData } from "./PorojectsData";
 
 import ProjectDetailCard from "./ProjectDetailCard";
 import NextPre from "./NextPre";
@@ -29,14 +29,14 @@ const ProjectDetail = () => {
   });
 
   useEffect(() => {
-    const index = projectsData.findIndex((elm) => elm.id === Number(id));
+    const index = productsData.findIndex((elm) => elm.id === Number(id));
 
-    const preproject = projectsData[index - 1] || null;
+    const preproject = productsData[index - 1] || null;
 
-    const nextproject = projectsData[index + 1] || null;
+    const nextproject = productsData[index + 1] || null;
     setCurrentProject({
       ...currentProject,
-      project: projectsData[index],
+      project: productsData[index],
       preproject,
       nextproject,
       id: Number(id),
@@ -62,7 +62,7 @@ const ProjectDetail = () => {
             className="max-w-full w-full  h-full rounded-lg object-cover project-detail-top-img"
           />
           <div className="md:absolute -bottom-1 md:right-28 rounded-md  md:pl-[55px] pl-[30px]   md:pt-[35px] pt-[20px] md:pb-[45px] pb-[25px] text-white bg-green-800 w-full max-w-[340px] project-detail-top-detail">
-            {projectDetailData.map((elm) => (
+            {productDetailData.map((elm) => (
               <div className="md:mt-5 mt-3 text-[18px]">
                 <p className="mb-[6px] text-gray-300">{elm.title}</p>
                 <p>{elm.ans}</p>
@@ -73,7 +73,7 @@ const ProjectDetail = () => {
 
         <div className="w-full mt-14">
           <h2 className="md:text-5xl text-4xl font-semibold my-8">
-            About Project
+            About Products
           </h2>
           <p className="opacity-[.8] mb-8 text-[16px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
@@ -94,9 +94,9 @@ const ProjectDetail = () => {
             turpis semper.
           </p>
 
-          <h3 className="text-[1.3rem] font-semibold my-7 ">
+          {/* <h3 className="text-[1.3rem] font-semibold my-7 ">
             Challenges And Solutions
-          </h3>
+          </h3> */}
           <p className="opacity-[.8] mb-8 text-[16px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
             porttitor dolor eu fringilla tristique. Curabitur eget velit
@@ -117,10 +117,10 @@ const ProjectDetail = () => {
         <NextPre
           id={id}
           currentProject={currentProject}
-          projectsData={projectsData}
+          projectsData={productsData}
         />
         <h2 className="mt-14 md:text-5xl text-3xl mb-7 font-semibold">
-          Related Project
+          Related Products
         </h2>
 
         <div>
@@ -137,7 +137,7 @@ const ProjectDetail = () => {
               1424: { items: 4 },
             }}
           >
-            {[...projectsData.slice(0, 6)].map((elm) => (
+            {[...productsData.slice(0, 6)].map((elm) => (
               <ProjectDetailCard
                 elm={elm}
                 hovered={hovered}

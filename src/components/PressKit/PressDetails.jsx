@@ -19,7 +19,8 @@ const PressDetails = () => {
   }, [pathname]);
 
   if (!press) {
-    return <div>Press not found</div>;
+   
+    return <div>Certificate not found</div>;
   }
 
   return (
@@ -41,7 +42,7 @@ const PressDetails = () => {
           <p className="text-sm text-gray-600 mb-6">{press.description}</p>
           <div className="w-full mt-14">
             <h2 className="md:text-5xl text-4xl font-semibold my-8">
-              About press
+              About Certificate
             </h2>
             <p className="opacity-[.8] mb-8 text-[16px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam

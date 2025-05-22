@@ -39,14 +39,14 @@ const Projects = () => {
           <span className="flex justify-center items-center gap-1">
             <img className="w-6" src={secImg} alt="" />
             <h3 className="text-xl md:text-xl lg:text-xl antialiased font-sans">
-              Our Project
+              Our Products
             </h3>
           </span>
           <h1
             className="form-hedding flex justify-center items-center"
             style={{ fontSize: "50px" }}
           >
-            Completed Projects
+             Products details
           </h1>
         </div>
       </section>

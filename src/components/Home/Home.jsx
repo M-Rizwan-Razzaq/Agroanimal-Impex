@@ -4,7 +4,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import About from "../About/About";
 import Service from "../Services/Service";
 import NHerosection from "../NHeroSection/NHerosection";
-import Testimonial from "../Testimonial/Testimonial";
+// import Testimonial from "../Testimonial/Testimonial";
 import Team from "../TeamMambers/OurTeam";
 import "./home.css";
 
@@ -44,7 +44,7 @@ const Home = () => {
         <>
           <NHerosection />
           <About />
-          <Testimonial />
+          {/* <Testimonial /> */}
           <Service />
           <Team />
         </>

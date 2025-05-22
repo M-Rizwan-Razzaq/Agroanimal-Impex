@@ -13,27 +13,27 @@ const About = () => {
   const dataArray = [
     {
       image: aboutUs1,
-      tag: "Agriculture & Foods",
+      tag: "Livestock Nutrition",
       description:
-        "A picturesque farm with golden fields of wheat and a traditional barn.",
+        "Providing high-quality, nutrient-rich feed to ensure the health and productivity of animals.",
     },
     {
       image: aboutUs2,
-      tag: "Vegetables & Fruits",
+      tag: "Veterinary Solutions",
       description:
-        "Colorful assortment of fresh fruits and vegetables on a wooden table.",
+        "Comprehensive healthcare and medical support for livestock, ensuring their well-being.",
     },
     {
       image: aboutUs3,
-      tag: "Food Beverage",
+      tag: "Dairy & Poultry Farming",
       description:
-        "From crisp vegetables to juicy fruits, our Food Beverage offerings showcase the vibrant richness of nature’s bounty.",
+        "Sustainable dairy and poultry solutions to enhance production efficiency and quality.",
     },
     {
       image: aboutUs4,
-      tag: "Animal Nutrition",
+      tag: "Animal Welfare",
       description:
-        "Healthy animal feed in a bowl, providing essential nutrients for livestock.",
+        "Promoting ethical and sustainable livestock management practices for a better future.",
     },
   ];
 
@@ -47,15 +47,10 @@ const About = () => {
           </h3>
         </span>
         <h1 className="mb-4 ml-6 text-xl lg:text-5xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-4xl">
-          Organic & Healthy Food
+          Excellence in Livestock Solutions
         </h1>
         <p className="text-gray-500 ml-6 mb-4 text-sm md:text-base lg:text-lg">
-          At [out Company Name], we are passionate about promoting a healthy
-          lifestyle through the consumption of organic and healthy food.
-          Committed to the well-being of our customers, we source only the
-          finest organic ingredients to create a range of wholesome products.
-          Join us on a journey towards nourishing your body and supporting a
-          sustainable, organic future.
+          At AgroAnimal Impex, we are dedicated to advancing the livestock industry with innovative solutions. Our commitment to high-quality nutrition, veterinary care, and sustainable farming ensures optimal animal health and productivity. Join us in revolutionizing the future of animal agriculture with trusted expertise and premium products.
         </p>
         <div className="px-4">
           {dataArray.map((data, index) => (
