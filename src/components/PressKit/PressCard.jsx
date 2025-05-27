@@ -15,7 +15,7 @@ const PressCard = ({ press }) => {
       <div className="bg-white shadow rounded-lg overflow-hidden">
         <div
           className="w-full h-48 flex items-center justify-center cursor-pointer bg-gray-100"
-          onClick={openModal}
+          onClick={(isImage || isPDF) ? openModal : undefined}
         >
           {isImage ? (
             <img
@@ -41,15 +41,22 @@ const PressCard = ({ press }) => {
         </div>
       </div>
 
-      {isOpen && (
+      {(isOpen && (isImage || isPDF)) && (
         <div
           className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
           onClick={closeModal}
         >
           <div
-            className="bg-white max-w-4xl w-[90%] h-[90%] rounded-lg overflow-auto"
+            className="relative bg-white max-w-4xl w-[90%] h-[90%] rounded-lg overflow-auto"
             onClick={(e) => e.stopPropagation()}
           >
+            <button
+              onClick={closeModal}
+              className="absolute top-2 right-2 text-white hover:text-red-500 text-2xl font-bold z-50"
+            >
+              ×
+            </button>
+
             {isImage ? (
               <img
                 src={press.image}
