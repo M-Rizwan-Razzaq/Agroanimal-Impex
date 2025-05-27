@@ -1,40 +1,73 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
-const truncateDescription = (description, maxWords = 20) => {
-    const words = description.split(' ');
-    if (words.length > maxWords) {
-      return words.slice(0, maxWords).join(' ') + '...';
-    }
-    return description;
-  };
-const PressCard = ({press,index}) => {
+import React, { useState } from 'react';
+import { FaFilePdf, FaFileWord } from 'react-icons/fa';
 
-    const navigate =  useNavigate();
+const PressCard = ({ press }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const openModal = () => setIsOpen(true);
+  const closeModal = () => setIsOpen(false);
+
+  const isImage = press.image?.match(/\.(jpeg|jpg|png|gif)$/i);
+  const isPDF = press.image?.match(/\.pdf$/i);
+  const isWord = press.image?.match(/\.(doc|docx)$/i);
+
   return (
-   <div
-  key={index}
-  className="bg-white shadow overflow-hidden rounded-lg"
-  onClick={() => navigate(`/press/${index + 1}`)}
->
-  <img
-    className="w-full h-48 object-cover object-center"
-    src={press.image}
-    alt={`Press Kit ${index + 1}`}
-  />
-  <div className="px-6 py-4">
-    <h3 className="text-lg font-medium text-gray-900">{press.title}</h3>
-    <p className="text-sm text-gray-600 mb-2">Date: {press.date}</p>
-    <p className="text-sm text-gray-600 mb-2">Author: {press.author}</p>
-    <p className="text-sm text-gray-600 mb-4 line-clamp-3">
-      {truncateDescription(press.description)}
-    </p>
-    <a href="#" className="text-green-600 hover:text-green-800 font-medium">
-      Read More
-    </a>
-  </div>
-</div>
+    <>
+      <div className="bg-white shadow rounded-lg overflow-hidden">
+        <div
+          className="w-full h-48 flex items-center justify-center cursor-pointer bg-gray-100"
+          onClick={openModal}
+        >
+          {isImage ? (
+            <img
+              src={press.image}
+              alt={press.title}
+              className="object-cover h-full w-full"
+            />
+          ) : isPDF ? (
+            <FaFilePdf className="text-red-600 text-6xl" />
+          ) : isWord ? (
+            <FaFileWord className="text-blue-600 text-6xl" />
+          ) : (
+            <span className="text-gray-500">Unsupported File</span>
+          )}
+        </div>
 
-  )
-}
+        <div className="p-4">
+          <h3 className="text-lg font-semibold">{press.title}</h3>
+          <p className="text-sm text-gray-600">
+            {press.date} — {press.author}
+          </p>
+          <p className="mt-2 text-gray-700 text-sm">{press.description}</p>
+        </div>
+      </div>
+
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+          onClick={closeModal}
+        >
+          <div
+            className="bg-white max-w-4xl w-[90%] h-[90%] rounded-lg overflow-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {isImage ? (
+              <img
+                src={press.image}
+                alt={press.title}
+                className="max-w-full max-h-full object-contain mx-auto p-4"
+              />
+            ) : (
+              <iframe
+                src={press.image}
+                title={press.title}
+                className="w-full h-full"
+              />
+            )}
+          </div>
+        </div>
+      )}
+    </>
+  );
+};
 
 export default PressCard;

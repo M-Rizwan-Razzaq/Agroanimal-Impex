@@ -1,7 +1,7 @@
-import project1 from "../../assest/project1.jpg";
-import project2 from "../../assest/project2.jpg";
-import project3 from "../../assest/project3.jpg";
-import project4 from "../../assest/project4.jpg";
+// import project1 from "../../assest/project1.jpg";
+// import project2 from "../../assest/project2.jpg";
+// import project3 from "../../assest/project3.jpg";
+// import project4 from "../../assest/project4.jpg";
 import wheatStraw from "../../assest/wheatstraw.jpg";
 import silage from "../../assest/silage.jpg";
 import bones from "../../assest/bones.jpg";
