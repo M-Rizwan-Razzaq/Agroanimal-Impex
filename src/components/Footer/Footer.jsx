@@ -55,7 +55,7 @@ function Footer() {
         <div>
           <h2 className="text-lg font-semibold">About AgroAnimal Implex</h2>
           <ul className="mt-2 space-y-1 text-sm">
-            <li><Link to="/">Our Mission & Vision</Link></li>
+            <li><Link to="/faq">Our Mission & Vision</Link></li>
             <li><Link to="/">Expert Veterinarians</Link></li>
             <li><Link to="/contactUs">Contact Us</Link></li>
           </ul>

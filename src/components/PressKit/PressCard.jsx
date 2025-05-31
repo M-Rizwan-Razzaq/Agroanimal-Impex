@@ -54,7 +54,7 @@ const PressCard = ({ press }) => {
               onClick={closeModal}
               className="absolute top-2 right-2 text-red-800 hover:text-red-500 text-2xl font-bold z-50"
             >
-              ×
+              X
             </button>
 
             {isImage ? (

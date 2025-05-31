@@ -59,7 +59,13 @@ const Navbar = () => {
         isMobile ? "w-[50px] h-[40px]" : "w-[70px] h-[55px]"
       }`}
     />
-    <h2 className="text-lg md:text-xl font-semibold">Agroanimal Impex</h2>
+  <h2
+  className={`text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold leading-tight max-w-[250px] sm:max-w-none break-words ${
+    isScrolled ? "text-black" : "text-white"
+  }`}
+>
+  AGROANIMAL IMPEX PRIVATE LIMITED
+</h2>
   </div>
 
   {/* Mobile Menu Icons */}
