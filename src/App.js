@@ -19,6 +19,16 @@ import BlogDetail from "./components/BlogDetail/BlogDetail";
 import Service from "./components/Services/Service";
 import Gallery from "./components/Gallery/Gallery";
 import AboutUsPage from "./components/AboutUsPage/AboutUsPage";
+import MeatManifesto from "./components/ProjectDetail/MeatManifesto";
+import GingerManifesto from "./components/ProjectDetail/GingerManifesto";
+import ImportAgriDairyTech from "./components/ProjectDetail/ImportAgriDairyTech";
+import WheatStrawInfo from "./components/ProjectDetail/WheatStrawInfo";
+import BonesExportComponent from "./components/ProjectDetail/BonesExportComponent";
+import CornSilageComponent from "./components/ProjectDetail/CornSilageComponent";
+import GarlicExportInfo from "./components/ProjectDetail/GarlicExportInfo";
+import SurgicalExportInfo from "./components/ProjectDetail/SurgicalExportInfo";
+import SaltExportInfo from "./components/ProjectDetail/SaltExportInfo";
+import ResearchAndDevelopment from "./components/ProjectDetail/ResearchAndDevelopment";
 function App() {
   return (
     <div className="App">
@@ -47,6 +57,17 @@ function App() {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/press/:id" element={<PressDetails />} />
           <Route path="/service" element={<Service />} />
+          <Route path="/projects/meat" element={<MeatManifesto />} />
+          <Route path="/projects/ginger" element={<GingerManifesto />} />
+          {/* <Route path="/projects/agridairy" element={<ImportAgriDairyTech />} /> */}
+          <Route path="/projects/wheatstraw" element={<WheatStrawInfo />} />
+          <Route path="/projects/bones" element={<BonesExportComponent />} />
+          <Route path="/projects/silage" element={<CornSilageComponent />} />
+          <Route path="/projects/garlic" element={<GarlicExportInfo />} />
+          <Route path="/projects/agridairy" element={<ImportAgriDairyTech />} />
+          <Route path="/projects/salts" element={<SaltExportInfo />} />
+          <Route path="/projects/surgical" element={<SurgicalExportInfo />} />
+          <Route path="/projects/researchanddevelopment" element={<ResearchAndDevelopment />} />
         </Routes>
         <Footer />
       </Router>

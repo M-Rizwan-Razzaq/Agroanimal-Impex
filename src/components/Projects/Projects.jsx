@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import dataArray from "./projectData";
 import faqimage from "../../images/Faq12.jpg";
 import secImg from "../../images/TriasseaIcon.png";
@@ -32,7 +32,7 @@ const Projects = () => {
   return (
     <div>
       <section>
-        <CompoHeader name="Projects" image={faqimage} />
+        <CompoHeader name="Products" image={faqimage} />
       </section>
       <section className="mt-20">
         <div className="mb-6 md:ml-1 lg:ml-2 ">
@@ -57,8 +57,8 @@ const Projects = () => {
             <div className="mx-auto lg:max-w-none max-w-2xl">
               <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-10 lg:space-y-0">
                 {data.map((callout) => (
-                  <div key={callout.id} className="group relative">
-                    <div className="project-content  relative w-full h-[440px] mb-8 overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1">
+                  <Link to={`/projects${callout.href}`} key={callout.id} className="group relative">
+                    <div  className="project-content  relative w-full h-[440px] mb-8 overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1">
                       <img
                         src={callout.imageSrc}
                         alt={callout.imageAlt}
@@ -67,7 +67,7 @@ const Projects = () => {
                       {/* Display on hover */}
                       <div
                         className="absolute top-0 bottom-0 left-0 right-0 project-detail bg-green-600 opacity-0 transition-all duration-500 ease-linear transform hover:scale-110 hover:opacity-60 flex flex-col justify-center items-center text-center px-10"
-                        onClick={() => navigate(`/projectdetail/${callout.id}`)}
+                        // onClick={() => navigate(`/projectdetail/${callout.id}`)}
                       >
                         <h3 className="text-3xl font-semibold text-white mb-2">
                           {callout.name}
@@ -78,14 +78,14 @@ const Projects = () => {
                         <IoArrowForward className="absolute bottom-5 right-5 text-white font-bold text-4xl" />
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
           </div>
         </div>
       </section>
-
+{/* 
       <section className="flex content-center justify-center gap-1">
         <button
           onClick={handclick1}
@@ -167,7 +167,7 @@ const Projects = () => {
             />
           </svg>
         </button>
-      </section>
+      </section> */}
     </div>
   );
 };

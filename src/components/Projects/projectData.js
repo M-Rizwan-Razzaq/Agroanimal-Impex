@@ -6,6 +6,8 @@ import salts from "../../assest/salts.jpg";
 import garlic from "../../assest/garlic.jpg";
 import ginger from "../../assest/ginger.jpg";
 import surgical from "../../assest/Sergical.jpg";
+import agridairy from "../../assest/agridairy.jpg"; 
+import researchAndDevelopment from "../../assest/research.jpg"; 
 
 const dataArray = [
   [
@@ -18,7 +20,7 @@ const dataArray = [
         wheatStraw,
       imageAlt:
         "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
-      href: "#",
+      href: "/wheatstraw",
     },
     {
       id: 2,
@@ -29,7 +31,7 @@ const dataArray = [
         silage,
       imageAlt:
         "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
-      href: "#",
+      href: "/silage",
     },
     {
       id: 3,
@@ -39,7 +41,7 @@ const dataArray = [
       imageSrc:
         bones,
       imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
-      href: "#",
+      href: "/bones",
     },
     {
       id: 4,
@@ -50,7 +52,7 @@ const dataArray = [
         meat,
       imageAlt:
         "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
-      href: "#",
+      href: "/meat",
     },
     {
       id: 5,
@@ -61,7 +63,7 @@ const dataArray = [
         salts,
       imageAlt:
         "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
-      href: "#",
+      href: "/salts",
     },
     {
       id: 6,
@@ -71,7 +73,7 @@ const dataArray = [
       imageSrc:
         garlic,
       imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
-      href: "#",
+      href: "/garlic",
     },
     {
       id: 7,
@@ -82,7 +84,7 @@ const dataArray = [
        ginger,
       imageAlt:
         "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
-      href: "#",
+      href: "/ginger",
     },
     {
       id: 8,
@@ -93,31 +95,28 @@ const dataArray = [
        surgical,
       imageAlt:
         "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
-      href: "#",
+      href: "/surgical",
     },
-  //   {
-  //     id: 9,
-  //     name: "Travel",
-  //     description:
-  //       "It is a long established fact that reader will the readable content",
-  //     imageSrc:
-  //       "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-07.jpg",
-  //     imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
-  //     href: "#",
-  //   },
-  // ],
-  // [
-  //   {
-  //     id: 10,
-  //     name: "Self-Improvement",
-  //     description:
-  //       "It is a long established fact that reader will the readable content",
-  //     imageSrc:
-  //       "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-06.jpg",
-  //     imageAlt:
-  //       "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
-  //     href: "#",
-  //   },
+    {
+      id: 9,
+      name: "Research & Development",
+  description:
+    "Committed to global innovation in medical and veterinary diagnostic technologies.",
+  imageSrc: researchAndDevelopment, // You can use one of the R&D images
+  imageAlt: "Lab-on-Chip Device used in research",
+  href: "/researchanddevelopment", // or change to "/research" if URL needs to match better
+
+    },
+  
+    {
+     id: 10,
+  name: "Agri & Dairy Tech",
+  description:
+    "High-quality agricultural and dairy technology products to boost farming and milk production efficiency.",
+  imageSrc: agridairy,
+  imageAlt: "Automatic Milking Machine used in dairy farms",
+  href: "/agridairy",
+    },
   //   {
   //     id: 11,
   //     name: "Travel",
