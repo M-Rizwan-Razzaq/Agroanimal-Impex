@@ -41,7 +41,7 @@ function App() {
           <Route path="/aboutus" element={<AboutUsPage />} />
           <Route path="/ouraproach" element={<Aproach />} />
 
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/products" element={<Projects />} />
           <Route path="/projectdetail/:id" element={<ProjectDetail />} />
 
           <Route path="/successstories" element={<Impact />} />
@@ -53,21 +53,20 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
 
           <Route path="/partnership" element={<Partnership />} />
-          <Route path="/presskit" element={<Press />} />
+          <Route path="/certificate" element={<Press />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/press/:id" element={<PressDetails />} />
           <Route path="/service" element={<Service />} />
-          <Route path="/projects/meat" element={<MeatManifesto />} />
-          <Route path="/projects/ginger" element={<GingerManifesto />} />
-          {/* <Route path="/projects/agridairy" element={<ImportAgriDairyTech />} /> */}
-          <Route path="/projects/wheatstraw" element={<WheatStrawInfo />} />
-          <Route path="/projects/bones" element={<BonesExportComponent />} />
-          <Route path="/projects/silage" element={<CornSilageComponent />} />
-          <Route path="/projects/garlic" element={<GarlicExportInfo />} />
-          <Route path="/projects/agridairy" element={<ImportAgriDairyTech />} />
-          <Route path="/projects/salts" element={<SaltExportInfo />} />
-          <Route path="/projects/surgical" element={<SurgicalExportInfo />} />
-          <Route path="/projects/researchanddevelopment" element={<ResearchAndDevelopment />} />
+          <Route path="/products/meat" element={<MeatManifesto />} />
+          <Route path="/products/ginger" element={<GingerManifesto />} />
+          <Route path="/products/wheatstraw" element={<WheatStrawInfo />} />
+          <Route path="/products/bones" element={<BonesExportComponent />} />
+          <Route path="/products/silage" element={<CornSilageComponent />} />
+          <Route path="/products/garlic" element={<GarlicExportInfo />} />
+          <Route path="/products/agridairy" element={<ImportAgriDairyTech />} />
+          <Route path="/products/salts" element={<SaltExportInfo />} />
+          <Route path="/products/surgical" element={<SurgicalExportInfo />} />
+          <Route path="/products/researchanddevelopment" element={<ResearchAndDevelopment />} />
         </Routes>
         <Footer />
       </Router>

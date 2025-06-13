@@ -1,6 +1,7 @@
-import hero1 from "../../images/hero1jpg.jpg";
-import hero2 from "../../images/hero2.jpg";
-import hero3 from "../../images/hero3.jpg";
+import hero1 from "../../images/agrohome1.jpeg";
+import hero2 from "../../images/agrohome5.jpg";
+import hero3 from "../../images/agrohome3.jpeg";
+import hero4 from "../../images/agrohome4.jpg";
 
 export const sliderData = [
   {
@@ -14,7 +15,7 @@ export const sliderData = [
     desc: "From farm to table, we provide fresh, organic produce that meets the highest standards of quality and sustainability, ensuring a healthier future.",
   },
   {
-    image: "https://i.ibb.co/8r7WYJh/slide3.jpg",
+    image: hero4,
     heading: "Innovative Agro Solutions",
     desc: "Empowering farmers with modern agricultural techniques and high-quality products to enhance yield and efficiency in the farming industry.",
   },

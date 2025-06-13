@@ -4,9 +4,12 @@ import { useNavigate, useLocation } from "react-router-dom";
 import About from "../About/About";
 import Service from "../Services/Service";
 import NHerosection from "../NHeroSection/NHerosection";
+import ScrollToTop from "react-scroll-to-top";
 // import Testimonial from "../Testimonial/Testimonial";
 import Team from "../TeamMambers/OurTeam";
 import "./home.css";
+import WhatsAppButton from "./WhatsAppButton";
+import Scroll from "./Scroll";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -43,8 +46,14 @@ const Home = () => {
       ) : (
         <>
           <NHerosection />
+          <WhatsAppButton />
+          <Scroll/>
           <About />
-          {/* <Testimonial /> */}
+          <ScrollToTop
+        smooth
+        color="white"
+        style={{ backgroundColor: "#ef4444", borderRadius: "80px", padding:"6px", }}
+/>
           <Service />
           <Team />
         </>

@@ -106,7 +106,7 @@ const Navbar = () => {
     {/* <Link to="/blog" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>
       Blog
     </Link> */}
-    <Link to="/projects" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>
+    <Link to="/products" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>
       Products
     </Link>
     <Link to="/aboutus" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>
@@ -159,7 +159,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/presskit" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>
+          <Link to="/certificate" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>
             Certificate
           </Link>
         </li>

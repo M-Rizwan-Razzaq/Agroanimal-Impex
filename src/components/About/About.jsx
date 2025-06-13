@@ -50,7 +50,7 @@ const About = () => {
           Excellence in Livestock Solutions
         </h1>
         <p className="text-gray-500 ml-6 mb-4 text-sm md:text-base lg:text-lg">
-          At AgroAnimal Impex, we are dedicated to advancing the livestock industry with innovative solutions. Our commitment to high-quality nutrition, veterinary care, and sustainable farming ensures optimal animal health and productivity. Join us in revolutionizing the future of animal agriculture with trusted expertise and premium products.
+          At AGROANIMAL IMPEX (SMC-PRIVATE) LIMITED, we are dedicated to advancing the livestock industry with innovative solutions. Our commitment to high-quality nutrition, veterinary care, and sustainable farming ensures optimal animal health and productivity. Join us in revolutionizing the future of animal agriculture with trusted expertise and premium products.
         </p>
         <div className="px-4">
           {dataArray.map((data, index) => (
@@ -75,10 +75,10 @@ const About = () => {
           ))}
         </div>
         <a
-          href="/"
+          href="/products"
           className="inline-flex items-center justify-center px-5 py-3 text-base md:text-lg lg:text-xl font-medium text-center text-white bg-red-500 rounded-lg hover:bg-orange-300 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 ml-4 mt-8"
         >
-          Read More
+          Explore Our Products
           <svg
             className="w-5 h-5 ms-2 rtl:rotate-180"
             aria-hidden="true"

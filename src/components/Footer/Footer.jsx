@@ -14,7 +14,7 @@ function Footer() {
     <footer className="bg-gray-900 text-white py-8 px-6">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
         <div>
-          <h1 className="text-xl font-bold">AgroAnimal Impex</h1>
+          <h1 className="text-xl font-bold">AGROANIMAL IMPEX (SMC-PRIVATE) LIMITED</h1>
           <h2 className="mt-4 font-semibold">Contact</h2>
           <address className="mt-2 text-sm">
             Lhr More- Kabirwala Road. near Ahmad Flour Mill Khanewal
@@ -44,16 +44,16 @@ function Footer() {
         <div>
           <h2 className="text-lg font-semibold">AgroAnimal Services</h2>
           <ul className="mt-2 space-y-1 text-sm">
-            <li><a href="#">Animal Nutrition</a></li>
-            <li><a href="#">Livestock Management</a></li>
-            <li><a href="#">Veterinary Solutions</a></li>
-            <li><a href="#">Dairy Farming</a></li>
-            <li><a href="#">Animal Health Research</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/aboutus">About Us</Link></li>
+            <li><Link to="/products">Products</Link></li>
+            <li><Link to="/certificate">Certificates</Link></li>
+            <li><Link to="/gallery">Gallery</Link></li>
           </ul>
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold">About AgroAnimal Implex</h2>
+          <h2 className="text-lg font-semibold">About AgroAnimal Impex</h2>
           <ul className="mt-2 space-y-1 text-sm">
             <li><Link to="/faq">Our Mission & Vision</Link></li>
             <li><Link to="/">Expert Veterinarians</Link></li>
