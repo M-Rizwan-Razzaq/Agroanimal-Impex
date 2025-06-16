@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import surgical from "../../assest/Sergical.jpg";
+import surgical from "../../assest/surgicalcollege.jpeg";
 
 const SurgicalExportInfo = () => {
    useEffect(() => {
@@ -14,7 +14,7 @@ const SurgicalExportInfo = () => {
           <img
             src={surgical}
             alt="surgical"
-            className="w-28 h-28 rounded-full shadow-lg object-cover"
+            className="w-40 h-40  shadow-lg object-cover"
           />
         </div>
         <h1 className="text-3xl md:text-4xl font-bold">Surgical Instruments Export</h1>

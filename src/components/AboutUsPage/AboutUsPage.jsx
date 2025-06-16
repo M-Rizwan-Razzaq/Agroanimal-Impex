@@ -154,7 +154,7 @@ const AboutUsPage = () => {
           Trusted by International Buyers & Partners
         </h2>
         <div className="py-5 sm:py-10">
-          <div className="bg-orange-400 mx-auto max-w-8xl">
+          <div className="bg-green-200 mx-auto max-w-8xl">
             <Swiper
               slidesPerView={getSlidesPerView()}
               spaceBetween={30}

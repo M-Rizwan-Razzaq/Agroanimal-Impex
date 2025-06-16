@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import garlic from "../../assest/garlic.jpg";
+import garlic from "../../assest/garliccollege.jpeg";
 
 
 const GarlicExportInfo = () => {
@@ -12,7 +12,7 @@ const GarlicExportInfo = () => {
       <div className="text-center space-y-2">
        
         <div className="flex justify-center">
-          <img src={garlic} alt="Rizwan" className="w-48  rounded-full shadow-lg object-cover" />
+          <img src={garlic} alt="Rizwan" className="w-48   shadow-lg object-cover" />
         </div>
         <h1 className="text-3xl md:text-4xl font-bold">Garlic Product Export</h1>
         <p className="text-base md:text-lg">

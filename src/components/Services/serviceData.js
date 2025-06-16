@@ -1,12 +1,12 @@
-import wheatStraw from "../../assest/wheatstraw.jpg";
-import silage from "../../assest/silage.jpg";
-import bones from "../../assest/bones.jpg";
-import meat from "../../assest/meat.jpg";
-import salts from "../../assest/salts.jpg";
-import garlic from "../../assest/garlic.jpg";
-import ginger from "../../assest/ginger.jpg";
-import surgical from "../../assest/Sergical.jpg";
-import agridairy from "../../assest/agridairy.jpg"; 
+import wheatStraw from "../../assest/wheatstrawcollege.jpg";
+import silage from "../../assest/silagecollege (2).jpeg";
+import bones from "../../assest/bonecollege.jpeg";
+import meat from "../../assest/meatcollege.jpeg";
+import salts from "../../assest/saltcollege.jpg";
+import garlic from "../../assest/garliccollege.jpeg";
+import ginger from "../../assest/gingercollege.jpeg";
+import surgical from "../../assest/surgicalcollege.jpeg";
+import agridairy from "../../assest/agricollege.jpeg"; 
 import researchAndDevelopment from "../../assest/research.jpg"; 
 
 export const serviceData = [

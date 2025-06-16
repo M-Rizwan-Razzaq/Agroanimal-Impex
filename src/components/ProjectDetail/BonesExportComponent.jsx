@@ -14,7 +14,7 @@ const BonesExportComponent = () => {
         {/* Image Placeholder */}
        <div className="w-full  mx-auto flex items-center justify-center bg-gray-200  rounded-md mb-8 p-4">
   <img
-    src="/products/cornbone.jpg"
+    src="/products/bonecollege.jpeg"
     alt="Cornbone Product"
     className="w-96 object-fill rounded-md shadow"
   />

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import salts from "../../assest/salts.jpg";
+import salts from "../../assest/saltcollege.jpg";
 
 const SaltExportInfo = () => {
    useEffect(() => {

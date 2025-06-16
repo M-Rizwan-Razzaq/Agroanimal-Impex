@@ -46,7 +46,7 @@ const Service = () => {
           {serviceData.map((slide) => (
             <SwiperSlide key={slide.id}>
               <div
-                onClick={() => navigate(`/projects${slide.link}`)}
+                onClick={() => navigate(`/products${slide.link}`)}
                 className="cursor-pointer bg-green-900 rounded-lg text-black transition-all hover:text-white"
               >
                 <div className="flex flex-col text-3xl mt-4">

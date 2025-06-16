@@ -71,10 +71,11 @@ const ContactUsPage = () => {
               style={{ fontSize: "50px" }}
             />
           </div>
-          <div className="contact grid grid-cols-1 justify-center items-center">
-            <p>Email Address</p>
-            <h1>agroanimalimpex.com</h1>
-          </div>
+          <div className="contact grid grid-cols-1 items-center justify-center text-center px-4 py-6 sm:px-6 lg:px-8">
+  <p className="text-gray-600 text-sm sm:text-base">Email Address</p>
+  <h1 className="text-base sm:text-xl font-semibold text-black break-words">agroanimalimpex@gmail.com</h1>
+</div>
+
         </div>
       </div>
 

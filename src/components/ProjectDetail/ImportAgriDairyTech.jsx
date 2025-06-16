@@ -1,4 +1,8 @@
 import React, { useEffect } from 'react';
+import agridairy from "../../assest/agricollege.jpeg"; 
+import surgical from "../../assest/surgicalcollege.jpeg";
+
+
 
 const ImportAgriDairyTech = () => {
    useEffect(() => {
@@ -107,8 +111,8 @@ const ImportAgriDairyTech = () => {
         <h3 className="text-lg font-semibold text-green-700 mb-4">Gallery / Visuals</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {/* Replace these src paths with your actual images */}
-          <img src="/products/ultrasound.jpg" alt="Ultrasound Scanner" className="w-full h-48 object-cover rounded-md shadow" />
-          <img src="/products/milkingmachine.jpg" alt="Milking Machine" className="w-full h-48 object-cover rounded-md shadow" />
+          <img src={agridairy} alt="Ultrasound Scanner" className="w-full h-48 object-fill rounded-md shadow" />
+          <img src={surgical} alt="Milking Machine" className="w-full h-48 object-fill rounded-md shadow" />
           <img src="/products/milkanalyzer.jpg" alt="Milk Analyzer" className="w-full h-48 object-cover rounded-md shadow" />
         </div>
       

@@ -63,7 +63,7 @@ function Footer() {
       </div>
 
       <div className="text-center mt-6 text-sm">
-        <p>&copy; 2025 AgroAnimal Implex. All rights reserved.</p>
+        <p>&copy; 2025 AgroAnimal Impex. All rights reserved.</p>
         <p className="mt-2">Dedicated to animal welfare and sustainable livestock management.</p>
       </div>
     </footer>

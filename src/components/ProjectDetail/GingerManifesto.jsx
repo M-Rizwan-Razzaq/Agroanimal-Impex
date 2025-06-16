@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const GingerManifesto = () => {
+  useEffect(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, []);
   const exportForms = [
     { form: 'Fresh Ginger', description: 'Raw, unprocessed ginger root, cleaned and packed for export.' },
     { form: 'Dried Ginger', description: 'Sun-dried or machine-dried ginger slices or whole roots.' },
@@ -36,7 +39,7 @@ const GingerManifesto = () => {
 
   return (
     <div className="max-w-7xl mx-auto mt-16 px-4 py-8 space-y-10">
-      <h1 className="text-3xl font-bold text-center text-orange-800">GINGER PRODUCT 5</h1>
+      <h1 className="text-3xl font-bold text-center text-orange-800">GINGER PRODUCT</h1>
 
       <p className="text-gray-700 text-center">
         <strong>AGROANIMAL IMPEX (SMC-PRIVATE) LIMITED</strong> is specialized in product stewardship and export of premium-quality ginger to international markets.

@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
+import agrologo from "../../assest/agrologo.png";
+
 // import logo from "../../assest/agri_logo.png";
 // import logo from "./images/logo.jpeg";
 import "./Navbar.css";
@@ -53,7 +55,7 @@ const Navbar = () => {
     <img
       style={{ cursor: "pointer" }}
       onClick={() => {}}
-      src="./agrologo.png"
+      src={agrologo}
       alt="Logo"
       className={`scale-95 ${
         isMobile ? "w-[50px] h-[40px]" : "w-[70px] h-[55px]"
@@ -148,11 +150,11 @@ const Navbar = () => {
             Gallery
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/partnership" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>
             Partners
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/involved" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>
             Involved
@@ -163,11 +165,11 @@ const Navbar = () => {
             Certificate
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/successstories" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>
             Impact
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/ourapproach" className={`${isScrolled ? "nav-item" : "nav-item-hover"}`}>
             Our Approach
