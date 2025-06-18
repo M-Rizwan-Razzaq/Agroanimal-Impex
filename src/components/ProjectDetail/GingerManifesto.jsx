@@ -1,5 +1,10 @@
 import React, { useEffect } from 'react';
 
+import ippc from "../../assest/main/ippc.jpg";
+import halal from "../../assest/main/halal.png";
+import pest from "../../assest/main/pest control.jpg";
+import coo from "../../assest/main/coo.png";
+
 const GingerManifesto = () => {
   useEffect(() => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -39,7 +44,7 @@ const GingerManifesto = () => {
 
   return (
     <div className="max-w-7xl mx-auto mt-16 px-4 py-8 space-y-10">
-      <h1 className="text-3xl font-bold text-center text-orange-800">GINGER PRODUCT</h1>
+      <h1 className="text-3xl font-bold text-center text-gray-800">GINGER PRODUCT</h1>
 
       <p className="text-gray-700 text-center">
         <strong>AGROANIMAL IMPEX (SMC-PRIVATE) LIMITED</strong> is specialized in product stewardship and export of premium-quality ginger to international markets.
@@ -53,7 +58,7 @@ const GingerManifesto = () => {
 
       {/* Product Images Section */}
       <div className="bg-white p-4 rounded-md shadow">
-        <h2 className="text-xl font-semibold text-orange-700 mb-4 text-center">Product Showcase</h2>
+        <h2 className="text-xl font-semibold text-gray-700 mb-4 text-center">Product Showcase</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {images.map((img, idx) => (
             <div key={idx} className="rounded overflow-hidden shadow hover:shadow-lg transition">
@@ -70,9 +75,9 @@ const GingerManifesto = () => {
 
       {/* Export Forms */}
       <div className="bg-white border p-4 rounded-md shadow">
-        <h2 className="text-xl font-semibold text-orange-700 mb-2">Ginger Export Information</h2>
+        <h2 className="text-xl font-semibold text-gray-700 mb-2">Ginger Export Information</h2>
         <table className="w-full border text-sm">
-          <thead className="bg-orange-100 text-gray-900">
+          <thead className="bg-gray-100 text-gray-900">
             <tr>
               <th className="border px-4 py-2 text-left">Form</th>
               <th className="border px-4 py-2 text-left">Description</th>
@@ -91,7 +96,7 @@ const GingerManifesto = () => {
 
       {/* Nutritional Value */}
       <div className="bg-gray-100 p-4 rounded-md shadow">
-        <h2 className="text-xl font-semibold text-orange-700">Ginger Nutritional Value (per 100g)</h2>
+        <h2 className="text-xl font-semibold text-gray-700">Ginger Nutritional Value (per 100g)</h2>
         <ul className="grid grid-cols-2 md:grid-cols-3 gap-2 list-disc pl-6 text-gray-800 mt-2">
           {nutrition.map((item, idx) => (
             <li key={idx}>
@@ -103,7 +108,7 @@ const GingerManifesto = () => {
 
       {/* Uses */}
       <div className="bg-white border p-4 rounded-md shadow">
-        <h2 className="text-xl font-semibold text-orange-700">Uses of Ginger</h2>
+        <h2 className="text-xl font-semibold text-gray-700">Uses of Ginger</h2>
         <ul className="list-disc pl-6 space-y-1 text-gray-800">
           {uses.map((item, idx) => (
             <li key={idx}><strong>{item.use}:</strong> {item.description}</li>
@@ -113,7 +118,7 @@ const GingerManifesto = () => {
 
       {/* Terms & Conditions */}
       <div className="bg-gray-50 p-4 rounded-md border shadow">
-        <h2 className="text-xl font-semibold text-orange-700 mb-2">Terms & Conditions</h2>
+        <h2 className="text-xl font-semibold text-gray-700 mb-2">Terms & Conditions</h2>
         <ul className="list-disc pl-5 text-gray-800 space-y-1">
           <li><strong>Origin of Product:</strong> Pakistan</li>
           <li><strong>Lab Quality Assessment:</strong> Toxin & Entophyte (Negotiable)</li>
@@ -125,7 +130,54 @@ const GingerManifesto = () => {
           <li><strong>Delivery Time:</strong> Negotiable, ensuring product stewardship</li>
         </ul>
       </div>
+        <div className="mt-16">
+        <h3 className="text-lg sm:text-xl font-semibold mb-4 text-green-700 text-center">
+          Export Certifications
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            {
+              title: "Phytosanitary Certificate",
+              description:
+                "Certifies that the product is free from pests, soil, or microbial contamination.",
+              img: ippc  ,
+            },
+            {
+              title: "Fumigation Certificate",
+              description:
+                "Validates fumigation treatment to meet quarantine requirements.",
+              img: pest ,
+            },
+            {
+              title: "Certificate of Origin",
+              description:
+                "Proof of cultivation and harvest in Pakistan.",
+              img: coo ,
+            },
+            {
+              title: "Halal Certificate",
+              description:
+                "If the ginger/garlic is processed, a Halal certification is often necessary.",
+              img: halal ,
+            },
+          ].map(({ title, description, img }, idx) => (
+            <div
+              key={idx}
+              className="bg-white p-4 shadow rounded-lg text-center"
+            >
+              <img
+                src={img}
+                alt={title}
+                className="w-20 h-20 mx-auto object-contain mb-3"
+              />
+              <h4 className="text-md font-semibold text-green-800">{title}</h4>
+              <p className="text-sm text-gray-600 mt-1">{description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
+    
   );
 };
 

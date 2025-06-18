@@ -1,4 +1,10 @@
 import React, { useEffect } from "react";
+import ippc from "../../assest/main/animalquarantine.png";
+import halal from "../../assest/main/halal.png";
+import pest from "../../assest/main/pest control.jpg";
+import nongmo from "../../assest/main/health.png";
+import coo from "../../assest/main/coo.png";
+
 
 const BonesExportComponent = () => {
    useEffect(() => {
@@ -136,12 +142,64 @@ const BonesExportComponent = () => {
           <li>Delivery Time: 2 – 3 Months (Negotiable)</li>
         </ul>
 
-        <div className="mt-6 flex gap-4 flex-wrap">
+<div className="mt-16">
+        <h3 className="text-lg sm:text-xl font-semibold mb-4 text-green-700 text-center">
+          Export Certifications
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            {
+              title: "Animal Quarantine Clearance",
+              description:
+                "Confirms bones are disease-free and safe for processing or industrial use.",
+              img: ippc  ,
+            },
+            {
+              title: "Fumigation Certificate",
+              description:
+                "Treatment confirmation to kill pathogens or pests.",
+              img: pest ,
+            },
+            {
+              title: "Health Certificate",
+              description:
+                "Issued after veterinary inspection to verify origin and safety.",
+              img: nongmo ,
+            },
+            {
+              title: "Halal Certificate",
+              description:
+                "Ensures bones were derived from Halal-slaughtered animals.",
+              img: halal ,
+            },
+            {
+              title: "Certificate of Origin",
+              description:
+                "Provides traceability and trade validation.",
+              img: coo ,
+            },
+          ].map(({ title, description, img }, idx) => (
+            <div
+              key={idx}
+              className="bg-white p-4 shadow rounded-lg text-center"
+            >
+              <img
+                src={img}
+                alt={title}
+                className="w-20 h-20 mx-auto object-contain mb-3"
+              />
+              <h4 className="text-md font-semibold text-green-800">{title}</h4>
+              <p className="text-sm text-gray-600 mt-1">{description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+        {/* <div className="mt-6 flex gap-4 flex-wrap">
           <div className="bg-gray-100 px-4 py-2 rounded">Punjab Halal Development Authority</div>
           <div className="bg-gray-100 px-4 py-2 rounded">Livestock & Dairy Development Dept</div>
           <div className="bg-gray-100 px-4 py-2 rounded">Pakistan Animal Quarantine Dept</div>
           <div className="bg-gray-100 px-4 py-2 rounded">Punjab Food Authority</div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

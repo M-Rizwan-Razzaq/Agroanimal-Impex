@@ -80,26 +80,27 @@ const SurgicalExportInfo = () => {
 
       {/* Certifications Section */}
       <div className="mt-8">
-        <h4 className="text-center font-semibold text-lg mb-4">Certifications</h4>
-        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-4 items-center justify-center">
-          {[
-            { src: "/products/ce.png", alt: "CE" },
-            { src: "/products/gmp.jpeg", alt: "GMP" },
-            { src: "/products/iso9001.jpeg", alt: "ISO9001" },
-            { src: "/products/iso13485.png", alt: "ISO13485" },
-            { src: "/products/iso10993.jpeg", alt: "ISO10993" },
-            { src: "/products/fda.png", alt: "FDA" },
-            { src: "/products/mdr.png", alt: "MDR" },
-          ].map((logo, i) => (
-            <img
-              key={i}
-              src={logo.src}
-              alt={logo.alt}
-              className="h-12 object-contain mx-auto"
-            />
-          ))}
-        </div>
-      </div>
+  <h4 className="text-center font-semibold text-lg mb-4">Certifications</h4>
+  <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-4 items-center justify-center">
+    {[
+      { src: "/products/ce.png", alt: "CE" },
+      { src: "/products/gmp.jpeg", alt: "GMP" },
+      { src: "/products/iso9001.jpeg", alt: "ISO9001" },
+      { src: "/products/iso13485.png", alt: "ISO13485" },
+      { src: "/products/iso10993.jpeg", alt: "ISO10993" },
+      { src: "/products/fda.png", alt: "FDA" },
+      { src: "/products/mdr.png", alt: "MDR" },
+    ].map((logo, i) => (
+      <img
+        key={i}
+        src={logo.src}
+        alt={logo.alt}
+        className="h-20 object-contain mx-auto" // ← height changed from h-12 to h-20
+      />
+    ))}
+  </div>
+</div>
+
     </div>
   );
 };

@@ -1,5 +1,9 @@
 import React, { useEffect } from "react";
 import salts from "../../assest/saltcollege.jpg";
+import ippc from "../../assest/main/coo.png";
+import halal from "../../assest/main/halal.png";
+import pest from "../../assest/main/labsalt.webp";
+import nongmo from "../../assest/main/packaging.webp";
 
 const SaltExportInfo = () => {
    useEffect(() => {
@@ -84,6 +88,52 @@ const SaltExportInfo = () => {
       </div>
 
       {/* Certifications Logo Row */}
+      <div className="mt-16">
+        <h3 className="text-lg sm:text-xl font-semibold mb-4 text-green-700 text-center">
+          Export Certifications
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            {
+              title: "Certificate of Origin",
+              description:
+                "Verifies that the salt was mined and processed in Pakistan.",
+              img: ippc  ,
+            },
+            {
+              title: "Lab Testing Report",
+              description:
+                "Shows mineral composition, purity, and safety for consumption or industrial use.",
+              img: pest ,
+            },
+            {
+              title: "Packaging & Labeling Compliance",
+              description:
+                "Compliance with target market’s regulations, including net weight, source, nutritional facts, etc.",
+              img: nongmo ,
+            },
+            {
+              title: "Halal Certificate",
+              description:
+                "Required if used for consumption to confirm it contains no haram additives.",
+              img: halal ,
+            },
+          ].map(({ title, description, img }, idx) => (
+            <div
+              key={idx}
+              className="bg-white p-4 shadow rounded-lg text-center"
+            >
+              <img
+                src={img}
+                alt={title}
+                className="w-20 h-20 mx-auto object-contain mb-3"
+              />
+              <h4 className="text-md font-semibold text-green-800">{title}</h4>
+              <p className="text-sm text-gray-600 mt-1">{description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
       <div className="mt-8">
         <h4 className="text-center font-semibold text-lg mb-4">Certifications</h4>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 items-center justify-center">

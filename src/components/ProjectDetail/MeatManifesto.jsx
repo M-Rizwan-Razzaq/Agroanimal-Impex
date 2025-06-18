@@ -1,4 +1,9 @@
 import React, { useEffect } from 'react';
+import ippc from "../../assest/main/meatlogo.jpg";
+import pest from "../../assest/main/health.png";
+import nongmo from "../../assest/main/veterinaray.jpg";
+import coo from "../../assest/main/coo.png";
+import halal from "../../assest/main/SANHALogowithR.webp"
 
 const MeatManifesto = () => {
    useEffect(() => {
@@ -106,10 +111,6 @@ const MeatManifesto = () => {
       </div>
 
       {/* Contact Note */}
-      <div className="bg-green-100 p-4 rounded-md text-center shadow">
-        <p className="text-lg font-semibold text-green-800">Want to inquire or place an order?</p>
-        <p className="text-gray-700">Contact us for samples, pricing, and further details. We look forward to doing business with you!</p>
-      </div>
       {/* Product Images Section */}
       <div className="bg-white p-4 rounded-md shadow">
         <h2 className="text-xl font-semibold text-green-700 mb-4 text-center">Product Showcase</h2>
@@ -126,7 +127,62 @@ const MeatManifesto = () => {
           ))}
         </div>
       </div>
-
+ <div className="mt-16">
+        <h3 className="text-lg sm:text-xl font-semibold mb-4 text-green-700 text-center">
+          Export Certifications
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            {
+              title: "Slaughterhouse Approval",
+              description:
+                "Required to ensure that the meat was processed in a government-approved facility.",
+              img: ippc  ,
+            },
+            {
+              title: "Health Certificate",
+              description:
+                "Verifies the meat is disease-free and fit for human consumption. Issued by the Animal Quarantine Department",
+              img: pest ,
+            },
+            {
+              title: "Certificate of Origin",
+              description:
+                "Proof that the meat originated in Pakistan.",
+              img: coo ,
+            },
+            {
+              title: "Veterinary Certificate",
+              description:
+                "Authenticates animal health records and inspection at slaughterhouse level.",
+              img: nongmo ,
+            },
+             {
+              title: "Halal Certification",
+              description:
+                "Issued by approved bodies like SANHA or PHDA. Confirms the animal was slaughtered as per Islamic law.",
+              img: halal ,
+            },
+          ].map(({ title, description, img }, idx) => (
+            <div
+              key={idx}
+              className="bg-white p-4 shadow rounded-lg text-center"
+            >
+              <img
+                src={img}
+                alt={title}
+                className="w-20 h-20 mx-auto object-contain mb-3"
+              />
+              <h4 className="text-md font-semibold text-green-800">{title}</h4>
+              <p className="text-sm text-gray-600 mt-1">{description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="bg-green-100 p-4 rounded-md text-center shadow">
+        <p className="text-lg font-semibold text-green-800">Want to inquire or place an order?</p>
+        <p className="text-gray-700">Contact us for samples, pricing, and further details. We look forward to doing business with you!</p>
+      </div>
       {/* ... remaining sections like Contact Note etc ... */}
     </div>
   );

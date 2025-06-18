@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import agridairy from "../../assest/agricollege.jpeg"; 
-import surgical from "../../assest/surgicalcollege.jpeg";
+// import agridairy from "../../assest/agricollege.jpeg"; 
+// import surgical from "../../assest/surgicalcollege.jpeg";
 
 
 
@@ -107,25 +107,68 @@ const ImportAgriDairyTech = () => {
       </div>
 
       {/* Images Section */}
-      <div className="text-center mt-10">
-        <h3 className="text-lg font-semibold text-green-700 mb-4">Gallery / Visuals</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {/* Replace these src paths with your actual images */}
-          <img src={agridairy} alt="Ultrasound Scanner" className="w-full h-48 object-fill rounded-md shadow" />
-          <img src={surgical} alt="Milking Machine" className="w-full h-48 object-fill rounded-md shadow" />
-          <img src="/products/milkanalyzer.jpg" alt="Milk Analyzer" className="w-full h-48 object-cover rounded-md shadow" />
-        </div>
-      
+     {/* Images Section - Matching Table Products */}
+<div className="text-center mt-10">
+  <h3 className="text-lg font-semibold text-green-700 mb-4">Product Visuals</h3>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    {[
+      {
+        src: "/products/ultrasound.jpg",
+        alt: "Ultrasound Scanner",
+        label: "Ultrasound Scanner",
+      },
+      {
+        src: "/products/milkingmachine.jpg",
+        alt: "Milking Machine",
+        label: "Milking Machine",
+      },
+      {
+        src: "/products/milkanalyzer.jpg",
+        alt: "Milk Analyzer",
+        label: "Milk Analyzer",
+      },
+      {
+        src: "/products/seman.jpg",
+        alt: "Semen (Indigenous & Exotic)",
+        label: "Semen (Indigenous & Exotic)",
+      },
+      {
+        src: "/products/forage.jpg",
+        alt: "Forage & Fodder Seeds",
+        label: "Fodder Seeds",
+      },
+      {
+        src: "/products/byproducts.jpg",
+        alt: "Agriculture By-products",
+        label: "Cakes & Meals",
+      },
+      {
+        src: "/products/syringe.jpg",
+        alt: "Vet Items (Syringes, Catheters)",
+        label: "Vet Items",
+      },
+    ].map(({ src, alt, label }, idx) => (
+      <div key={idx} className="text-center ">
+        <img
+          src={src}
+          alt={alt}
+          className="w-full h-48 object-fill rounded-md shadow-md"
+        />
+        <p className="mt-2 text-sm text-gray-700">{label}</p>
       </div>
+    ))}
+  </div>
+</div>
+
 
       {/* Logos Section */}
       <div className="flex flex-wrap items-center justify-center gap-6 mt-10">
         {/* Replace with actual logo images */}
-        <img src="/agrologo.png" alt="Company Logo" className="h-14" />
-        <img src="/products/iso salt.webp" alt="ISO Certified" className="h-14" />
-        <img src="/products/secp.jpeg" alt="SECP" className="h-14" />
-        <img src="/products/cornimg (1).jpeg" alt="Meezan Bank" className="h-14" />
-        <img src="/products/sbp.png" alt="State Bank of Pakistan" className="h-14" />
+        <img src="/agrologo.png" alt="Company Logo" className="h-20" />
+        <img src="/products/iso salt.webp" alt="ISO Certified" className="h-20" />
+        <img src="/products/secp.jpeg" alt="SECP" className="h-20" />
+        <img src="/products/cornimg (1).jpeg" alt="Meezan Bank" className="h-20" />
+        <img src="/products/sbp.png" alt="State Bank of Pakistan" className="h-20" />
       </div>
     </div>
   );

@@ -53,15 +53,15 @@ const pressKitData = [
     "AMIR IQBAL TRADERS & IMPEX KHANEWAL (SMC-PRIVATE) LIMITED was incorporated under Section 16 of the Companies Act, 2017. The company is limited by shares and registered with Corporate Unique Identification No. 0267304.",
     image: "./Certificate/pdf (1).pdf"
   },
-  {
-   id: 7,
-  title: "Memorandum of Association",
-  date: "August 5, 2024",
-  author: "Securities and Exchange Commission of Pakistan (SECP)",
-  description:
-    "AGROANIMAL IMPEX (SMC-PRIVATE) LIMITED was incorporated under the Companies Act, 2017 as a company limited by shares. The principal business activities include trading, import/export, and general order supply of legally permissible goods and services. The company shall not engage in banking, non-banking finance, insurance, MLM, Ponzi schemes, or any restricted/licensable business without prior regulatory approval. The authorized capital is Rs. 5,000 divided into 50 ordinary shares of Rs. 100 each. Muhammad Tayyab Iqbal is the sole subscriber.",
-    image: "./Certificate/pdf (2).pdf"
-  },
+  // {
+  //  id: 7,
+  // title: "Memorandum of Association",
+  // date: "August 5, 2024",
+  // author: "Securities and Exchange Commission of Pakistan (SECP)",
+  // description:
+  //   "AGROANIMAL IMPEX (SMC-PRIVATE) LIMITED was incorporated under the Companies Act, 2017 as a company limited by shares. The principal business activities include trading, import/export, and general order supply of legally permissible goods and services. The company shall not engage in banking, non-banking finance, insurance, MLM, Ponzi schemes, or any restricted/licensable business without prior regulatory approval. The authorized capital is Rs. 5,000 divided into 50 ordinary shares of Rs. 100 each. Muhammad Tayyab Iqbal is the sole subscriber.",
+  //   image: "./Certificate/pdf (2).pdf"
+  // },
   {
      id: 8,
   title: "Certificate of Incorporation on Change of Company Name",
@@ -71,16 +71,16 @@ const pressKitData = [
     "The company formerly known as AMIR IQBAL TRADERS & IMPEX KHANEWAL (SMC-PRIVATE) LIMITED has officially changed its name to AGROANIMAL IMPEX (SMC-PRIVATE) LIMITED under Section 13 of the Companies Act, 2017. For ninety days from the issuance date, the company is required to display its former name alongside the new name in all business locations and official documents as per Section 22 of the Act.",
     image: "./Certificate/pdf (3).pdf"
   },
-  {
-   id: 9,
-  title: "Articles of Association of AGROANIMAL IMPEX (SMC-PRIVATE) LIMITED",
-  date: "August 5, 2024",
-  author: "AGROANIMAL IMPEX (SMC-PRIVATE) LIMITED",
-  description:
-    "This document defines the internal rules and regulations for AGROANIMAL IMPEX (SMC-PRIVATE) LIMITED as a single member company under the Companies Act, 2017. It covers company structure, shareholding rules, meetings, director responsibilities, secretarial duties, financial record-keeping, dividend policies, use of company seal, indemnity provisions, and rules in case of change of status or winding up. It outlines how a sole director/member may act, how shares are to be handled in life and death, and provides a legal framework for contracts, accounts, and corporate governance.",
+  // {
+  //  id: 9,
+  // title: "Articles of Association of AGROANIMAL IMPEX (SMC-PRIVATE) LIMITED",
+  // date: "August 5, 2024",
+  // author: "AGROANIMAL IMPEX (SMC-PRIVATE) LIMITED",
+  // description:
+  //   "This document defines the internal rules and regulations for AGROANIMAL IMPEX (SMC-PRIVATE) LIMITED as a single member company under the Companies Act, 2017. It covers company structure, shareholding rules, meetings, director responsibilities, secretarial duties, financial record-keeping, dividend policies, use of company seal, indemnity provisions, and rules in case of change of status or winding up. It outlines how a sole director/member may act, how shares are to be handled in life and death, and provides a legal framework for contracts, accounts, and corporate governance.",
  
-    image: "./Certificate/pdf (4).pdf"
-  }
+  //   image: "./Certificate/pdf (4).pdf"
+  // }
 ];
 
 export default pressKitData;

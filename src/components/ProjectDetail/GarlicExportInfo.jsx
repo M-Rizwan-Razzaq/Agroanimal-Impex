@@ -1,6 +1,11 @@
 import React, { useEffect } from "react";
 import garlic from "../../assest/garliccollege.jpeg";
 
+import ippc from "../../assest/main/ippc.jpg";
+import halal from "../../assest/main/halal.png";
+import pest from "../../assest/main/pest control.jpg";
+import coo from "../../assest/main/coo.png";
+
 
 const GarlicExportInfo = () => {
    useEffect(() => {
@@ -86,7 +91,54 @@ const GarlicExportInfo = () => {
       </div>
 
       {/* Logo Row */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-4 items-center justify-center mt-6">
+   
+       <div className="mt-16">
+        <h3 className="text-lg sm:text-xl font-semibold mb-4 text-green-700 text-center">
+          Export Certifications
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            {
+              title: "Phytosanitary Certificate",
+              description:
+                "Certifies that the product is free from pests, soil, or microbial contamination.",
+              img: ippc  ,
+            },
+            {
+              title: "Fumigation Certificate",
+              description:
+                "Validates fumigation treatment to meet quarantine requirements.",
+              img: pest ,
+            },
+            {
+              title: "Certificate of Origin",
+              description:
+                "Proof of cultivation and harvest in Pakistan.",
+              img: coo ,
+            },
+            {
+              title: "Halal Certificate",
+              description:
+                "If the ginger/garlic is processed, a Halal certification is often necessary.",
+              img: halal ,
+            },
+          ].map(({ title, description, img }, idx) => (
+            <div
+              key={idx}
+              className="bg-white p-4 shadow rounded-lg text-center"
+            >
+              <img
+                src={img}
+                alt={title}
+                className="w-20 h-20 mx-auto object-contain mb-3"
+              />
+              <h4 className="text-md font-semibold text-green-800">{title}</h4>
+              <p className="text-sm text-gray-600 mt-1">{description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+         <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-4 items-center justify-center mt-6">
         {[
           { src: "/products/cornimg (1).jpeg", alt: "Meezan Bank" },
           { src: "/products/tadp.jpeg", alt: "TDAP" },

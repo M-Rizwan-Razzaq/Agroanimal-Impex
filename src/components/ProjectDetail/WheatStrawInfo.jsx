@@ -1,4 +1,10 @@
 import React, { useEffect } from 'react';
+import ippc from "../../assest/main/ippc.jpg";
+import pest from "../../assest/main/pest control.jpg";
+import nongmo from "../../assest/main/packaging.webp";
+import coo from "../../assest/main/coo.png";
+
+
 
 const WheatStrawInfo = () => {
    useEffect(() => {
@@ -125,6 +131,52 @@ const WheatStrawInfo = () => {
             </tbody>
           </table>
         </div>
+       <div className="mt-16">
+        <h3 className="text-lg sm:text-xl font-semibold mb-4 text-green-700 text-center">
+          Export Certifications
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            {
+              title: "Phytosanitary Certificate",
+              description:
+                "Ensures that straw is clean and pest-free, preventing the introduction of plant diseases.",
+              img: ippc  ,
+            },
+            {
+              title: "Fumigation Certificate",
+              description:
+                "Confirms treatment of the straw to kill any potential contaminants before export.",
+              img: pest ,
+            },
+            {
+              title: "Certificate of Origin",
+              description:
+                "Confirms the source country of the product, usually issued by the Chamber of Commerce.",
+              img: coo ,
+            },
+            {
+              title: "Packing & Labeling Compliance",
+              description:
+                "Required to meet the standards of the importing country regarding packaging, language, weight, etc.",
+              img: nongmo ,
+            },
+          ].map(({ title, description, img }, idx) => (
+            <div
+              key={idx}
+              className="bg-white p-4 shadow rounded-lg text-center"
+            >
+              <img
+                src={img}
+                alt={title}
+                className="w-20 h-20 mx-auto object-contain mb-3"
+              />
+              <h4 className="text-md font-semibold text-green-800">{title}</h4>
+              <p className="text-sm text-gray-600 mt-1">{description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
       </section>
 
       {/* Footer Image */}
