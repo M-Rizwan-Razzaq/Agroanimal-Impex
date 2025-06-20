@@ -1,6 +1,6 @@
 import wheatStraw from "../../assest/wheatstrawcollege.jpg";
 import silage from "../../assest/silagecollege (2).jpeg";
-import bones from "../../assest/bonecollege.jpeg";
+import bones from "../../assest/collegebones.jpg";
 import meat from "../../assest/meatcollege.jpeg";
 import salts from "../../assest/saltcollege.jpg";
 import garlic from "../../assest/garliccollege.jpeg";
@@ -70,7 +70,7 @@ export const serviceData = [
   {
     imageUrl: agridairy,
     altText: 'Agri-Dairy',
-    linkText: 'AgriDairy',
+    linkText: 'Import',
     description: 'Innovative solutions for modern dairy and agriculture systems.',
     link: "/agridairy"
   },

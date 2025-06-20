@@ -128,7 +128,7 @@ const ImportAgriDairyTech = () => {
         label: "Milk Analyzer",
       },
       {
-        src: "/products/seman.jpg",
+        src: "/products/semem.jpeg",
         alt: "Semen (Indigenous & Exotic)",
         label: "Semen (Indigenous & Exotic)",
       },
@@ -138,14 +138,39 @@ const ImportAgriDairyTech = () => {
         label: "Fodder Seeds",
       },
       {
-        src: "/products/byproducts.jpg",
+        src: "/products/cotton seed cake.jpg",
         alt: "Agriculture By-products",
         label: "Cakes & Meals",
       },
       {
+        src: "/products/diathermy.jpg",
+        alt: "Agriculture By-products",
+        label: "Diathermy",
+      },
+      {
         src: "/products/syringe.jpg",
         alt: "Vet Items (Syringes, Catheters)",
-        label: "Vet Items",
+        label: "Syringes",
+      },
+      {
+        src: "/products/silk suture.jpg",
+        alt: "Vet Items (silk suture,)",
+        label: "Silk Suture",
+      },
+      {
+        src: "/products/insemination.jpg",
+        alt: "Vet Items (insemination)",
+        label: "Insemination",
+      },
+      {
+        src: "/products/catgut ch.jpg",
+        alt: "Vet Items (catgut)",
+        label: "Catgut sutures",
+      },
+      {
+        src: "/products/catheter.jpg",
+        alt: "Vet Items (Catheter)",
+        label: "Catheter",
       },
     ].map(({ src, alt, label }, idx) => (
       <div key={idx} className="text-center ">

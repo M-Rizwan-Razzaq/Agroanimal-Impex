@@ -5,7 +5,6 @@ import About from "../About/About";
 import Service from "../Services/Service";
 import NHerosection from "../NHeroSection/NHerosection";
 import ScrollToTop from "react-scroll-to-top";
-// import Testimonial from "../Testimonial/Testimonial";
 import Team from "../TeamMambers/OurTeam";
 import "./home.css";
 import WhatsAppButton from "./WhatsAppButton";
@@ -54,8 +53,10 @@ const Home = () => {
         color="white"
         style={{ backgroundColor: "#ef4444", borderRadius: "80px", padding:"6px", }}
 />
+
           <Service />
           <Team />
+    
         </>
       )}
     </div>

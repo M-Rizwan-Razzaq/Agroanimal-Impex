@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { FaFacebook, FaEnvelope, FaLinkedin, FaTwitter } from "react-icons/fa";
 import "./TeamMembers.css";
-import shalinipatel from "../../assest/team1.jpg";
-import omkarjypuria from "../../assest/team2.jpg";
+// import shalinipatel from "../../assest/team1.jpg";
+import omkarjypuria from "../../assest/Tayyab Iqbal.jpg";
 // import Gadadharmartha from "../../assest/team3.jpg";
 // import Amitkumarpatel from "../../assest/team4.jpg";
 
 const teamData = [
     {
       name: "Muhammad Tayyab Iqbal",
-      role: "Agriculture Engineer",
-      email: "agriculture@gmail.com",
+      role: "Veterinarian & Entrepreneur",
+      email: "agroanimalimpex@gmail.com",
       imageSrc: omkarjypuria,
     },
     // {
