@@ -10,17 +10,17 @@ const ResearchAndDevelopment = () => {
       alt: "Sugar Detecting Device",
     },
     {
-      src: "/products/pointcare.jpg",
+      src: "/products/poct.jpg",
       alt: "Point-of-Care Device",
     },
     {
-      src: "/products/laponchip.jpg",
+      src: "/products/loc.jpg",
       alt: "Lab-on-Chip Device",
     },
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-10 text-gray-800 space-y-10">
+    <div className="max-w-7xl mx-auto px-4 mt-16  sm:px-6 md:px-8 py-10 text-gray-800 space-y-10">
       {/* Header */}
       <div className="text-center space-y-3">
         <h1 className="text-3xl md:text-4xl font-bold">
@@ -67,7 +67,7 @@ const ResearchAndDevelopment = () => {
               <img
                 src={img.src}
                 alt={img.alt}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-fill"
               />
               <div className="text-center text-sm font-medium p-2 bg-gray-100">
                 {img.alt}

@@ -1,8 +1,14 @@
+import potato from "../../assest/potato.jpg";
+import rice from "../../assest/rices.jpg";
+import mango from "../../assest/mangos.jpg";
+import chickenWMeat from "../../assest/chicken.png";
+
+
 export const media = [
   {
     id: 1,
     type: "image",
-    url: "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-02.jpg",
+    url: potato,
   },
   {
     id: 2,
@@ -12,7 +18,7 @@ export const media = [
   {
     id: 3,
     type: "image",
-    url: "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-04.jpg",
+    url: chickenWMeat,
   },
   {
     id: 4,
@@ -27,7 +33,7 @@ export const media = [
   {
     id: 6,
     type: "image",
-    url: "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-07.jpg",
+    url: mango,
   },
   {
     id: 7,
@@ -47,7 +53,7 @@ export const media = [
   {
     id: 10,
     type: "image",
-    url: "https://demo2.themelexus.com/farmor/wp-content/uploads/2023/09/project-11.jpg",
+    url: rice,
   },
   {
     id: 11,
